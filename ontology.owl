@@ -8,36 +8,40 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="https://schema.org/">
+     xmlns:schema="https://schema.org/"
+     xmlns:schema1="https://schema.org/schema:">
     <owl:Ontology rdf:about="http://w3id.org/ci">
         <owl:imports rdf:resource="http://w3id.org/cr"/>
         <owl:imports rdf:resource="http://w3id.org/cterm"/>
+        <terms:bibliographicCitation></terms:bibliographicCitation>
         <terms:contributor rdf:nodeID="genid1"/>
         <terms:contributor rdf:nodeID="genid3"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-12</terms:created>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-10-12</terms:created>
         <terms:creator rdf:nodeID="genid5"/>
         <terms:creator rdf:nodeID="genid8"/>
         <terms:description xml:lang="en">The Cost Item (CI) Ontology is based on concepts and principles of construction project cost estimation an can be used together with the Construction Resources (CR) ontology and can use terminology from the Construction Terminology (CTERM).</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:rights>Copyright 2024 by DABC, PoliMi</terms:rights>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-13</terms:modified>
+        <terms:rights>Copyright 2025 by DABC, PoliMi</terms:rights>
         <terms:title xml:lang="en">The Cost Item (CI) Ontology</terms:title>
         <vann:preferredNamespacePrefix>ci</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/ci#"/>
         <owl:versionInfo>1.0</owl:versionInfo>
+        <schema1:codeRepository rdf:resource="https://github.com/cpm-ont-network/cost"/>
     </owl:Ontology>
     <rdf:Description rdf:nodeID="genid1">
         <rdf:type rdf:resource="https://schema.org/Person"/>
         <schema:email rdf:resource="mailto:claudio.mirarchi@polimi.it"/>
         <schema:identifier rdf:resource="https://orcid.org/0000-0002-9288-8662"/>
         <schema:memberOf rdf:nodeID="genid2"/>
-        <schema:name>Claudio Mirarchi</schema:name>
+        <schema:name>Mirarchi, Claudio</schema:name>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid3">
         <rdf:type rdf:resource="https://schema.org/Person"/>
         <schema:email rdf:resource="mailto:katharina.sigalov@rub.de"/>
         <schema:identifier rdf:resource="https://orcid.org/0000-0002-3070-0759"/>
         <schema:memberOf rdf:nodeID="genid4"/>
-        <schema:name>Katharina Sigalov</schema:name>
+        <schema:name>Sigalov, Katharina</schema:name>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid5">
         <rdf:type rdf:resource="https://schema.org/Person"/>
@@ -49,18 +53,18 @@
                 <schema:name>Politecnico di Milano</schema:name>
             </rdf:Description>
         </schema:memberOf>
-        <schema:name>Philipp Hagedorn</schema:name>
+        <schema:name>Hagedorn, Philipp</schema:name>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid8">
         <rdf:type rdf:resource="https://schema.org/Person"/>
         <schema:email rdf:resource="mailto:jacopo.cassandro@polimi.it"/>
-        <schema:identifier rdf:resource="https://orcid.org/0000-0001-6058-7614"/>
+        <schema:identifier rdf:resource="https://orcid.org/0000-0002-1487-8178"/>
         <schema:memberOf rdf:nodeID="genid9"/>
-        <schema:name>Jacopo Cassandro</schema:name>
+        <schema:name>Cassandro, Jacopo</schema:name>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid2">
         <schema:identifier rdf:resource="https://www.dabc.polimi.it/persona/claudio-mirarchi/"/>
-        <schema:name>Politecnico di Milano</schema:name>
+        <schema:name>Politecnico di Milano, Dipartimento ABC</schema:name>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid4">
         <schema:identifier rdf:resource="https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/katharina_sigalov.html.en"/>
@@ -68,7 +72,7 @@
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid6">
         <schema:identifier rdf:resource="https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en"/>
-        <schema:name>Ruhr University Bochum</schema:name>
+        <schema:name>Ruhr University Bochum, Computing in Engineering</schema:name>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid9">
         <schema:identifier rdf:resource="https://www.dabc.polimi.it/persona/jacopo-cassandro/"/>
@@ -86,6 +90,13 @@
      -->
 
 
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
     
 
 
@@ -121,6 +132,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
     
 
 
@@ -194,6 +212,13 @@
     
 
 
+    <!-- https://schema.org/schema:codeRepository -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/schema:codeRepository"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -225,10 +250,74 @@
     
 
 
+    <!-- https://w3id.org/ci#ActivityOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ci#ActivityOf">
+        <rdfs:domain rdf:resource="https://w3id.org/ci#Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/ci#CostComponent"/>
+        <rdfs:label>Activity of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ci#PartOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ci#PartOf">
+        <rdfs:domain rdf:resource="https://w3id.org/ci#CostComponent"/>
+        <rdfs:range rdf:resource="https://w3id.org/ci#CostItem"/>
+        <rdfs:range rdf:resource="https://w3id.org/ci#ProductionResult"/>
+        <rdfs:label>PartOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ci#SubComponentOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ci#SubComponentOf">
+        <rdfs:domain rdf:resource="https://w3id.org/ci#CostComponent"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cr#Resource"/>
+        <rdfs:range rdf:resource="https://w3id.org/ci#Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/ci#CostComponent"/>
+        <rdfs:range rdf:resource="https://w3id.org/ci#Work"/>
+        <rdfs:label>SubComponentOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ci#UnitOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ci#UnitOf">
+        <owl:inverseOf rdf:resource="https://w3id.org/ci#hasUnit"/>
+        <rdfs:domain rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+        <rdfs:range rdf:resource="https://w3id.org/ci#Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/ci#CostComponent"/>
+        <rdfs:range rdf:resource="https://w3id.org/ci#Work"/>
+        <rdfs:label>UnitOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ci#WorkOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ci#WorkOf">
+        <owl:inverseOf rdf:resource="https://w3id.org/ci#hasWork"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ci#Work"/>
+        <rdfs:range rdf:resource="https://w3id.org/ci#CostComponent"/>
+        <rdfs:label>WorkOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ci#hasActivity -->
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ci#hasActivity">
+        <owl:inverseOf rdf:resource="https://w3id.org/ci#ActivityOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/ci#CostComponent"/>
         <rdfs:range rdf:resource="https://w3id.org/ci#Activity"/>
         <rdfs:label>hasActivity</rdfs:label>
@@ -240,6 +329,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ci#hasPart">
+        <owl:inverseOf rdf:resource="https://w3id.org/ci#PartOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/ci#CostItem"/>
         <rdfs:domain rdf:resource="https://w3id.org/ci#ProductionResult"/>
         <rdfs:range rdf:resource="https://w3id.org/ci#CostComponent"/>
@@ -252,6 +342,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ci#hasSubComponent">
+        <owl:inverseOf rdf:resource="https://w3id.org/ci#SubComponentOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/ci#Activity"/>
         <rdfs:domain rdf:resource="https://w3id.org/ci#CostComponent"/>
         <rdfs:domain rdf:resource="https://w3id.org/ci#Work"/>
@@ -286,18 +377,6 @@
     
 
 
-    <!-- https://w3id.org/ci#isPartOf -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/ci#isPartOf">
-        <rdfs:domain rdf:resource="https://w3id.org/ci#CostComponent"/>
-        <rdfs:range rdf:resource="https://w3id.org/ci#CostItem"/>
-        <rdfs:range rdf:resource="https://w3id.org/ci#ProductionResult"/>
-        <rdfs:label>IsPartOf</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/cterm#hasClassification -->
 
 
@@ -323,7 +402,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/ci#cam">
         <rdfs:domain rdf:resource="https://w3id.org/ci#Work"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label>cam</rdfs:label>
+        <rdfs:label>environmental and ecological requirements defined by the Italian Ministry of Environment</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -480,262 +559,262 @@
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error38 -->
+    <!-- http://org.semanticweb.owlapi/error#Error100 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error38"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error100"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error39 -->
+    <!-- http://org.semanticweb.owlapi/error#Error101 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error39"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error101"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error40 -->
+    <!-- http://org.semanticweb.owlapi/error#Error102 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error40"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error102"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error41 -->
+    <!-- http://org.semanticweb.owlapi/error#Error103 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error41"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error103"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error42 -->
+    <!-- http://org.semanticweb.owlapi/error#Error104 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error42"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error104"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error43 -->
+    <!-- http://org.semanticweb.owlapi/error#Error105 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error43"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error105"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error44 -->
+    <!-- http://org.semanticweb.owlapi/error#Error106 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error44"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error106"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error45 -->
+    <!-- http://org.semanticweb.owlapi/error#Error107 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error45"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error107"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error46 -->
+    <!-- http://org.semanticweb.owlapi/error#Error108 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error46"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error108"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error47 -->
+    <!-- http://org.semanticweb.owlapi/error#Error109 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error47"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error109"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error48 -->
+    <!-- http://org.semanticweb.owlapi/error#Error110 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error48"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error110"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error49 -->
+    <!-- http://org.semanticweb.owlapi/error#Error111 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error49"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error111"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error50 -->
+    <!-- http://org.semanticweb.owlapi/error#Error75 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error50"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error75"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error51 -->
+    <!-- http://org.semanticweb.owlapi/error#Error76 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error51"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error76"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error52 -->
+    <!-- http://org.semanticweb.owlapi/error#Error77 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error52"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error77"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error53 -->
+    <!-- http://org.semanticweb.owlapi/error#Error78 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error53"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error78"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error54 -->
+    <!-- http://org.semanticweb.owlapi/error#Error79 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error54"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error79"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error55 -->
+    <!-- http://org.semanticweb.owlapi/error#Error80 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error55"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error80"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error56 -->
+    <!-- http://org.semanticweb.owlapi/error#Error81 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error56"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error81"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error57 -->
+    <!-- http://org.semanticweb.owlapi/error#Error82 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error57"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error82"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error58 -->
+    <!-- http://org.semanticweb.owlapi/error#Error83 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error58"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error83"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error59 -->
+    <!-- http://org.semanticweb.owlapi/error#Error84 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error59"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error84"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error60 -->
+    <!-- http://org.semanticweb.owlapi/error#Error85 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error60"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error85"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error61 -->
+    <!-- http://org.semanticweb.owlapi/error#Error86 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error61"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error86"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error62 -->
+    <!-- http://org.semanticweb.owlapi/error#Error87 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error62"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error87"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error63 -->
+    <!-- http://org.semanticweb.owlapi/error#Error88 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error63"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error88"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error64 -->
+    <!-- http://org.semanticweb.owlapi/error#Error89 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error64"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error89"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error65 -->
+    <!-- http://org.semanticweb.owlapi/error#Error90 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error65"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error90"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error66 -->
+    <!-- http://org.semanticweb.owlapi/error#Error91 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error66"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error91"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error67 -->
+    <!-- http://org.semanticweb.owlapi/error#Error92 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error67"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error92"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error68 -->
+    <!-- http://org.semanticweb.owlapi/error#Error93 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error68"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error93"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error69 -->
+    <!-- http://org.semanticweb.owlapi/error#Error94 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error69"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error94"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error70 -->
+    <!-- http://org.semanticweb.owlapi/error#Error95 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error70"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error95"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error71 -->
+    <!-- http://org.semanticweb.owlapi/error#Error96 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error71"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error96"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error72 -->
+    <!-- http://org.semanticweb.owlapi/error#Error97 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error72"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error97"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error73 -->
+    <!-- http://org.semanticweb.owlapi/error#Error98 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error73"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error98"/>
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error74 -->
+    <!-- http://org.semanticweb.owlapi/error#Error99 -->
 
 
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error74"/>
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error99"/>
     
 
 
@@ -764,12 +843,12 @@
 
 
     <owl:Class rdf:about="https://w3id.org/ci#Activity">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error45"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error46"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error47"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error48"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error49"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error50"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error82"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error83"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error84"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error85"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error86"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error87"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -819,13 +898,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ci#unitPrice"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ci#descriptionDetail"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -866,14 +938,14 @@
 
 
     <owl:Class rdf:about="https://w3id.org/ci#CostComponent">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error64"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error65"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error66"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error67"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error101"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error102"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error103"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error104"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ci#isPartOf"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ci#PartOf"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/ci#CostItem"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1057,12 +1129,12 @@
 
 
     <owl:Class rdf:about="https://w3id.org/ci#Work">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error51"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error52"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error53"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error54"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error55"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error56"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error88"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error89"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error90"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error91"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error92"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error93"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1090,13 +1162,6 @@
                 <owl:onProperty rdf:resource="https://w3id.org/ci#quantityUnitOfMeasure"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ci#unitPrice"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1136,13 +1201,13 @@
 
 
     <owl:Class rdf:about="https://w3id.org/ci#WorkOfConstructionComponent">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error57"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error58"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error59"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error60"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error61"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error62"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error63"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error100"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error94"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error95"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error96"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error97"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error98"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error99"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/ci#Work"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1173,13 +1238,13 @@
 
 
     <owl:Class rdf:about="https://w3id.org/ci#WorkOfProductComponent">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error38"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error39"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error40"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error41"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error42"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error43"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error44"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error75"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error76"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error77"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error78"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error79"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error80"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error81"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/ci#Work"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1197,13 +1262,13 @@
 
 
     <owl:Class rdf:about="https://w3id.org/ci#WorkOfTemporaryComponent">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error68"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error69"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error70"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error71"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error72"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error73"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error74"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error105"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error106"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error107"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error108"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error109"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error110"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error111"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/ci#Work"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1261,6 +1326,51 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#Classification"/>
     <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">10</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
@@ -1276,6 +1386,18 @@
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
@@ -1300,27 +1422,6 @@
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
@@ -1331,42 +1432,6 @@
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>

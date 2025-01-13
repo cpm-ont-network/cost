@@ -13,7 +13,7 @@
     "@id" : "_:genid2"
   } ],
   "https://schema.org/name" : [ {
-    "@value" : "Claudio Mirarchi"
+    "@value" : "Mirarchi, Claudio"
   } ]
 }, {
   "@id" : "_:genid10",
@@ -97,15 +97,15 @@
 }, {
   "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#unitPrice"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ci#descriptionDetail"
   } ]
 }, {
   "@id" : "_:genid18",
@@ -118,31 +118,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#descriptionDetail"
-  } ]
-}, {
-  "@id" : "_:genid19",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/ci#techSpecs"
   } ]
 }, {
-  "@id" : "_:genid2",
-  "https://schema.org/identifier" : [ {
-    "@id" : "https://www.dabc.polimi.it/persona/claudio-mirarchi/"
-  } ],
-  "https://schema.org/name" : [ {
-    "@value" : "Politecnico di Milano"
-  } ]
-}, {
-  "@id" : "_:genid20",
+  "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/ci#WorkOfConstructionComponent"
@@ -155,16 +134,24 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid21",
+  "@id" : "_:genid2",
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://www.dabc.polimi.it/persona/claudio-mirarchi/"
+  } ],
+  "https://schema.org/name" : [ {
+    "@value" : "Politecnico di Milano, Dipartimento ABC"
+  } ]
+}, {
+  "@id" : "_:genid20",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#isPartOf"
+    "@id" : "https://w3id.org/ci#PartOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/ci#CostItem"
   } ]
 }, {
-  "@id" : "_:genid22",
+  "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/cterm#hasClassification"
@@ -173,7 +160,7 @@
     "@id" : "https://w3id.org/cterm#Classification"
   } ]
 }, {
-  "@id" : "_:genid23",
+  "@id" : "_:genid22",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/ci#Activity"
@@ -186,7 +173,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid24",
+  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://qudt.org/schema/qudt/Unit"
@@ -199,7 +186,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid25",
+  "@id" : "_:genid24",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -212,7 +199,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid26",
+  "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -225,7 +212,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid27",
+  "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -238,7 +225,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid28",
+  "@id" : "_:genid27",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -251,13 +238,22 @@
     "@id" : "https://w3id.org/ci#descriptionDetail"
   } ]
 }, {
-  "@id" : "_:genid29",
+  "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/ci#hasPart"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/ci#CostComponent"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasClassification"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#Classification"
   } ]
 }, {
   "@id" : "_:genid3",
@@ -274,19 +270,10 @@
     "@id" : "_:genid4"
   } ],
   "https://schema.org/name" : [ {
-    "@value" : "Katharina Sigalov"
+    "@value" : "Sigalov, Katharina"
   } ]
 }, {
   "@id" : "_:genid30",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasClassification"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#Classification"
-  } ]
-}, {
-  "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://qudt.org/schema/qudt/unit"
@@ -299,7 +286,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid32",
+  "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -312,7 +299,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid33",
+  "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -325,7 +312,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid34",
+  "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -338,7 +325,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid35",
+  "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -351,7 +338,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid36",
+  "@id" : "_:genid35",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -364,7 +351,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid37",
+  "@id" : "_:genid36",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -377,7 +364,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid38",
+  "@id" : "_:genid37",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/ci#WorkOfProductComponent"
@@ -390,13 +377,26 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid39",
+  "@id" : "_:genid38",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/ci#hasPart"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/ci#CostComponent"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/ci#WorkOfTemporaryComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ci#hasWork"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid4",
@@ -410,19 +410,6 @@
   "@id" : "_:genid40",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/ci#WorkOfTemporaryComponent"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#hasWork"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid41",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://qudt.org/schema/qudt/Unit"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
@@ -433,7 +420,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid42",
+  "@id" : "_:genid41",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -446,7 +433,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid43",
+  "@id" : "_:genid42",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -459,7 +446,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid44",
+  "@id" : "_:genid43",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -472,20 +459,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid45",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#unitPrice"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid46",
+  "@id" : "_:genid44",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -498,7 +472,7 @@
     "@id" : "https://w3id.org/ci#cam"
   } ]
 }, {
-  "@id" : "_:genid47",
+  "@id" : "_:genid45",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -511,7 +485,7 @@
     "@id" : "https://w3id.org/ci#descriptionDetail"
   } ]
 }, {
-  "@id" : "_:genid48",
+  "@id" : "_:genid46",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -524,7 +498,7 @@
     "@id" : "https://w3id.org/ci#law"
   } ]
 }, {
-  "@id" : "_:genid49",
+  "@id" : "_:genid47",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -535,6 +509,24 @@
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/ci#techSpecs"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ci#hasSubComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/ci#ConstructionComponent"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ci#hasSubComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/ci#ProductComponent"
   } ]
 }, {
   "@id" : "_:genid5",
@@ -553,7 +545,7 @@
     "@id" : "_:genid6"
   } ],
   "https://schema.org/name" : [ {
-    "@value" : "Philipp Hagedorn"
+    "@value" : "Hagedorn, Philipp"
   } ]
 }, {
   "@id" : "_:genid50",
@@ -562,7 +554,7 @@
     "@id" : "https://w3id.org/ci#hasSubComponent"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/ci#ConstructionComponent"
+    "@id" : "https://w3id.org/cr#MaterialResource"
   } ]
 }, {
   "@id" : "_:genid51",
@@ -571,7 +563,7 @@
     "@id" : "https://w3id.org/ci#hasSubComponent"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/ci#ProductComponent"
+    "@id" : "https://w3id.org/cr#MaterialResource"
   } ]
 }, {
   "@id" : "_:genid52",
@@ -580,7 +572,7 @@
     "@id" : "https://w3id.org/ci#hasSubComponent"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cr#MaterialResource"
+    "@id" : "https://w3id.org/ci#ProductComponent"
   } ]
 }, {
   "@id" : "_:genid53",
@@ -589,7 +581,7 @@
     "@id" : "https://w3id.org/ci#hasSubComponent"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cr#MaterialResource"
+    "@id" : "https://w3id.org/cr#EquipmentResource"
   } ]
 }, {
   "@id" : "_:genid54",
@@ -598,43 +590,37 @@
     "@id" : "https://w3id.org/ci#hasSubComponent"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/ci#ProductComponent"
+    "@id" : "https://w3id.org/cr#MaterialResource"
   } ]
 }, {
   "@id" : "_:genid55",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#hasSubComponent"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cr#EquipmentResource"
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "5"
   } ]
 }, {
   "@id" : "_:genid56",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#hasSubComponent"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cr#MaterialResource"
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid57",
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "10"
+    "@value" : "5"
   } ]
 }, {
   "@id" : "_:genid58",
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "10"
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid59",
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "10"
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid6",
@@ -642,7 +628,7 @@
     "@id" : "https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en"
   } ],
   "https://schema.org/name" : [ {
-    "@value" : "Ruhr University Bochum"
+    "@value" : "Ruhr University Bochum, Computing in Engineering"
   } ]
 }, {
   "@id" : "_:genid60",
@@ -652,27 +638,27 @@
   } ]
 }, {
   "@id" : "_:genid61",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid62",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid63",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "5"
   } ]
 }, {
   "@id" : "_:genid64",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "5"
   } ]
 }, {
   "@id" : "_:genid65",
@@ -682,15 +668,15 @@
   } ]
 }, {
   "@id" : "_:genid66",
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "5"
-  } ]
-}, {
-  "@id" : "_:genid67",
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "5"
   } ]
 }, {
   "@id" : "_:genid68",
@@ -711,21 +697,21 @@
   } ]
 }, {
   "@id" : "_:genid70",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "10"
   } ]
 }, {
   "@id" : "_:genid71",
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "5"
+    "@value" : "10"
   } ]
 }, {
   "@id" : "_:genid72",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "10"
   } ]
 }, {
   "@id" : "_:genid73",
@@ -735,7 +721,7 @@
   } ]
 }, {
   "@id" : "_:genid74",
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -753,15 +739,15 @@
   } ]
 }, {
   "@id" : "_:genid77",
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "5"
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid78",
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "5"
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid79",
@@ -778,13 +764,13 @@
     "@id" : "mailto:jacopo.cassandro@polimi.it"
   } ],
   "https://schema.org/identifier" : [ {
-    "@id" : "https://orcid.org/0000-0001-6058-7614"
+    "@id" : "https://orcid.org/0000-0002-1487-8178"
   } ],
   "https://schema.org/memberOf" : [ {
     "@id" : "_:genid9"
   } ],
   "https://schema.org/name" : [ {
-    "@value" : "Jacopo Cassandro"
+    "@value" : "Cassandro, Jacopo"
   } ]
 }, {
   "@id" : "_:genid80",
@@ -794,13 +780,13 @@
   } ]
 }, {
   "@id" : "_:genid81",
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "5"
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid82",
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -808,7 +794,7 @@
   "@id" : "_:genid83",
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "5"
   } ]
 }, {
   "@id" : "_:genid84",
@@ -820,7 +806,7 @@
   "@id" : "_:genid85",
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "5"
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid86",
@@ -830,9 +816,9 @@
   } ]
 }, {
   "@id" : "_:genid87",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@value" : "5"
   } ]
 }, {
   "@id" : "_:genid88",
@@ -842,7 +828,7 @@
   } ]
 }, {
   "@id" : "_:genid89",
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -856,7 +842,7 @@
   } ]
 }, {
   "@id" : "_:genid90",
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
@@ -867,128 +853,119 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid92",
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "5"
-  } ]
-}, {
-  "@id" : "_:genid93",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error38",
+  "@id" : "http://org.semanticweb.owlapi/error#Error100",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error39",
+  "@id" : "http://org.semanticweb.owlapi/error#Error101",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error40",
+  "@id" : "http://org.semanticweb.owlapi/error#Error102",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error41",
+  "@id" : "http://org.semanticweb.owlapi/error#Error103",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error42",
+  "@id" : "http://org.semanticweb.owlapi/error#Error104",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error43",
+  "@id" : "http://org.semanticweb.owlapi/error#Error105",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error44",
+  "@id" : "http://org.semanticweb.owlapi/error#Error106",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error45",
+  "@id" : "http://org.semanticweb.owlapi/error#Error107",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error46",
+  "@id" : "http://org.semanticweb.owlapi/error#Error108",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error47",
+  "@id" : "http://org.semanticweb.owlapi/error#Error109",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error48",
+  "@id" : "http://org.semanticweb.owlapi/error#Error110",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error49",
+  "@id" : "http://org.semanticweb.owlapi/error#Error111",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error50",
+  "@id" : "http://org.semanticweb.owlapi/error#Error75",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error51",
+  "@id" : "http://org.semanticweb.owlapi/error#Error76",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error52",
+  "@id" : "http://org.semanticweb.owlapi/error#Error77",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error53",
+  "@id" : "http://org.semanticweb.owlapi/error#Error78",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error54",
+  "@id" : "http://org.semanticweb.owlapi/error#Error79",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error55",
+  "@id" : "http://org.semanticweb.owlapi/error#Error80",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error56",
+  "@id" : "http://org.semanticweb.owlapi/error#Error81",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error57",
+  "@id" : "http://org.semanticweb.owlapi/error#Error82",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error58",
+  "@id" : "http://org.semanticweb.owlapi/error#Error83",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error59",
+  "@id" : "http://org.semanticweb.owlapi/error#Error84",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error60",
+  "@id" : "http://org.semanticweb.owlapi/error#Error85",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error61",
+  "@id" : "http://org.semanticweb.owlapi/error#Error86",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error62",
+  "@id" : "http://org.semanticweb.owlapi/error#Error87",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error63",
+  "@id" : "http://org.semanticweb.owlapi/error#Error88",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error64",
+  "@id" : "http://org.semanticweb.owlapi/error#Error89",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error65",
+  "@id" : "http://org.semanticweb.owlapi/error#Error90",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error66",
+  "@id" : "http://org.semanticweb.owlapi/error#Error91",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error67",
+  "@id" : "http://org.semanticweb.owlapi/error#Error92",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error68",
+  "@id" : "http://org.semanticweb.owlapi/error#Error93",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error69",
+  "@id" : "http://org.semanticweb.owlapi/error#Error94",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error70",
+  "@id" : "http://org.semanticweb.owlapi/error#Error95",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error71",
+  "@id" : "http://org.semanticweb.owlapi/error#Error96",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error72",
+  "@id" : "http://org.semanticweb.owlapi/error#Error97",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error73",
+  "@id" : "http://org.semanticweb.owlapi/error#Error98",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error74",
+  "@id" : "http://org.semanticweb.owlapi/error#Error99",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/contributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -1003,6 +980,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/rights",
@@ -1025,6 +1005,9 @@
 }, {
   "@id" : "http://w3id.org/ci",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@value" : ""
+  } ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@id" : "_:genid1"
   }, {
@@ -1032,7 +1015,7 @@
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2024-12-12"
+    "@value" : "2024-10-12"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@id" : "_:genid5"
@@ -1046,8 +1029,12 @@
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
   } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-01-13"
+  } ],
   "http://purl.org/dc/terms/rights" : [ {
-    "@value" : "Copyright 2024 by DABC, PoliMi"
+    "@value" : "Copyright 2025 by DABC, PoliMi"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
@@ -1066,6 +1053,9 @@
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "1.0"
+  } ],
+  "https://schema.org/schema:codeRepository" : [ {
+    "@id" : "https://github.com/cpm-ont-network/cost"
   } ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#date",
@@ -1092,23 +1082,26 @@
   "@id" : "https://schema.org/name",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "https://schema.org/schema:codeRepository",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "https://w3id.org/ci#Activity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Activity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://org.semanticweb.owlapi/error#Error45"
+    "@id" : "http://org.semanticweb.owlapi/error#Error82"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error46"
+    "@id" : "http://org.semanticweb.owlapi/error#Error83"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error47"
+    "@id" : "http://org.semanticweb.owlapi/error#Error84"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error48"
+    "@id" : "http://org.semanticweb.owlapi/error#Error85"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error49"
+    "@id" : "http://org.semanticweb.owlapi/error#Error86"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error50"
+    "@id" : "http://org.semanticweb.owlapi/error#Error87"
   }, {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   }, {
@@ -1129,8 +1122,18 @@
     "@id" : "_:genid17"
   }, {
     "@id" : "_:genid18"
-  }, {
-    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ci#ActivityOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ci#Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Activity of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ci#CostComponent"
   } ]
 }, {
   "@id" : "https://w3id.org/ci#ConstructionComponent",
@@ -1141,7 +1144,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ci#CostComponent"
   }, {
-    "@id" : "_:genid20"
+    "@id" : "_:genid19"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/ci#ProductComponent"
@@ -1155,15 +1158,17 @@
     "@value" : "CostComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://org.semanticweb.owlapi/error#Error64"
+    "@id" : "http://org.semanticweb.owlapi/error#Error101"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error65"
+    "@id" : "http://org.semanticweb.owlapi/error#Error102"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error66"
+    "@id" : "http://org.semanticweb.owlapi/error#Error103"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error67"
+    "@id" : "http://org.semanticweb.owlapi/error#Error104"
   }, {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
+    "@id" : "_:genid20"
   }, {
     "@id" : "_:genid21"
   }, {
@@ -1178,8 +1183,6 @@
     "@id" : "_:genid26"
   }, {
     "@id" : "_:genid27"
-  }, {
-    "@id" : "_:genid28"
   } ]
 }, {
   "@id" : "https://w3id.org/ci#CostItem",
@@ -1189,6 +1192,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
+    "@id" : "_:genid28"
   }, {
     "@id" : "_:genid29"
   }, {
@@ -1205,10 +1210,22 @@
     "@id" : "_:genid35"
   }, {
     "@id" : "_:genid36"
-  }, {
-    "@id" : "_:genid37"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/ci#ProductionResult"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ci#PartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ci#CostComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PartOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ci#CostItem"
+  }, {
     "@id" : "https://w3id.org/ci#ProductionResult"
   } ]
 }, {
@@ -1220,7 +1237,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ci#CostComponent"
   }, {
-    "@id" : "_:genid38"
+    "@id" : "_:genid37"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/ci#TemporaryComponent"
@@ -1234,7 +1251,25 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   }, {
-    "@id" : "_:genid39"
+    "@id" : "_:genid38"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ci#SubComponentOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ci#CostComponent"
+  }, {
+    "@id" : "https://w3id.org/cr#Resource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SubComponentOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ci#Activity"
+  }, {
+    "@id" : "https://w3id.org/ci#CostComponent"
+  }, {
+    "@id" : "https://w3id.org/ci#Work"
   } ]
 }, {
   "@id" : "https://w3id.org/ci#TemporaryComponent",
@@ -1245,7 +1280,26 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ci#CostComponent"
   }, {
-    "@id" : "_:genid40"
+    "@id" : "_:genid39"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ci#UnitOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://qudt.org/schema/qudt/Unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UnitOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ci#Activity"
+  }, {
+    "@id" : "https://w3id.org/ci#CostComponent"
+  }, {
+    "@id" : "https://w3id.org/ci#Work"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/ci#hasUnit"
   } ]
 }, {
   "@id" : "https://w3id.org/ci#Work",
@@ -1254,19 +1308,21 @@
     "@value" : "Work"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://org.semanticweb.owlapi/error#Error51"
+    "@id" : "http://org.semanticweb.owlapi/error#Error88"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error52"
+    "@id" : "http://org.semanticweb.owlapi/error#Error89"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error53"
+    "@id" : "http://org.semanticweb.owlapi/error#Error90"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error54"
+    "@id" : "http://org.semanticweb.owlapi/error#Error91"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error55"
+    "@id" : "http://org.semanticweb.owlapi/error#Error92"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error56"
+    "@id" : "http://org.semanticweb.owlapi/error#Error93"
   }, {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
+    "@id" : "_:genid40"
   }, {
     "@id" : "_:genid41"
   }, {
@@ -1281,10 +1337,21 @@
     "@id" : "_:genid46"
   }, {
     "@id" : "_:genid47"
-  }, {
-    "@id" : "_:genid48"
-  }, {
-    "@id" : "_:genid49"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ci#WorkOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ci#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "WorkOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ci#CostComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/ci#hasWork"
   } ]
 }, {
   "@id" : "https://w3id.org/ci#WorkOfConstructionComponent",
@@ -1293,27 +1360,27 @@
     "@value" : "WorkOfConstructionWork"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://org.semanticweb.owlapi/error#Error57"
+    "@id" : "http://org.semanticweb.owlapi/error#Error100"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error58"
+    "@id" : "http://org.semanticweb.owlapi/error#Error94"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error59"
+    "@id" : "http://org.semanticweb.owlapi/error#Error95"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error60"
+    "@id" : "http://org.semanticweb.owlapi/error#Error96"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error61"
+    "@id" : "http://org.semanticweb.owlapi/error#Error97"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error62"
+    "@id" : "http://org.semanticweb.owlapi/error#Error98"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error63"
+    "@id" : "http://org.semanticweb.owlapi/error#Error99"
   }, {
     "@id" : "https://w3id.org/ci#Work"
   }, {
+    "@id" : "_:genid48"
+  }, {
+    "@id" : "_:genid49"
+  }, {
     "@id" : "_:genid50"
-  }, {
-    "@id" : "_:genid51"
-  }, {
-    "@id" : "_:genid52"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/ci#WorkOfProductComponent"
@@ -1327,23 +1394,23 @@
     "@value" : "WorkOfProductWork"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://org.semanticweb.owlapi/error#Error38"
+    "@id" : "http://org.semanticweb.owlapi/error#Error75"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error39"
+    "@id" : "http://org.semanticweb.owlapi/error#Error76"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error40"
+    "@id" : "http://org.semanticweb.owlapi/error#Error77"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error41"
+    "@id" : "http://org.semanticweb.owlapi/error#Error78"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error42"
+    "@id" : "http://org.semanticweb.owlapi/error#Error79"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error43"
+    "@id" : "http://org.semanticweb.owlapi/error#Error80"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error44"
+    "@id" : "http://org.semanticweb.owlapi/error#Error81"
   }, {
     "@id" : "https://w3id.org/ci#Work"
   }, {
-    "@id" : "_:genid53"
+    "@id" : "_:genid51"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/ci#WorkOfTemporaryComponent"
@@ -1355,27 +1422,27 @@
     "@value" : "WorkOfTemporaryWork"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://org.semanticweb.owlapi/error#Error68"
+    "@id" : "http://org.semanticweb.owlapi/error#Error105"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error69"
+    "@id" : "http://org.semanticweb.owlapi/error#Error106"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error70"
+    "@id" : "http://org.semanticweb.owlapi/error#Error107"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error71"
+    "@id" : "http://org.semanticweb.owlapi/error#Error108"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error72"
+    "@id" : "http://org.semanticweb.owlapi/error#Error109"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error73"
+    "@id" : "http://org.semanticweb.owlapi/error#Error110"
   }, {
-    "@id" : "http://org.semanticweb.owlapi/error#Error74"
+    "@id" : "http://org.semanticweb.owlapi/error#Error111"
   }, {
     "@id" : "https://w3id.org/ci#Work"
   }, {
+    "@id" : "_:genid52"
+  }, {
+    "@id" : "_:genid53"
+  }, {
     "@id" : "_:genid54"
-  }, {
-    "@id" : "_:genid55"
-  }, {
-    "@id" : "_:genid56"
   } ]
 }, {
   "@id" : "https://w3id.org/ci#cam",
@@ -1384,7 +1451,7 @@
     "@id" : "https://w3id.org/ci#Work"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "cam"
+    "@value" : "environmental and ecological requirements defined by the Italian Ministry of Environment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -1456,6 +1523,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ci#Activity"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/ci#ActivityOf"
   } ]
 }, {
   "@id" : "https://w3id.org/ci#hasPart",
@@ -1470,6 +1540,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ci#CostComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/ci#PartOf"
   } ]
 }, {
   "@id" : "https://w3id.org/ci#hasSubComponent",
@@ -1488,6 +1561,9 @@
     "@id" : "https://w3id.org/ci#CostComponent"
   }, {
     "@id" : "https://w3id.org/cr#Resource"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/ci#SubComponentOf"
   } ]
 }, {
   "@id" : "https://w3id.org/ci#hasUnit",
@@ -1530,20 +1606,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "https://w3id.org/ci#isPartOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ci#CostComponent"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "IsPartOf"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/ci#CostItem"
-  }, {
-    "@id" : "https://w3id.org/ci#ProductionResult"
   } ]
 }, {
   "@id" : "https://w3id.org/ci#keywords",
