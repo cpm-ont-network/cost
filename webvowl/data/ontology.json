@@ -1,0 +1,1907 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://qudt.org/schema/qudt", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "https://w3id.org/ci", "http://www.w3.org/2001/XMLSchema", "http://org.semanticweb.owlapi/error", "https://w3id.org/cr", "https://w3id.org/cterm" ],
+    "title" : {
+      "en" : "The Cost Item (CI) Ontology"
+    },
+    "iri" : "http://w3id.org/ci",
+    "version" : "1.0",
+    "author" : [ "_:genid2147483697", "_:genid2147483696" ],
+    "description" : {
+      "en" : "The Cost Item (CI) Ontology is based on concepts and principles of construction project cost estimation an can be used together with the Construction Resources (CR) ontology and can use terminology from the Construction Terminology (CTERM)."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "_:genid2147483697",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "_:genid2147483696",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "_:genid2147483694",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "_:genid2147483695",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2024-12-12",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "Copyright 2024 by DABC, PoliMi",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "ci",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ci#",
+        "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The Cost Item (CI) Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "126",
+    "type" : "owl:Class"
+  }, {
+    "id" : "133",
+    "type" : "owl:Class"
+  }, {
+    "id" : "140",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:equivalentClass"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/ci#Activity",
+    "baseIri" : "https://w3id.org/ci",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity",
+      "undefined" : "Activity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1", "2", "3", "4", "5", "6" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/ci#Work",
+    "baseIri" : "https://w3id.org/ci",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Work",
+      "undefined" : "Work"
+    },
+    "subClasses" : [ "15", "16", "17" ],
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "9", "10", "11", "12", "13", "14" ]
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error68",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error68"
+    },
+    "subClasses" : [ "16" ],
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error69",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error69"
+    },
+    "subClasses" : [ "16" ],
+    "attributes" : [ "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error66",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error66"
+    },
+    "subClasses" : [ "21" ],
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error67",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error67"
+    },
+    "subClasses" : [ "21" ],
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/Unit",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Unit"
+    },
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error71",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error71"
+    },
+    "subClasses" : [ "16" ],
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error72",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error72"
+    },
+    "subClasses" : [ "16" ],
+    "attributes" : [ "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error70",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error70"
+    },
+    "subClasses" : [ "16" ],
+    "attributes" : [ "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error73",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error73"
+    },
+    "subClasses" : [ "16" ],
+    "attributes" : [ "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error74",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error74"
+    },
+    "subClasses" : [ "16" ],
+    "attributes" : [ "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/ci#ConstructionComponent",
+    "baseIri" : "https://w3id.org/ci",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConstructionComponent",
+      "undefined" : "Construction Work"
+    },
+    "attributes" : [ "external" ],
+    "id" : "46",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error57",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error57"
+    },
+    "subClasses" : [ "17" ],
+    "attributes" : [ "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error58",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error58"
+    },
+    "subClasses" : [ "17" ],
+    "attributes" : [ "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error55",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error55"
+    },
+    "subClasses" : [ "8" ],
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error56",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error56"
+    },
+    "subClasses" : [ "8" ],
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error59",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error59"
+    },
+    "subClasses" : [ "17" ],
+    "attributes" : [ "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://w3id.org/ci#CostComponent",
+    "baseIri" : "https://w3id.org/ci",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CostComponent",
+      "undefined" : "CostComponent"
+    },
+    "subClasses" : [ "46", "55", "43" ],
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "53", "54", "20", "22" ]
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error60",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error60"
+    },
+    "subClasses" : [ "17" ],
+    "attributes" : [ "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error61",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error61"
+    },
+    "subClasses" : [ "17" ],
+    "attributes" : [ "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/ci#WorkOfTemporaryComponent",
+    "baseIri" : "https://w3id.org/ci",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WorkOfTemporaryComponent",
+      "undefined" : "WorkOfTemporaryWork"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "24", "25", "28", "8", "31", "32", "18", "19" ]
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/unit",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "unit"
+    },
+    "attributes" : [ "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error64",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error64"
+    },
+    "subClasses" : [ "21" ],
+    "attributes" : [ "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error65",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error65"
+    },
+    "subClasses" : [ "21" ],
+    "attributes" : [ "external" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error62",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error62"
+    },
+    "subClasses" : [ "17" ],
+    "attributes" : [ "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error63",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error63"
+    },
+    "subClasses" : [ "17" ],
+    "attributes" : [ "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/cr#EquipmentResource",
+    "baseIri" : "https://w3id.org/cr",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EquipmentResource"
+    },
+    "attributes" : [ "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://w3id.org/cr#MaterialResource",
+    "baseIri" : "https://w3id.org/cr",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaterialResource"
+    },
+    "attributes" : [ "external" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error46",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error46"
+    },
+    "subClasses" : [ "0" ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error47",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error47"
+    },
+    "subClasses" : [ "0" ],
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error44",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error44"
+    },
+    "subClasses" : [ "15" ],
+    "attributes" : [ "external" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error45",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error45"
+    },
+    "subClasses" : [ "0" ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error48",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error48"
+    },
+    "subClasses" : [ "0" ],
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error49",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error49"
+    },
+    "subClasses" : [ "0" ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error50",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error50"
+    },
+    "subClasses" : [ "0" ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/ci#WorkOfConstructionComponent",
+    "baseIri" : "https://w3id.org/ci",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WorkOfConstructionComponent",
+      "undefined" : "WorkOfConstructionWork"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17",
+    "superClasses" : [ "56", "57", "8", "63", "64", "50", "51", "52" ]
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error53",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error53"
+    },
+    "subClasses" : [ "8" ],
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error54",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error54"
+    },
+    "subClasses" : [ "8" ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/cr#Resource",
+    "baseIri" : "https://w3id.org/cr",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Resource"
+    },
+    "attributes" : [ "external" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error51",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error51"
+    },
+    "subClasses" : [ "8" ],
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error52",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error52"
+    },
+    "subClasses" : [ "8" ],
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/ci#ProductComponent",
+    "baseIri" : "https://w3id.org/ci",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProductComponent",
+      "undefined" : "Product Work"
+    },
+    "attributes" : [ "external" ],
+    "id" : "43",
+    "superClasses" : [ "21" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "21", "0", "8" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "87"
+  }, {
+    "instances" : 0,
+    "union" : [ "21", "80" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "88"
+  }, {
+    "instances" : 0,
+    "union" : [ "0", "8" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "91"
+  }, {
+    "instances" : 0,
+    "union" : [ "0", "8" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error39",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error39"
+    },
+    "subClasses" : [ "15" ],
+    "attributes" : [ "external" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error38",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error38"
+    },
+    "subClasses" : [ "15" ],
+    "attributes" : [ "external" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error42",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error42"
+    },
+    "subClasses" : [ "15" ],
+    "attributes" : [ "external" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error43",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error43"
+    },
+    "subClasses" : [ "15" ],
+    "attributes" : [ "external" ],
+    "id" : "96"
+  }, {
+    "instances" : 0,
+    "union" : [ "98", "21", "0", "8" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error40",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error40"
+    },
+    "subClasses" : [ "15" ],
+    "attributes" : [ "external" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error41",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error41"
+    },
+    "subClasses" : [ "15" ],
+    "attributes" : [ "external" ],
+    "id" : "100"
+  }, {
+    "instances" : 0,
+    "union" : [ "0", "8" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "34"
+  }, {
+    "instances" : 0,
+    "union" : [ "21", "0", "8" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "82"
+  }, {
+    "instances" : 0,
+    "union" : [ "0", "8" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "103"
+  }, {
+    "instances" : 0,
+    "union" : [ "98", "72" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "98", "72" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "107",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "https://w3id.org/ci#WorkOfProductComponent",
+    "baseIri" : "https://w3id.org/ci",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WorkOfProductComponent",
+      "undefined" : "WorkOfProductWork"
+    },
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "95", "96", "99", "8", "100", "78", "93", "94" ]
+  }, {
+    "iri" : "https://w3id.org/ci#ProductionResult",
+    "equivalent" : [ "98" ],
+    "baseIri" : "https://w3id.org/ci",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProductionResult",
+      "undefined" : "ProductionResult"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://w3id.org/cterm#Classification",
+    "baseIri" : "https://w3id.org/cterm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Classification"
+    },
+    "attributes" : [ "external" ],
+    "id" : "126"
+  }, {
+    "iri" : "https://w3id.org/cr#LabourResource",
+    "baseIri" : "https://w3id.org/cr",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LabourResource"
+    },
+    "attributes" : [ "external" ],
+    "id" : "133"
+  }, {
+    "iri" : "https://schema.org/Person",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "140"
+  }, {
+    "iri" : "https://w3id.org/ci#TemporaryComponent",
+    "baseIri" : "https://w3id.org/ci",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemporaryComponent",
+      "undefined" : "Temporary Work"
+    },
+    "attributes" : [ "external" ],
+    "id" : "55",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://w3id.org/ci#CostItem",
+    "equivalent" : [ "72" ],
+    "baseIri" : "https://w3id.org/ci",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CostItem",
+      "undefined" : "CostItem"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "98"
+  } ],
+  "property" : [ {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "65",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "67",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "68",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "69",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "70",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "71",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "73",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "74",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "135",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "137",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "138",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "139",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "141",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "142",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "143",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "144",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "154",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "155",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/ci#isPartOf",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "isPartOf",
+      "undefined" : "IsPartOf"
+    },
+    "domain" : "21",
+    "attributes" : [ "object", "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/ci#techSpecs",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "techSpecs",
+      "undefined" : "tech specs"
+    },
+    "maxCardinality" : "1",
+    "domain" : "34",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/ci#descriptionGeneral",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "descriptionGeneral",
+      "undefined" : "descriptionGeneral"
+    },
+    "cardinality" : "1",
+    "domain" : "21",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://w3id.org/ci#hasSubComponent",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "hasSubComponent",
+      "undefined" : "hasSubComponent"
+    },
+    "domain" : "16",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://w3id.org/ci#quantityUnitOfMeasure",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "quantityUnitOfMeasure",
+      "undefined" : "quantityUnitOfMeasure"
+    },
+    "cardinality" : "1",
+    "domain" : "21",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/ci#hasActivity",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasActivity",
+      "undefined" : "hasActivity"
+    },
+    "domain" : "21",
+    "attributes" : [ "object", "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://w3id.org/ci#hasSubComponent",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "hasSubComponent",
+      "undefined" : "hasSubComponent"
+    },
+    "domain" : "16",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://w3id.org/ci#hasWork",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasWork",
+      "undefined" : "hasWork"
+    },
+    "domain" : "21",
+    "attributes" : [ "object", "external" ],
+    "id" : "61"
+  }, {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://w3id.org/ci#hasSubComponent",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "hasSubComponent",
+      "undefined" : "hasSubComponent"
+    },
+    "domain" : "16",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://w3id.org/ci#hasSubComponent",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "hasSubComponent",
+      "undefined" : "hasSubComponent"
+    },
+    "domain" : "17",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://w3id.org/ci#hasSubComponent",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "hasSubComponent",
+      "undefined" : "hasSubComponent"
+    },
+    "domain" : "17",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://w3id.org/ci#hasSubComponent",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "hasSubComponent",
+      "undefined" : "hasSubComponent"
+    },
+    "domain" : "15",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "69"
+  }, {
+    "range" : "16",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://w3id.org/ci#hasPart",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasPart",
+      "undefined" : "hasPart"
+    },
+    "domain" : "72",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://w3id.org/ci#hasSubComponent",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "hasSubComponent",
+      "undefined" : "hasSubComponent"
+    },
+    "domain" : "17",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "73"
+  }, {
+    "range" : "15",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "range" : "22",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "range" : "25",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "76"
+  }, {
+    "range" : "24",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://w3id.org/ci#cam",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "cam",
+      "undefined" : "cam"
+    },
+    "maxCardinality" : "1",
+    "domain" : "8",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://w3id.org/ci#hasUnit",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "undefined" : "hasUnit"
+    },
+    "domain" : "82",
+    "attributes" : [ "object", "external" ],
+    "id" : "81"
+  }, {
+    "range" : "18",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  }, {
+    "range" : "8",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "range" : "20",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "85"
+  }, {
+    "range" : "19",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "86"
+  }, {
+    "range" : "8",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "8",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://w3id.org/ci#law",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "law",
+      "undefined" : "law"
+    },
+    "maxCardinality" : "10",
+    "domain" : "8",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "101"
+  }, {
+    "iri" : "https://w3id.org/ci#descriptionDetail",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "descriptionDetail",
+      "undefined" : "descriptionDetail"
+    },
+    "maxCardinality" : "1",
+    "cardinality" : "1",
+    "domain" : "21",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "102"
+  }, {
+    "iri" : "https://w3id.org/ci#hasSubComponent",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "hasSubComponent",
+      "undefined" : "hasSubComponent"
+    },
+    "domain" : "87",
+    "attributes" : [ "object", "external" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://w3id.org/ci#excluded",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "excluded",
+      "undefined" : "excluded"
+    },
+    "domain" : "91",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "105"
+  }, {
+    "range" : "78",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "108"
+  }, {
+    "range" : "3",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "109"
+  }, {
+    "range" : "5",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "range" : "4",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "111"
+  }, {
+    "range" : "2",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "112"
+  }, {
+    "range" : "64",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "113"
+  }, {
+    "iri" : "https://w3id.org/ci#measurementRules",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "measurementRules",
+      "undefined" : "measurementRules"
+    },
+    "domain" : "21",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "114"
+  }, {
+    "range" : "63",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
+  }, {
+    "range" : "57",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "116"
+  }, {
+    "range" : "56",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
+  }, {
+    "range" : "54",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "118"
+  }, {
+    "range" : "53",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "119"
+  }, {
+    "range" : "21",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
+  }, {
+    "range" : "52",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "range" : "21",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "range" : "21",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "iri" : "https://w3id.org/ci#keywords",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "keywords",
+      "undefined" : "keywords"
+    },
+    "domain" : "92",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "124"
+  }, {
+    "range" : "13",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "51",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "range" : "14",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "31",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "range" : "28",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "range" : "50",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "131"
+  }, {
+    "range" : "32",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "iri" : "https://w3id.org/ci#hasSubComponent",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "hasSubComponent",
+      "undefined" : "hasSubComponent"
+    },
+    "domain" : "0",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "134"
+  }, {
+    "range" : "55",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "range" : "43",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "iri" : "https://w3id.org/ci#isPartOf",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "isPartOf",
+      "undefined" : "IsPartOf"
+    },
+    "domain" : "21",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "137"
+  }, {
+    "iri" : "https://w3id.org/cterm#hasClassification",
+    "baseIri" : "https://w3id.org/cterm",
+    "range" : "126",
+    "label" : {
+      "IRI-based" : "hasClassification"
+    },
+    "domain" : "21",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "138"
+  }, {
+    "iri" : "https://w3id.org/ci#hasPart",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasPart",
+      "undefined" : "hasPart"
+    },
+    "domain" : "98",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "139"
+  }, {
+    "iri" : "https://w3id.org/cterm#hasClassification",
+    "baseIri" : "https://w3id.org/cterm",
+    "range" : "126",
+    "label" : {
+      "IRI-based" : "hasClassification"
+    },
+    "domain" : "98",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "141"
+  }, {
+    "range" : "55",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "142"
+  }, {
+    "iri" : "https://w3id.org/ci#hasSubComponent",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "hasSubComponent",
+      "undefined" : "hasSubComponent"
+    },
+    "domain" : "0",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "143"
+  }, {
+    "iri" : "https://w3id.org/ci#hasSubComponent",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "133",
+    "label" : {
+      "IRI-based" : "hasSubComponent",
+      "undefined" : "hasSubComponent"
+    },
+    "domain" : "0",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "144"
+  }, {
+    "range" : "100",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "range" : "95",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "94",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "range" : "99",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "96",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  }, {
+    "range" : "93",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "150"
+  }, {
+    "range" : "12",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  }, {
+    "iri" : "https://w3id.org/ci#hasPart",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasPart",
+      "undefined" : "hasPart"
+    },
+    "domain" : "106",
+    "attributes" : [ "object", "external" ],
+    "id" : "152"
+  }, {
+    "iri" : "https://w3id.org/ci#included",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "included",
+      "undefined" : "included"
+    },
+    "domain" : "103",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "153"
+  }, {
+    "iri" : "https://w3id.org/ci#code",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "code",
+      "undefined" : "code"
+    },
+    "cardinality" : "1",
+    "domain" : "97",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "154"
+  }, {
+    "iri" : "https://w3id.org/ci#prefix",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "prefix",
+      "en" : "prefix",
+      "it" : "prefisso"
+    },
+    "cardinality" : "1",
+    "domain" : "98",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "155"
+  }, {
+    "iri" : "https://w3id.org/ci#unitPrice",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "unitPrice",
+      "undefined" : "unit price"
+    },
+    "cardinality" : "1",
+    "domain" : "98",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "156"
+  }, {
+    "range" : "11",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "range" : "6",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "159"
+  }, {
+    "range" : "10",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "160"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "161"
+  } ]
+}
