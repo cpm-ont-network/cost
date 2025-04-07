@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://w3id.org/ci#","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://w3id.org/ci#","name":"The Cost Item (CI) Ontology", "headline":"Document describing the ontology http://w3id.org/ci#", "dateReleased":"2024-10-12", "dateModified":"2025-01-13", "version":"1.0", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Hagedorn, Philipp"},{"@type":"Person","name":"Cassandro, Jacopo"}], "contributor":[{"@type":"Person","name":"Mirarchi, Claudio"},{"@type":"Person","name":"Sigalov, Katharina"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://w3id.org/ci#","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://w3id.org/ci#","name":"The Cost Item (CI) Ontology", "headline":"Document describing the ontology http://w3id.org/ci#", "dateReleased":"2024-10-12", "dateModified":"2025-04-07", "version":"0.2", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Cassandro, Jacopo"},{"@type":"Person","name":"Hagedorn, Philipp"}], "contributor":[{"@type":"Person","name":"Mirarchi, Claudio"},{"@type":"Person","name":"Sigalov, Katharina"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -70,13 +70,13 @@ $(function(){
 
 
 <dl>
-<dt>Data modificata: 2025-01-13</dt>
+<dt>Data modificata: 2025-04-07</dt>
 <dt>Ultima versione:</dt>
 <dd><a href="http://w3id.org/ci#">http://w3id.org/ci#</a></dd>
 <dt>Revisione:</dt>
-<dd>1.0</dd>
+<dd>0.2</dd>
 <dt>Autori:</dt>
-<dd>Hagedorn, Philipp<a href="mailto:philipp.hagedorn-n6v@rub.de">&#9993;</a></dd><dd>Cassandro, Jacopo<a href="mailto:jacopo.cassandro@polimi.it">&#9993;</a></dd>
+<dd>Cassandro, Jacopo<a href="mailto:jacopo.cassandro@polimi.it">&#9993;</a></dd><dd>Hagedorn, Philipp<a href="mailto:philipp.hagedorn-n6v@rub.de">&#9993;</a></dd>
 
 <dt>Collaboratori:</dt>
 <dd>Mirarchi, Claudio<a href="mailto:claudio.mirarchi@polimi.it">&#9993;</a></dd><dd>Sigalov, Katharina<a href="mailto:katharina.sigalov@rub.de">&#9993;</a></dd>
@@ -84,7 +84,7 @@ $(function(){
 <dt>Scarica la serializzazione:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>Licenza:</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
 </dd><dt>Visualizzazione:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cita come:</dt>
-<dd>Hagedorn, Philipp, Cassandro, Jacopo. The Cost Item (CI) Ontology. Revision: 1.0.</dd>
+<dd>Cassandro, Jacopo, Hagedorn, Philipp. The Cost Item (CI) Ontology. Revision: 0.2.</dd>
 </dl>
 
 <hr/>
@@ -93,7 +93,41 @@ $(function(){
 <div>
 <span>Ontology Specification Draft</span>
 </div>
-</div><div id="toc"></div>  
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+Qui va inserito il testo dell'abstract. L'abstract dovrebbe contenere una descrizione sintetica dell'ontologia e degli scopi a cui &egrave;  destinata.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduzione <span class="backlink"> torna alla <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Qui va inserita l'introduzione. L'introduzione dovrebbe descrivere brevemente l'ontologia, le motivazioni, lo stato dell'arte, e gli obiettivi.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Lista dei namespace</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Tabella 1</a>: Lista dei namespace usati nel documento </caption>
+<tbody>
+<tr><td><b>ci</b></td><td>&lt;https://w3id.org/ci#&gt;</td></tr>
+<tr><td><b>cr</b></td><td>&lt;https://w3id.org/cr#&gt;</td></tr>
+<tr><td><b>cterm</b></td><td>&lt;https://w3id.org/cterm#&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/terms/&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+<tr><td><b>qudt</b></td><td>&lt;http://qudt.org/schema/qudt/&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
+<tr><td><b>schema</b></td><td>&lt;https://schema.org/&gt;</td></tr>
+<tr><td><b>schema1</b></td><td>&lt;https://schema.org/schema:&gt;</td></tr>
+<tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann/&gt;</td></tr>
+<tr><td><b>vs</b></td><td>&lt;http://www.w3.org/2003/06/sw-vocab-status/ns#&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
 
 <!--OVERVIEW SECTION-->
     <div id="overview"><h2 id="overv" class="list">The Cost Item (CI) Ontology: Overview <span class="backlink"> torna alla <a href="#toc">ToC</a></span></h2>
@@ -140,7 +174,7 @@ Questa ontologia definisce le seguenti classe e propriet&agrave;.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
-      <a href="#https://w3id.org/ci#ActivityOf" title="https://w3id.org/ci#ActivityOf">Activity of</a>
+      <a href="#https://w3id.org/ci#activityOf" title="https://w3id.org/ci#activityOf">activity of</a>
    </li>
    <li>
       <a href="#https://w3id.org/ci#hasActivity" title="https://w3id.org/ci#hasActivity">hasActivity</a>
@@ -158,16 +192,16 @@ Questa ontologia definisce le seguenti classe e propriet&agrave;.</span>
       <a href="#https://w3id.org/ci#hasWork" title="https://w3id.org/ci#hasWork">hasWork</a>
    </li>
    <li>
-      <a href="#https://w3id.org/ci#PartOf" title="https://w3id.org/ci#PartOf">PartOf</a>
+      <a href="#https://w3id.org/ci#partOf" title="https://w3id.org/ci#partOf">partOf</a>
    </li>
    <li>
-      <a href="#https://w3id.org/ci#SubComponentOf" title="https://w3id.org/ci#SubComponentOf">SubComponentOf</a>
+      <a href="#https://w3id.org/ci#subComponentOf" title="https://w3id.org/ci#subComponentOf">subComponentOf</a>
    </li>
    <li>
-      <a href="#https://w3id.org/ci#UnitOf" title="https://w3id.org/ci#UnitOf">UnitOf</a>
+      <a href="#https://w3id.org/ci#unitOf" title="https://w3id.org/ci#unitOf">unitOf</a>
    </li>
    <li>
-      <a href="#https://w3id.org/ci#WorkOf" title="https://w3id.org/ci#WorkOf">WorkOf</a>
+      <a href="#https://w3id.org/ci#workOf" title="https://w3id.org/ci#workOf">workOf</a>
    </li>
 </ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -213,12 +247,6 @@ Questa ontologia definisce le seguenti classe e propriet&agrave;.</span>
    </li>
 </ul><iframe src="webvowl/index.html"></iframe> 
 </div>
-  
-
-<!--DESCRIPTION SECTION-->
-    <div id="description"><h2 id="desc" class="list">The Cost Item (CI) Ontology: Descrizione <span class="backlink"> torna alla <a href="#toc">ToC</a></span></h2>
-
-<span class="markdown">The Cost Item (CI) Ontology is based on concepts and principles of construction project cost estimation an can be used together with the Construction Resources (CR) ontology and can use terminology from the Construction Terminology (CTERM).</span></div>
    
 
 <!--CROSSREF SECTION-->
@@ -247,19 +275,19 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
     ha come super-classi
    </dt>
    <dd>
-    <a href="http://org.semanticweb.owlapi/error#Error82" target="_blank" title="http://org.semanticweb.owlapi/error#Error82">Error82</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error83" target="_blank" title="http://org.semanticweb.owlapi/error#Error83">Error83</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error84" target="_blank" title="http://org.semanticweb.owlapi/error#Error84">Error84</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error85" target="_blank" title="http://org.semanticweb.owlapi/error#Error85">Error85</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error86" target="_blank" title="http://org.semanticweb.owlapi/error#Error86">Error86</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error87" target="_blank" title="http://org.semanticweb.owlapi/error#Error87">Error87</a> <sup class="type-c" title="classe">c</sup>, <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="classe">c</sup>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="classe">c</sup>
    </dd>
    <dt>
     è nel dominio di
    </dt>
    <dd>
-    <a href="#https://w3id.org/ci#ActivityOf" title="https://w3id.org/ci#ActivityOf">Activity of</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#code" title="https://w3id.org/ci#code">code</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#excluded" title="https://w3id.org/ci#excluded">excluded</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#hasSubComponent" title="https://w3id.org/ci#hasSubComponent">hasSubComponent</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#hasUnit" title="https://w3id.org/ci#hasUnit">hasUnit</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#included" title="https://w3id.org/ci#included">included</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#keywords" title="https://w3id.org/ci#keywords">keywords</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#techSpecs" title="https://w3id.org/ci#techSpecs">tech specs</a> <sup class="type-dp" title="data property">dp</sup>
+    <a href="#https://w3id.org/ci#activityOf" title="https://w3id.org/ci#activityOf">activity of</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#code" title="https://w3id.org/ci#code">code</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#excluded" title="https://w3id.org/ci#excluded">excluded</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#hasSubComponent" title="https://w3id.org/ci#hasSubComponent">hasSubComponent</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#hasUnit" title="https://w3id.org/ci#hasUnit">hasUnit</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#included" title="https://w3id.org/ci#included">included</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#keywords" title="https://w3id.org/ci#keywords">keywords</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#techSpecs" title="https://w3id.org/ci#techSpecs">tech specs</a> <sup class="type-dp" title="data property">dp</sup>
    </dd>
    <dt>
     è nel codominio di
    </dt>
    <dd>
-    <a href="#https://w3id.org/ci#SubComponentOf" title="https://w3id.org/ci#SubComponentOf">SubComponentOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#UnitOf" title="https://w3id.org/ci#UnitOf">UnitOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#hasActivity" title="https://w3id.org/ci#hasActivity">hasActivity</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#https://w3id.org/ci#hasActivity" title="https://w3id.org/ci#hasActivity">hasActivity</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#subComponentOf" title="https://w3id.org/ci#subComponentOf">subComponentOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#unitOf" title="https://w3id.org/ci#unitOf">unitOf</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -289,7 +317,7 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
     ha come super-classi
    </dt>
    <dd>
-    <a href="http://org.semanticweb.owlapi/error#Error101" target="_blank" title="http://org.semanticweb.owlapi/error#Error101">Error101</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error102" target="_blank" title="http://org.semanticweb.owlapi/error#Error102">Error102</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error103" target="_blank" title="http://org.semanticweb.owlapi/error#Error103">Error103</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error104" target="_blank" title="http://org.semanticweb.owlapi/error#Error104">Error104</a> <sup class="type-c" title="classe">c</sup>, <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="classe">c</sup>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="classe">c</sup>
    </dd>
    <dt>
     ha come sotto-classi
@@ -301,13 +329,13 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
     è nel dominio di
    </dt>
    <dd>
-    <a href="#https://w3id.org/ci#PartOf" title="https://w3id.org/ci#PartOf">PartOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#SubComponentOf" title="https://w3id.org/ci#SubComponentOf">SubComponentOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#code" title="https://w3id.org/ci#code">code</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#descriptionDetail" title="https://w3id.org/ci#descriptionDetail">descriptionDetail</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#descriptionGeneral" title="https://w3id.org/ci#descriptionGeneral">descriptionGeneral</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#hasActivity" title="https://w3id.org/ci#hasActivity">hasActivity</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#hasSubComponent" title="https://w3id.org/ci#hasSubComponent">hasSubComponent</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#hasUnit" title="https://w3id.org/ci#hasUnit">hasUnit</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#hasWork" title="https://w3id.org/ci#hasWork">hasWork</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#measurementRules" title="https://w3id.org/ci#measurementRules">measurementRules</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#quantityUnitOfMeasure" title="https://w3id.org/ci#quantityUnitOfMeasure">quantityUnitOfMeasure</a> <sup class="type-dp" title="data property">dp</sup>
+    <a href="#https://w3id.org/ci#code" title="https://w3id.org/ci#code">code</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#descriptionDetail" title="https://w3id.org/ci#descriptionDetail">descriptionDetail</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#descriptionGeneral" title="https://w3id.org/ci#descriptionGeneral">descriptionGeneral</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#hasActivity" title="https://w3id.org/ci#hasActivity">hasActivity</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#hasSubComponent" title="https://w3id.org/ci#hasSubComponent">hasSubComponent</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#hasUnit" title="https://w3id.org/ci#hasUnit">hasUnit</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#hasWork" title="https://w3id.org/ci#hasWork">hasWork</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#measurementRules" title="https://w3id.org/ci#measurementRules">measurementRules</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#partOf" title="https://w3id.org/ci#partOf">partOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#quantityUnitOfMeasure" title="https://w3id.org/ci#quantityUnitOfMeasure">quantityUnitOfMeasure</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#subComponentOf" title="https://w3id.org/ci#subComponentOf">subComponentOf</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     è nel codominio di
    </dt>
    <dd>
-    <a href="#https://w3id.org/ci#ActivityOf" title="https://w3id.org/ci#ActivityOf">Activity of</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#SubComponentOf" title="https://w3id.org/ci#SubComponentOf">SubComponentOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#UnitOf" title="https://w3id.org/ci#UnitOf">UnitOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#WorkOf" title="https://w3id.org/ci#WorkOf">WorkOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#hasPart" title="https://w3id.org/ci#hasPart">hasPart</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#hasSubComponent" title="https://w3id.org/ci#hasSubComponent">hasSubComponent</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#https://w3id.org/ci#activityOf" title="https://w3id.org/ci#activityOf">activity of</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#hasPart" title="https://w3id.org/ci#hasPart">hasPart</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#hasSubComponent" title="https://w3id.org/ci#hasSubComponent">hasSubComponent</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#subComponentOf" title="https://w3id.org/ci#subComponentOf">subComponentOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#unitOf" title="https://w3id.org/ci#unitOf">unitOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#workOf" title="https://w3id.org/ci#workOf">workOf</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -337,7 +365,7 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
     è nel codominio di
    </dt>
    <dd>
-    <a href="#https://w3id.org/ci#PartOf" title="https://w3id.org/ci#PartOf">PartOf</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#https://w3id.org/ci#partOf" title="https://w3id.org/ci#partOf">partOf</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -379,7 +407,7 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
     è nel codominio di
    </dt>
    <dd>
-    <a href="#https://w3id.org/ci#PartOf" title="https://w3id.org/ci#PartOf">PartOf</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#https://w3id.org/ci#partOf" title="https://w3id.org/ci#partOf">partOf</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -409,7 +437,7 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
     ha come super-classi
    </dt>
    <dd>
-    <a href="http://org.semanticweb.owlapi/error#Error88" target="_blank" title="http://org.semanticweb.owlapi/error#Error88">Error88</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error89" target="_blank" title="http://org.semanticweb.owlapi/error#Error89">Error89</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error90" target="_blank" title="http://org.semanticweb.owlapi/error#Error90">Error90</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error91" target="_blank" title="http://org.semanticweb.owlapi/error#Error91">Error91</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error92" target="_blank" title="http://org.semanticweb.owlapi/error#Error92">Error92</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error93" target="_blank" title="http://org.semanticweb.owlapi/error#Error93">Error93</a> <sup class="type-c" title="classe">c</sup>, <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="classe">c</sup>
+    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="classe">c</sup>
    </dd>
    <dt>
     ha come sotto-classi
@@ -421,13 +449,13 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
     è nel dominio di
    </dt>
    <dd>
-    <a href="#https://w3id.org/ci#WorkOf" title="https://w3id.org/ci#WorkOf">WorkOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#code" title="https://w3id.org/ci#code">code</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#cam" title="https://w3id.org/ci#cam">environmental and ecological requirements defined by the Italian Ministry of Environment</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#excluded" title="https://w3id.org/ci#excluded">excluded</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#hasSubComponent" title="https://w3id.org/ci#hasSubComponent">hasSubComponent</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#hasUnit" title="https://w3id.org/ci#hasUnit">hasUnit</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#included" title="https://w3id.org/ci#included">included</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#keywords" title="https://w3id.org/ci#keywords">keywords</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#law" title="https://w3id.org/ci#law">law</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#techSpecs" title="https://w3id.org/ci#techSpecs">tech specs</a> <sup class="type-dp" title="data property">dp</sup>
+    <a href="#https://w3id.org/ci#code" title="https://w3id.org/ci#code">code</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#cam" title="https://w3id.org/ci#cam">environmental and ecological requirements defined by the Italian Ministry of Environment</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#excluded" title="https://w3id.org/ci#excluded">excluded</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#hasSubComponent" title="https://w3id.org/ci#hasSubComponent">hasSubComponent</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#hasUnit" title="https://w3id.org/ci#hasUnit">hasUnit</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#included" title="https://w3id.org/ci#included">included</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#keywords" title="https://w3id.org/ci#keywords">keywords</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#law" title="https://w3id.org/ci#law">law</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#techSpecs" title="https://w3id.org/ci#techSpecs">tech specs</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/ci#workOf" title="https://w3id.org/ci#workOf">workOf</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     è nel codominio di
    </dt>
    <dd>
-    <a href="#https://w3id.org/ci#SubComponentOf" title="https://w3id.org/ci#SubComponentOf">SubComponentOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#UnitOf" title="https://w3id.org/ci#UnitOf">UnitOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#hasWork" title="https://w3id.org/ci#hasWork">hasWork</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#https://w3id.org/ci#hasWork" title="https://w3id.org/ci#hasWork">hasWork</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#subComponentOf" title="https://w3id.org/ci#subComponentOf">subComponentOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/ci#unitOf" title="https://w3id.org/ci#unitOf">unitOf</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -439,7 +467,7 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
     ha come super-classi
    </dt>
    <dd>
-    <a href="http://org.semanticweb.owlapi/error#Error100" target="_blank" title="http://org.semanticweb.owlapi/error#Error100">Error100</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error94" target="_blank" title="http://org.semanticweb.owlapi/error#Error94">Error94</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error95" target="_blank" title="http://org.semanticweb.owlapi/error#Error95">Error95</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error96" target="_blank" title="http://org.semanticweb.owlapi/error#Error96">Error96</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error97" target="_blank" title="http://org.semanticweb.owlapi/error#Error97">Error97</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error98" target="_blank" title="http://org.semanticweb.owlapi/error#Error98">Error98</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error99" target="_blank" title="http://org.semanticweb.owlapi/error#Error99">Error99</a> <sup class="type-c" title="classe">c</sup>, <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
+    <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
    </dd>
    <dt>
     è disgiuta da
@@ -457,7 +485,7 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
     ha come super-classi
    </dt>
    <dd>
-    <a href="http://org.semanticweb.owlapi/error#Error75" target="_blank" title="http://org.semanticweb.owlapi/error#Error75">Error75</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error76" target="_blank" title="http://org.semanticweb.owlapi/error#Error76">Error76</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error77" target="_blank" title="http://org.semanticweb.owlapi/error#Error77">Error77</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error78" target="_blank" title="http://org.semanticweb.owlapi/error#Error78">Error78</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error79" target="_blank" title="http://org.semanticweb.owlapi/error#Error79">Error79</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error80" target="_blank" title="http://org.semanticweb.owlapi/error#Error80">Error80</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error81" target="_blank" title="http://org.semanticweb.owlapi/error#Error81">Error81</a> <sup class="type-c" title="classe">c</sup>, <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
+    <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
    </dd>
    <dt>
     è disgiuta da
@@ -475,7 +503,7 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
     ha come super-classi
    </dt>
    <dd>
-    <a href="http://org.semanticweb.owlapi/error#Error105" target="_blank" title="http://org.semanticweb.owlapi/error#Error105">Error105</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error106" target="_blank" title="http://org.semanticweb.owlapi/error#Error106">Error106</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error107" target="_blank" title="http://org.semanticweb.owlapi/error#Error107">Error107</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error108" target="_blank" title="http://org.semanticweb.owlapi/error#Error108">Error108</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error109" target="_blank" title="http://org.semanticweb.owlapi/error#Error109">Error109</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error110" target="_blank" title="http://org.semanticweb.owlapi/error#Error110">Error110</a> <sup class="type-c" title="classe">c</sup>, <a href="http://org.semanticweb.owlapi/error#Error111" target="_blank" title="http://org.semanticweb.owlapi/error#Error111">Error111</a> <sup class="type-c" title="classe">c</sup>, <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
+    <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
    </dd>
    <dt>
     è disgiuta da
@@ -488,20 +516,20 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
  <h2>Object Property</h2>
  <ul class="hlist">
-  <li><a href="#https://w3id.org/ci#ActivityOf" title="https://w3id.org/ci#ActivityOf">Activity of</a></li>
+  <li><a href="#https://w3id.org/ci#activityOf" title="https://w3id.org/ci#activityOf">activity of</a></li>
   <li><a href="#https://w3id.org/ci#hasActivity" title="https://w3id.org/ci#hasActivity">hasActivity</a></li>
   <li><a href="#https://w3id.org/ci#hasPart" title="https://w3id.org/ci#hasPart">hasPart</a></li>
   <li><a href="#https://w3id.org/ci#hasSubComponent" title="https://w3id.org/ci#hasSubComponent">hasSubComponent</a></li>
   <li><a href="#https://w3id.org/ci#hasUnit" title="https://w3id.org/ci#hasUnit">hasUnit</a></li>
   <li><a href="#https://w3id.org/ci#hasWork" title="https://w3id.org/ci#hasWork">hasWork</a></li>
-  <li><a href="#https://w3id.org/ci#PartOf" title="https://w3id.org/ci#PartOf">PartOf</a></li>
-  <li><a href="#https://w3id.org/ci#SubComponentOf" title="https://w3id.org/ci#SubComponentOf">SubComponentOf</a></li>
-  <li><a href="#https://w3id.org/ci#UnitOf" title="https://w3id.org/ci#UnitOf">UnitOf</a></li>
-  <li><a href="#https://w3id.org/ci#WorkOf" title="https://w3id.org/ci#WorkOf">WorkOf</a></li>
+  <li><a href="#https://w3id.org/ci#partOf" title="https://w3id.org/ci#partOf">partOf</a></li>
+  <li><a href="#https://w3id.org/ci#subComponentOf" title="https://w3id.org/ci#subComponentOf">subComponentOf</a></li>
+  <li><a href="#https://w3id.org/ci#unitOf" title="https://w3id.org/ci#unitOf">unitOf</a></li>
+  <li><a href="#https://w3id.org/ci#workOf" title="https://w3id.org/ci#workOf">workOf</a></li>
  </ul>
- <div class="entity" id="https://w3id.org/ci#ActivityOf">
-  <h3>Activity of<sup class="type-op" title="object property">op</sup> <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/ci#ActivityOf</p>
+ <div class="entity" id="https://w3id.org/ci#activityOf">
+  <h3>activity of<sup class="type-op" title="object property">op</sup> <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ci#activityOf</p>
   <div class="description">
    <dl>
     <dt>
@@ -546,7 +574,7 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
      è l'inversa di
     </dt>
     <dd>
-     <a href="#https://w3id.org/ci#ActivityOf" title="https://w3id.org/ci#ActivityOf">Activity of</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#https://w3id.org/ci#activityOf" title="https://w3id.org/ci#activityOf">activity of</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -560,10 +588,7 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
      ha come dominio
     </dt>
     <dd>
-     <a href="#https://w3id.org/ci#CostItem" title="https://w3id.org/ci#CostItem">CostItem</a> <sup class="type-c" title="classe">c</sup>
-    </dd>
-    <dd>
-     <a href="#https://w3id.org/ci#ProductionResult" title="https://w3id.org/ci#ProductionResult">ProductionResult</a> <sup class="type-c" title="classe">c</sup>
+     <a href="#https://w3id.org/ci#CostItem" title="https://w3id.org/ci#CostItem">CostItem</a> <sup class="type-c" title="classe">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/ci#ProductionResult" title="https://w3id.org/ci#ProductionResult">ProductionResult</a> <sup class="type-c" title="classe">c</sup>
     </dd>
     <dt>
      ha come codominio
@@ -575,7 +600,7 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
      è l'inversa di
     </dt>
     <dd>
-     <a href="#https://w3id.org/ci#PartOf" title="https://w3id.org/ci#PartOf">PartOf</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#https://w3id.org/ci#partOf" title="https://w3id.org/ci#partOf">partOf</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -589,28 +614,19 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
      ha come dominio
     </dt>
     <dd>
-     <a href="#https://w3id.org/ci#Activity" title="https://w3id.org/ci#Activity">Activity</a> <sup class="type-c" title="classe">c</sup>
-    </dd>
-    <dd>
-     <a href="#https://w3id.org/ci#CostComponent" title="https://w3id.org/ci#CostComponent">CostComponent</a> <sup class="type-c" title="classe">c</sup>
-    </dd>
-    <dd>
-     <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
+     <a href="#https://w3id.org/ci#Activity" title="https://w3id.org/ci#Activity">Activity</a> <sup class="type-c" title="classe">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/ci#CostComponent" title="https://w3id.org/ci#CostComponent">CostComponent</a> <sup class="type-c" title="classe">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
     </dd>
     <dt>
      ha come codominio
     </dt>
     <dd>
-     <a href="#https://w3id.org/ci#CostComponent" title="https://w3id.org/ci#CostComponent">CostComponent</a> <sup class="type-c" title="classe">c</sup>
-    </dd>
-    <dd>
-     <a href="https://w3id.org/cr#Resource" target="_blank" title="https://w3id.org/cr#Resource">Resource</a> <sup class="type-c" title="classe">c</sup>
+     <a href="#https://w3id.org/ci#CostComponent" title="https://w3id.org/ci#CostComponent">CostComponent</a> <sup class="type-c" title="classe">c</sup> <span class="logic">or</span> <a href="https://w3id.org/cr#Resource" target="_blank" title="https://w3id.org/cr#Resource">Resource</a> <sup class="type-c" title="classe">c</sup>
     </dd>
     <dt>
      è l'inversa di
     </dt>
     <dd>
-     <a href="#https://w3id.org/ci#SubComponentOf" title="https://w3id.org/ci#SubComponentOf">SubComponentOf</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#https://w3id.org/ci#subComponentOf" title="https://w3id.org/ci#subComponentOf">subComponentOf</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -624,13 +640,7 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
      ha come dominio
     </dt>
     <dd>
-     <a href="#https://w3id.org/ci#Activity" title="https://w3id.org/ci#Activity">Activity</a> <sup class="type-c" title="classe">c</sup>
-    </dd>
-    <dd>
-     <a href="#https://w3id.org/ci#CostComponent" title="https://w3id.org/ci#CostComponent">CostComponent</a> <sup class="type-c" title="classe">c</sup>
-    </dd>
-    <dd>
-     <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
+     <a href="#https://w3id.org/ci#Activity" title="https://w3id.org/ci#Activity">Activity</a> <sup class="type-c" title="classe">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/ci#CostComponent" title="https://w3id.org/ci#CostComponent">CostComponent</a> <sup class="type-c" title="classe">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
     </dd>
     <dt>
      ha come codominio
@@ -642,7 +652,7 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
      è l'inversa di
     </dt>
     <dd>
-     <a href="#https://w3id.org/ci#UnitOf" title="https://w3id.org/ci#UnitOf">UnitOf</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#https://w3id.org/ci#unitOf" title="https://w3id.org/ci#unitOf">unitOf</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -668,14 +678,14 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
      è l'inversa di
     </dt>
     <dd>
-     <a href="#https://w3id.org/ci#WorkOf" title="https://w3id.org/ci#WorkOf">WorkOf</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#https://w3id.org/ci#workOf" title="https://w3id.org/ci#workOf">workOf</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
  </div>
- <div class="entity" id="https://w3id.org/ci#PartOf">
-  <h3>PartOf<sup class="type-op" title="object property">op</sup> <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/ci#PartOf</p>
+ <div class="entity" id="https://w3id.org/ci#partOf">
+  <h3>partOf<sup class="type-op" title="object property">op</sup> <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ci#partOf</p>
   <div class="description">
    <dl>
     <dt>
@@ -688,10 +698,7 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
      ha come codominio
     </dt>
     <dd>
-     <a href="#https://w3id.org/ci#CostItem" title="https://w3id.org/ci#CostItem">CostItem</a> <sup class="type-c" title="classe">c</sup>
-    </dd>
-    <dd>
-     <a href="#https://w3id.org/ci#ProductionResult" title="https://w3id.org/ci#ProductionResult">ProductionResult</a> <sup class="type-c" title="classe">c</sup>
+     <a href="#https://w3id.org/ci#CostItem" title="https://w3id.org/ci#CostItem">CostItem</a> <sup class="type-c" title="classe">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/ci#ProductionResult" title="https://w3id.org/ci#ProductionResult">ProductionResult</a> <sup class="type-c" title="classe">c</sup>
     </dd>
     <dt>
      è l'inversa di
@@ -702,31 +709,22 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
    </dl>
   </div>
  </div>
- <div class="entity" id="https://w3id.org/ci#SubComponentOf">
-  <h3>SubComponentOf<sup class="type-op" title="object property">op</sup> <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/ci#SubComponentOf</p>
+ <div class="entity" id="https://w3id.org/ci#subComponentOf">
+  <h3>subComponentOf<sup class="type-op" title="object property">op</sup> <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ci#subComponentOf</p>
   <div class="description">
    <dl>
     <dt>
      ha come dominio
     </dt>
     <dd>
-     <a href="#https://w3id.org/ci#CostComponent" title="https://w3id.org/ci#CostComponent">CostComponent</a> <sup class="type-c" title="classe">c</sup>
-    </dd>
-    <dd>
-     <a href="https://w3id.org/cr#Resource" target="_blank" title="https://w3id.org/cr#Resource">Resource</a> <sup class="type-c" title="classe">c</sup>
+     <a href="#https://w3id.org/ci#CostComponent" title="https://w3id.org/ci#CostComponent">CostComponent</a> <sup class="type-c" title="classe">c</sup> <span class="logic">or</span> <a href="https://w3id.org/cr#Resource" target="_blank" title="https://w3id.org/cr#Resource">Resource</a> <sup class="type-c" title="classe">c</sup>
     </dd>
     <dt>
      ha come codominio
     </dt>
     <dd>
-     <a href="#https://w3id.org/ci#Activity" title="https://w3id.org/ci#Activity">Activity</a> <sup class="type-c" title="classe">c</sup>
-    </dd>
-    <dd>
-     <a href="#https://w3id.org/ci#CostComponent" title="https://w3id.org/ci#CostComponent">CostComponent</a> <sup class="type-c" title="classe">c</sup>
-    </dd>
-    <dd>
-     <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
+     <a href="#https://w3id.org/ci#Activity" title="https://w3id.org/ci#Activity">Activity</a> <sup class="type-c" title="classe">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/ci#CostComponent" title="https://w3id.org/ci#CostComponent">CostComponent</a> <sup class="type-c" title="classe">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
     </dd>
     <dt>
      è l'inversa di
@@ -737,9 +735,9 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
    </dl>
   </div>
  </div>
- <div class="entity" id="https://w3id.org/ci#UnitOf">
-  <h3>UnitOf<sup class="type-op" title="object property">op</sup> <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/ci#UnitOf</p>
+ <div class="entity" id="https://w3id.org/ci#unitOf">
+  <h3>unitOf<sup class="type-op" title="object property">op</sup> <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ci#unitOf</p>
   <div class="description">
    <dl>
     <dt>
@@ -752,13 +750,7 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
      ha come codominio
     </dt>
     <dd>
-     <a href="#https://w3id.org/ci#Activity" title="https://w3id.org/ci#Activity">Activity</a> <sup class="type-c" title="classe">c</sup>
-    </dd>
-    <dd>
-     <a href="#https://w3id.org/ci#CostComponent" title="https://w3id.org/ci#CostComponent">CostComponent</a> <sup class="type-c" title="classe">c</sup>
-    </dd>
-    <dd>
-     <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
+     <a href="#https://w3id.org/ci#Activity" title="https://w3id.org/ci#Activity">Activity</a> <sup class="type-c" title="classe">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/ci#CostComponent" title="https://w3id.org/ci#CostComponent">CostComponent</a> <sup class="type-c" title="classe">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
     </dd>
     <dt>
      è l'inversa di
@@ -769,9 +761,9 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
    </dl>
   </div>
  </div>
- <div class="entity" id="https://w3id.org/ci#WorkOf">
-  <h3>WorkOf<sup class="type-op" title="object property">op</sup> <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/ci#WorkOf</p>
+ <div class="entity" id="https://w3id.org/ci#workOf">
+  <h3>workOf<sup class="type-op" title="object property">op</sup> <span class="backlink"> torna all' <a href="#toc">indice</a> oppure <a href="#objectproperties">indice delle Object Property</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ci#workOf</p>
   <div class="description">
    <dl>
     <dt>
@@ -821,16 +813,7 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
      ha come dominio
     </dt>
     <dd>
-     <a href="#https://w3id.org/ci#Activity" title="https://w3id.org/ci#Activity">Activity</a> <sup class="type-c" title="classe">c</sup>
-    </dd>
-    <dd>
-     <a href="#https://w3id.org/ci#CostComponent" title="https://w3id.org/ci#CostComponent">CostComponent</a> <sup class="type-c" title="classe">c</sup>
-    </dd>
-    <dd>
-     <a href="#https://w3id.org/ci#CostItem" title="https://w3id.org/ci#CostItem">CostItem</a> <sup class="type-c" title="classe">c</sup>
-    </dd>
-    <dd>
-     <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
+     <a href="#https://w3id.org/ci#Activity" title="https://w3id.org/ci#Activity">Activity</a> <sup class="type-c" title="classe">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/ci#CostComponent" title="https://w3id.org/ci#CostComponent">CostComponent</a> <sup class="type-c" title="classe">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/ci#CostItem" title="https://w3id.org/ci#CostItem">CostItem</a> <sup class="type-c" title="classe">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
     </dd>
     <dt>
      ha come codominio
@@ -910,10 +893,7 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
      ha come dominio
     </dt>
     <dd>
-     <a href="#https://w3id.org/ci#Activity" title="https://w3id.org/ci#Activity">Activity</a> <sup class="type-c" title="classe">c</sup>
-    </dd>
-    <dd>
-     <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
+     <a href="#https://w3id.org/ci#Activity" title="https://w3id.org/ci#Activity">Activity</a> <sup class="type-c" title="classe">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
     </dd>
     <dt>
      ha come codominio
@@ -933,10 +913,7 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
      ha come dominio
     </dt>
     <dd>
-     <a href="#https://w3id.org/ci#Activity" title="https://w3id.org/ci#Activity">Activity</a> <sup class="type-c" title="classe">c</sup>
-    </dd>
-    <dd>
-     <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
+     <a href="#https://w3id.org/ci#Activity" title="https://w3id.org/ci#Activity">Activity</a> <sup class="type-c" title="classe">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
     </dd>
     <dt>
      ha come codominio
@@ -956,10 +933,7 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
      ha come dominio
     </dt>
     <dd>
-     <a href="#https://w3id.org/ci#Activity" title="https://w3id.org/ci#Activity">Activity</a> <sup class="type-c" title="classe">c</sup>
-    </dd>
-    <dd>
-     <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
+     <a href="#https://w3id.org/ci#Activity" title="https://w3id.org/ci#Activity">Activity</a> <sup class="type-c" title="classe">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
     </dd>
     <dt>
      ha come codominio
@@ -1059,10 +1033,7 @@ Questa sezione fornisce i dettagli per ogni classe e propriet&agrave; definita d
      ha come dominio
     </dt>
     <dd>
-     <a href="#https://w3id.org/ci#Activity" title="https://w3id.org/ci#Activity">Activity</a> <sup class="type-c" title="classe">c</sup>
-    </dd>
-    <dd>
-     <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
+     <a href="#https://w3id.org/ci#Activity" title="https://w3id.org/ci#Activity">Activity</a> <sup class="type-c" title="classe">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/ci#Work" title="https://w3id.org/ci#Work">Work</a> <sup class="type-c" title="classe">c</sup>
     </dd>
     <dt>
      ha come codominio
