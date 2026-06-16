@@ -754,7 +754,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ci#hasSubComponent"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/cr#LabourResource"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/cr#LaborResource"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1379,10 +1379,10 @@
     
 
 
-    <!-- https://w3id.org/cr#LabourResource -->
+    <!-- https://w3id.org/cr#LaborResource -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cr#LabourResource"/>
+    <owl:Class rdf:about="https://w3id.org/cr#LaborResource"/>
     
 
 

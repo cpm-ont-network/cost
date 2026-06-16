@@ -472,8 +472,8 @@ _:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cr#Eq
 _:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ci#hasSubComponent> .
 _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/ci#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
-_:genid57 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cr#LabourResource> .
-<https://w3id.org/cr#LabourResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid57 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/cr#LaborResource> .
+<https://w3id.org/cr#LaborResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ci#hasSubComponent> .
 _:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/ci#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
@@ -920,7 +920,7 @@ _:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://w3id.org/cr#EquipmentResource
 # 
-# https://w3id.org/cr#LabourResource
+# https://w3id.org/cr#LaborResource
 # 
 # https://w3id.org/cr#MaterialResource
 # 

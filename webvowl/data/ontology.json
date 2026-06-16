@@ -869,11 +869,11 @@
     "attributes" : [ "external" ],
     "id" : "98"
   }, {
-    "iri" : "https://w3id.org/cr#LabourResource",
+    "iri" : "https://w3id.org/cr#LaborResource",
     "baseIri" : "https://w3id.org/cr",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "LabourResource"
+      "IRI-based" : "LaborResource"
     },
     "attributes" : [ "external" ],
     "id" : "142"

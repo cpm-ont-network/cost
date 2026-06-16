@@ -456,7 +456,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                ] ,
                                                [ rdf:type owl:Restriction ;
                                                  owl:onProperty <https://w3id.org/ci#hasSubComponent> ;
-                                                 owl:someValuesFrom <https://w3id.org/cr#LabourResource>
+                                                 owl:someValuesFrom <https://w3id.org/cr#LaborResource>
                                                ] ,
                                                [ rdf:type owl:Restriction ;
                                                  owl:onProperty <https://w3id.org/cterm#hasFunction> ;
@@ -877,8 +877,8 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/cr#EquipmentResource> rdf:type owl:Class .
 
 
-###  https://w3id.org/cr#LabourResource
-<https://w3id.org/cr#LabourResource> rdf:type owl:Class .
+###  https://w3id.org/cr#LaborResource
+<https://w3id.org/cr#LaborResource> rdf:type owl:Class .
 
 
 ###  https://w3id.org/cr#MaterialResource

@@ -593,7 +593,7 @@
     "@id" : "https://w3id.org/ci#hasSubComponent"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cr#LabourResource"
+    "@id" : "https://w3id.org/cr#LaborResource"
   } ]
 }, {
   "@id" : "_:genid58",
@@ -1795,7 +1795,7 @@
   "@id" : "https://w3id.org/cr#EquipmentResource",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cr#LabourResource",
+  "@id" : "https://w3id.org/cr#LaborResource",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/cr#MaterialResource",
