@@ -4,7 +4,7 @@ Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE) 2.4
 
 ## Metadata
 * **IRI**
-  * `http://w3id.org/ci`
+  * `https://w3id.org/ci`
 * **Creators(s)**
   * [Cassandro, Jacopo](https://orcid.org/0000-0002-1487-8178)
     [[ORCID]](https://orcid.org/0000-0002-1487-8178)
