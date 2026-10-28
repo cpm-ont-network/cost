@@ -1180,7 +1180,7 @@
   "https://schema.org/codeRepository" : [ {
     "@id" : "https://github.com/cpm-ont-network/cost"
   } ],
-  "https://w3id.org/widoco/vocab" : [ {
+  "https://w3id.org/widoco/vocab#introduction" : [ {
     "@language" : "en",
     "@value" : "Construction cost information is commonly represented through natural-language descriptions and catalogue-specific coding systems, which limits interoperability, automated querying, and reuse across digital construction workflows. The Cost Item (CI) Ontology addresses this issue by providing a structured semantic representation of construction cost items and their constituent components. The model distinguishes the physical entity involved in a construction result from the activity performed and represents each cost item through structured CostComponents. CI uses controlled terminology provided by the Construction Terminology (CTERM) Ontology and can be integrated with the Construction Resources (CR) Ontology to describe the elementary resources involved in construction production processes."
   }, {
@@ -2148,6 +2148,6 @@
   "@id" : "https://w3id.org/cterm#hasUse",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "https://w3id.org/widoco/vocab",
+  "@id" : "https://w3id.org/widoco/vocab#introduction",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 } ]
