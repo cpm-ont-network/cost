@@ -6,6 +6,7 @@
     "prefixList" : {
       "owl" : "http://www.w3.org/2002/07/owl#",
       "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "widoco" : "https://w3id.org/widoco/vocab#",
       "xsd" : "http://www.w3.org/2001/XMLSchema#",
       "" : "https://w3id.org/ci#",
       "xml" : "http://www.w3.org/XML/1998/namespace",
@@ -25,12 +26,12 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "_:genid2147483650",
+        "value" : "_:genid2147483651",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "_:genid2147483651",
+        "value" : "_:genid2147483650",
         "type" : "label"
       } ],
       "created" : [ {
@@ -79,27 +80,16 @@
         "value" : "_:genid2147483649",
         "type" : "label"
       } ],
-      "preferredNamespacePrefix" : [ {
-        "identifier" : "preferredNamespacePrefix",
-        "language" : "undefined",
-        "value" : "ci",
-        "type" : "label"
-      } ],
       "rights" : [ {
         "identifier" : "rights",
         "language" : "undefined",
         "value" : "Copyright 2025 by DABC, PoliMi",
         "type" : "label"
       } ],
-      "vocab" : [ {
-        "identifier" : "vocab",
-        "language" : "it",
-        "value" : "Le informazioni relative ai costi delle costruzioni sono comunemente rappresentate mediante descrizioni in linguaggio naturale e sistemi di codifica specifici dei singoli prezzari, limitando l'interoperabilità, l'interrogazione automatica e il riutilizzo dei dati nei processi digitali delle costruzioni. L'ontologia Cost Item (CI) affronta questo problema fornendo una rappresentazione semantica strutturata delle voci di costo e delle relative componenti. Il modello distingue l'entità fisica coinvolta nel risultato della costruzione dall'attività eseguita e rappresenta ciascuna voce attraverso CostComponent strutturati. CI utilizza la terminologia controllata fornita dall'ontologia Construction Terminology (CTERM) e può essere integrata con l'ontologia Construction Resources (CR) per descrivere le risorse elementari coinvolte nei processi produttivi delle costruzioni.",
-        "type" : "label"
-      }, {
-        "identifier" : "vocab",
-        "language" : "en",
-        "value" : "Construction cost information is commonly represented through natural-language descriptions and catalogue-specific coding systems, which limits interoperability, automated querying, and reuse across digital construction workflows. The Cost Item (CI) Ontology addresses this issue by providing a structured semantic representation of construction cost items and their constituent components. The model distinguishes the physical entity involved in a construction result from the activity performed and represents each cost item through structured CostComponents. CI uses controlled terminology provided by the Construction Terminology (CTERM) Ontology and can be integrated with the Construction Resources (CR) Ontology to describe the elementary resources involved in construction production processes.",
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "ci",
         "type" : "label"
       } ],
       "modified" : [ {
@@ -107,12 +97,6 @@
         "language" : "undefined",
         "value" : "2026-10-12",
         "type" : "label"
-      } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "https://w3id.org/ci#",
-        "type" : "iri"
       } ],
       "bibliographicCitation" : [ {
         "identifier" : "bibliographicCitation",
@@ -125,6 +109,23 @@
         "language" : "undefined",
         "value" : "https://github.com/cpm-ont-network/cost",
         "type" : "iri"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/ci#",
+        "type" : "iri"
+      } ],
+      "introduction" : [ {
+        "identifier" : "introduction",
+        "language" : "it",
+        "value" : "Le informazioni relative ai costi delle costruzioni sono comunemente rappresentate mediante descrizioni in linguaggio naturale e sistemi di codifica specifici dei singoli prezzari, limitando l'interoperabilità, l'interrogazione automatica e il riutilizzo dei dati nei processi digitali delle costruzioni. L'ontologia Cost Item (CI) affronta questo problema fornendo una rappresentazione semantica strutturata delle voci di costo e delle relative componenti. Il modello distingue l'entità fisica coinvolta nel risultato della costruzione dall'attività eseguita e rappresenta ciascuna voce attraverso CostComponent strutturati. CI utilizza la terminologia controllata fornita dall'ontologia Construction Terminology (CTERM) e può essere integrata con l'ontologia Construction Resources (CR) per descrivere le risorse elementari coinvolte nei processi produttivi delle costruzioni.",
+        "type" : "label"
+      }, {
+        "identifier" : "introduction",
+        "language" : "en",
+        "value" : "Construction cost information is commonly represented through natural-language descriptions and catalogue-specific coding systems, which limits interoperability, automated querying, and reuse across digital construction workflows. The Cost Item (CI) Ontology addresses this issue by providing a structured semantic representation of construction cost items and their constituent components. The model distinguishes the physical entity involved in a construction result from the activity performed and represents each cost item through structured CostComponents. CI uses controlled terminology provided by the Construction Terminology (CTERM) Ontology and can be integrated with the Construction Resources (CR) Ontology to describe the elementary resources involved in construction production processes.",
+        "type" : "label"
       } ]
     }
   },
@@ -229,7 +230,7 @@
     "id" : "42",
     "type" : "owl:Class"
   }, {
-    "id" : "49",
+    "id" : "47",
     "type" : "owl:Class"
   }, {
     "id" : "53",
@@ -355,7 +356,7 @@
     "id" : "146",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "47",
+    "id" : "49",
     "type" : "owl:Class"
   }, {
     "id" : "149",
@@ -397,7 +398,7 @@
     "id" : "135",
     "type" : "owl:Class"
   }, {
-    "id" : "190",
+    "id" : "189",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "194",
@@ -562,17 +563,17 @@
   }, {
     "instances" : 0,
     "union" : [ "28", "33" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "32"
   }, {
     "instances" : 0,
     "union" : [ "28", "34", "30", "8" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "25"
   }, {
     "instances" : 0,
     "union" : [ "34", "36" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "35"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -591,7 +592,7 @@
   }, {
     "instances" : 0,
     "union" : [ "30", "8" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "18"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -649,7 +650,7 @@
   }, {
     "instances" : 0,
     "union" : [ "28", "30", "8" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "51"
   }, {
     "iri" : "https://w3id.org/cterm#CategoryOfWorkOfProductComponent",
@@ -696,7 +697,7 @@
       "IRI-based" : "FinishingOfWorkOfTemporaryComponent"
     },
     "attributes" : [ "external" ],
-    "id" : "49"
+    "id" : "47"
   }, {
     "iri" : "https://w3id.org/cterm#Material",
     "baseIri" : "https://w3id.org/cterm",
@@ -1071,7 +1072,7 @@
       "IRI-based" : "CategoryOfWorkOfTemporaryComponent"
     },
     "attributes" : [ "external" ],
-    "id" : "47"
+    "id" : "49"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -1182,7 +1183,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "190",
+    "id" : "189",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1517,8 +1518,8 @@
     "id" : "188",
     "type" : "owl:allValuesFrom"
   }, {
-    "id" : "189",
-    "type" : "owl:allValuesFrom"
+    "id" : "190",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "191",
     "type" : "owl:disjointWith"
@@ -1527,7 +1528,7 @@
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "193",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "59",
     "type" : "owl:objectProperty"
@@ -1550,12 +1551,12 @@
   "propertyAttribute" : [ {
     "range" : "8",
     "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "12"
   }, {
     "range" : "8",
     "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "13"
   }, {
     "iri" : "https://w3id.org/ci#techSpecs",
@@ -1635,24 +1636,24 @@
     "attributes" : [ "object" ],
     "id" : "43"
   }, {
-    "iri" : "https://w3id.org/cterm#hasCategory",
-    "baseIri" : "https://w3id.org/cterm",
-    "range" : "47",
-    "label" : {
-      "IRI-based" : "hasCategory"
-    },
-    "domain" : "10",
-    "attributes" : [ "object", "external", "allValues" ],
-    "id" : "46"
-  }, {
     "iri" : "https://w3id.org/cterm#hasFinishing",
     "baseIri" : "https://w3id.org/cterm",
-    "range" : "49",
+    "range" : "47",
     "label" : {
       "IRI-based" : "hasFinishing"
     },
     "domain" : "10",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/cterm#hasCategory",
+    "baseIri" : "https://w3id.org/cterm",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasCategory"
+    },
+    "domain" : "10",
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "48"
   }, {
     "iri" : "https://w3id.org/ci#hasWork",
@@ -1735,7 +1736,7 @@
   }, {
     "range" : "28",
     "domain" : "42",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "67"
   }, {
     "iri" : "https://w3id.org/ci#workOf",
@@ -1801,17 +1802,17 @@
   }, {
     "range" : "8",
     "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "72"
   }, {
     "range" : "28",
     "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "73"
   }, {
     "range" : "28",
     "domain" : "41",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "74"
   }, {
     "iri" : "https://w3id.org/cterm#hasFunction",
@@ -1821,7 +1822,7 @@
       "IRI-based" : "hasFunction"
     },
     "domain" : "30",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "75"
   }, {
     "iri" : "https://w3id.org/ci#code",
@@ -1959,12 +1960,12 @@
       "IRI-based" : "hasClassification"
     },
     "domain" : "34",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "94"
   }, {
     "range" : "41",
     "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "95"
   }, {
     "iri" : "https://w3id.org/ci#hasWork",
@@ -2016,18 +2017,8 @@
   }, {
     "range" : "9",
     "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "100"
-  }, {
-    "iri" : "https://w3id.org/cterm#hasType",
-    "baseIri" : "https://w3id.org/cterm",
-    "range" : "16",
-    "label" : {
-      "IRI-based" : "hasType"
-    },
-    "domain" : "9",
-    "attributes" : [ "object", "external", "allValues" ],
-    "id" : "101"
   }, {
     "iri" : "https://w3id.org/cterm#hasAspect",
     "baseIri" : "https://w3id.org/cterm",
@@ -2036,7 +2027,17 @@
       "IRI-based" : "hasAspect"
     },
     "domain" : "9",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "101"
+  }, {
+    "iri" : "https://w3id.org/cterm#hasType",
+    "baseIri" : "https://w3id.org/cterm",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasType"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "102"
   }, {
     "iri" : "https://w3id.org/ci#quantityUnitOfMeasure",
@@ -2062,7 +2063,7 @@
       "IRI-based" : "hasPerformanceParameter"
     },
     "domain" : "8",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "107"
   }, {
     "iri" : "https://w3id.org/ci#cam",
@@ -2118,7 +2119,7 @@
       "IRI-based" : "hasObject"
     },
     "domain" : "30",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "111"
   }, {
     "iri" : "https://w3id.org/ci#code",
@@ -2144,7 +2145,7 @@
       "IRI-based" : "hasDimensionParameter"
     },
     "domain" : "8",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "114"
   }, {
     "iri" : "https://w3id.org/ci#techSpecs",
@@ -2264,7 +2265,7 @@
       "IRI-based" : "hasCategory"
     },
     "domain" : "30",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "129"
   }, {
     "iri" : "https://w3id.org/cterm#hasType",
@@ -2274,7 +2275,7 @@
       "IRI-based" : "hasType"
     },
     "domain" : "30",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "130"
   }, {
     "iri" : "https://w3id.org/ci#hasUnit",
@@ -2300,7 +2301,7 @@
       "IRI-based" : "hasFamily"
     },
     "domain" : "30",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "132"
   }, {
     "iri" : "https://w3id.org/cterm#hasUse",
@@ -2310,7 +2311,7 @@
       "IRI-based" : "hasUse"
     },
     "domain" : "30",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "134"
   }, {
     "iri" : "https://w3id.org/cterm#hasClassification",
@@ -2320,7 +2321,7 @@
       "IRI-based" : "hasClassification"
     },
     "domain" : "28",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "136"
   }, {
     "iri" : "https://w3id.org/cterm#hasCategory",
@@ -2330,7 +2331,7 @@
       "IRI-based" : "hasCategory"
     },
     "domain" : "28",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "137"
   }, {
     "iri" : "https://w3id.org/ci#quantityUnitOfMeasure",
@@ -2372,7 +2373,7 @@
       "IRI-based" : "hasObject"
     },
     "domain" : "28",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "142"
   }, {
     "iri" : "https://w3id.org/ci#measurementRules",
@@ -2429,7 +2430,7 @@
       "IRI-based" : "hasPhysicalParameter"
     },
     "domain" : "8",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "147"
   }, {
     "iri" : "https://w3id.org/cterm#hasMaterial",
@@ -2439,7 +2440,7 @@
       "IRI-based" : "hasMaterial"
     },
     "domain" : "8",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "148"
   }, {
     "iri" : "https://w3id.org/ci#cam",
@@ -2470,7 +2471,7 @@
       "en" : "Provides a textual reference to legislation or regulatory requirements applicable to a Work.",
       "it" : "Fornisce un riferimento testuale alla legislazione o ai requisiti normativi applicabili a un Work."
     },
-    "attributes" : [ "datatype", "allValues" ],
+    "attributes" : [ "allValues", "datatype" ],
     "id" : "152"
   }, {
     "iri" : "https://w3id.org/ci#keywords",
@@ -2511,7 +2512,7 @@
       "IRI-based" : "hasOtherStandard"
     },
     "domain" : "8",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "159"
   }, {
     "iri" : "https://w3id.org/cterm#hasFamily",
@@ -2521,7 +2522,7 @@
       "IRI-based" : "hasFamily"
     },
     "domain" : "8",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "160"
   }, {
     "iri" : "https://w3id.org/ci#descriptionDetail",
@@ -2547,7 +2548,7 @@
       "IRI-based" : "hasObject"
     },
     "domain" : "10",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "163"
   }, {
     "iri" : "https://w3id.org/cterm#hasFunction",
@@ -2557,7 +2558,7 @@
       "IRI-based" : "hasFunction"
     },
     "domain" : "10",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "164"
   }, {
     "iri" : "https://w3id.org/cterm#hasAspect",
@@ -2567,7 +2568,7 @@
       "IRI-based" : "hasAspect"
     },
     "domain" : "10",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "166"
   }, {
     "iri" : "https://w3id.org/cterm#hasUse",
@@ -2577,7 +2578,7 @@
       "IRI-based" : "hasUse"
     },
     "domain" : "10",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "168"
   }, {
     "iri" : "https://w3id.org/cterm#hasCategory",
@@ -2587,7 +2588,7 @@
       "IRI-based" : "hasCategory"
     },
     "domain" : "11",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "169"
   }, {
     "iri" : "https://w3id.org/cterm#hasType",
@@ -2597,7 +2598,7 @@
       "IRI-based" : "hasType"
     },
     "domain" : "10",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "171"
   }, {
     "iri" : "https://w3id.org/cterm#hasObject",
@@ -2607,12 +2608,12 @@
       "IRI-based" : "hasObject"
     },
     "domain" : "11",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "173"
   }, {
     "range" : "42",
     "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "174"
   }, {
     "iri" : "https://w3id.org/ci#hasPart",
@@ -2637,7 +2638,7 @@
       "IRI-based" : "hasCategory"
     },
     "domain" : "9",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "176"
   }, {
     "iri" : "https://w3id.org/cterm#hasFinishing",
@@ -2647,12 +2648,12 @@
       "IRI-based" : "hasFinishing"
     },
     "domain" : "9",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "177"
   }, {
     "range" : "10",
     "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "178"
   }, {
     "iri" : "https://w3id.org/cterm#hasUse",
@@ -2662,7 +2663,7 @@
       "IRI-based" : "hasUse"
     },
     "domain" : "9",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "179"
   }, {
     "iri" : "https://w3id.org/cterm#hasObject",
@@ -2672,7 +2673,7 @@
       "IRI-based" : "hasObject"
     },
     "domain" : "9",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "181"
   }, {
     "iri" : "https://w3id.org/cterm#hasFunction",
@@ -2682,7 +2683,7 @@
       "IRI-based" : "hasFunction"
     },
     "domain" : "9",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "182"
   }, {
     "iri" : "https://w3id.org/ci#hasWork",
@@ -2703,7 +2704,7 @@
   }, {
     "range" : "42",
     "domain" : "41",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "184"
   }, {
     "iri" : "https://w3id.org/cterm#hasFinishing",
@@ -2713,7 +2714,7 @@
       "IRI-based" : "hasFinishing"
     },
     "domain" : "11",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "185"
   }, {
     "iri" : "https://w3id.org/cterm#hasUse",
@@ -2723,7 +2724,7 @@
       "IRI-based" : "hasUse"
     },
     "domain" : "11",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "186"
   }, {
     "iri" : "https://w3id.org/cterm#hasFunction",
@@ -2733,7 +2734,7 @@
       "IRI-based" : "hasFunction"
     },
     "domain" : "11",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "187"
   }, {
     "iri" : "https://w3id.org/cterm#hasType",
@@ -2743,37 +2744,12 @@
       "IRI-based" : "hasType"
     },
     "domain" : "11",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "188"
-  }, {
-    "iri" : "https://w3id.org/cterm#hasMaterial",
-    "baseIri" : "https://w3id.org/cterm",
-    "range" : "53",
-    "label" : {
-      "IRI-based" : "hasMaterial"
-    },
-    "domain" : "28",
-    "attributes" : [ "object", "external", "allValues" ],
-    "id" : "189"
-  }, {
-    "range" : "10",
-    "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "191"
-  }, {
-    "iri" : "https://w3id.org/cterm#hasAspect",
-    "baseIri" : "https://w3id.org/cterm",
-    "range" : "153",
-    "label" : {
-      "IRI-based" : "hasAspect"
-    },
-    "domain" : "11",
-    "attributes" : [ "object", "external", "allValues" ],
-    "id" : "192"
   }, {
     "iri" : "https://w3id.org/ci#descriptionGeneral",
     "baseIri" : "https://w3id.org/ci",
-    "range" : "190",
+    "range" : "189",
     "label" : {
       "IRI-based" : "descriptionGeneral",
       "undefined" : "descriptionGeneral"
@@ -2785,6 +2761,31 @@
       "it" : "Fornisce la descrizione testuale generale utilizzata per identificare e descrivere l'entità rappresentata in forma standardizzata."
     },
     "attributes" : [ "datatype" ],
+    "id" : "190"
+  }, {
+    "range" : "10",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "191"
+  }, {
+    "iri" : "https://w3id.org/cterm#hasAspect",
+    "baseIri" : "https://w3id.org/cterm",
+    "range" : "153",
+    "label" : {
+      "IRI-based" : "hasAspect"
+    },
+    "domain" : "11",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "192"
+  }, {
+    "iri" : "https://w3id.org/cterm#hasMaterial",
+    "baseIri" : "https://w3id.org/cterm",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "hasMaterial"
+    },
+    "domain" : "28",
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "193"
   }, {
     "iri" : "https://w3id.org/ci#hasPart",
@@ -2856,7 +2857,7 @@
       "IRI-based" : "hasFamily"
     },
     "domain" : "28",
-    "attributes" : [ "object", "external", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "198"
   }, {
     "iri" : "https://w3id.org/ci#code",
