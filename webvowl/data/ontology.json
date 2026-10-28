@@ -22,12 +22,6 @@
       "it" : "L'ontologia Cost Item (CI) si basa su concetti e principi della stima dei costi dei progetti di costruzione e può essere utilizzata insieme all'ontologia Construction Resources (CR), utilizzando la terminologia della Construction Terminology (CTERM)."
     },
     "other" : {
-      "license" : [ {
-        "identifier" : "license",
-        "language" : "undefined",
-        "value" : "https://creativecommons.org/licenses/by/4.0/",
-        "type" : "iri"
-      } ],
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
@@ -38,6 +32,41 @@
         "language" : "undefined",
         "value" : "_:genid2147483651",
         "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2024-10-12",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.3",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "The Cost Item (CI) Ontology provides a semantic model for representing and structuring construction cost items and their constituent components. It separates physical works from construction activities and supports the description of cost information through standardized terminology, quantitative attributes, units, and economic information. CI is designed to interoperate with the Construction Resources (CR) and Construction Terminology (CTERM) ontologies.",
+        "type" : "label"
+      }, {
+        "identifier" : "abstract",
+        "language" : "it",
+        "value" : "L'ontologia Cost Item (CI) fornisce un modello semantico per rappresentare e strutturare le voci di costo delle costruzioni e le relative componenti. Distingue le opere fisiche dalle attività di costruzione e supporta la descrizione delle informazioni di costo mediante terminologia standardizzata, attributi quantitativi, unità di misura e informazioni economiche. CI è progettata per interoperare con le ontologie Construction Resources (CR) e Construction Terminology (CTERM).",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The Cost Item (CI) Ontology",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
       } ],
       "contributor" : [ {
         "identifier" : "contributor",
@@ -50,10 +79,10 @@
         "value" : "_:genid2147483649",
         "type" : "label"
       } ],
-      "created" : [ {
-        "identifier" : "created",
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
         "language" : "undefined",
-        "value" : "2024-10-12",
+        "value" : "ci",
         "type" : "label"
       } ],
       "rights" : [ {
@@ -62,10 +91,15 @@
         "value" : "Copyright 2025 by DABC, PoliMi",
         "type" : "label"
       } ],
-      "preferredNamespacePrefix" : [ {
-        "identifier" : "preferredNamespacePrefix",
-        "language" : "undefined",
-        "value" : "ci",
+      "vocab" : [ {
+        "identifier" : "vocab",
+        "language" : "it",
+        "value" : "Le informazioni relative ai costi delle costruzioni sono comunemente rappresentate mediante descrizioni in linguaggio naturale e sistemi di codifica specifici dei singoli prezzari, limitando l'interoperabilità, l'interrogazione automatica e il riutilizzo dei dati nei processi digitali delle costruzioni. L'ontologia Cost Item (CI) affronta questo problema fornendo una rappresentazione semantica strutturata delle voci di costo e delle relative componenti. Il modello distingue l'entità fisica coinvolta nel risultato della costruzione dall'attività eseguita e rappresenta ciascuna voce attraverso CostComponent strutturati. CI utilizza la terminologia controllata fornita dall'ontologia Construction Terminology (CTERM) e può essere integrata con l'ontologia Construction Resources (CR) per descrivere le risorse elementari coinvolte nei processi produttivi delle costruzioni.",
+        "type" : "label"
+      }, {
+        "identifier" : "vocab",
+        "language" : "en",
+        "value" : "Construction cost information is commonly represented through natural-language descriptions and catalogue-specific coding systems, which limits interoperability, automated querying, and reuse across digital construction workflows. The Cost Item (CI) Ontology addresses this issue by providing a structured semantic representation of construction cost items and their constituent components. The model distinguishes the physical entity involved in a construction result from the activity performed and represents each cost item through structured CostComponents. CI uses controlled terminology provided by the Construction Terminology (CTERM) Ontology and can be integrated with the Construction Resources (CR) Ontology to describe the elementary resources involved in construction production processes.",
         "type" : "label"
       } ],
       "modified" : [ {
@@ -74,16 +108,16 @@
         "value" : "2026-10-12",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
-        "value" : "0.3",
-        "type" : "label"
+        "value" : "https://w3id.org/ci#",
+        "type" : "iri"
       } ],
       "bibliographicCitation" : [ {
         "identifier" : "bibliographicCitation",
         "language" : "undefined",
-        "value" : "",
+        "value" : "Cassandro, J., Hagedorn, P., Sigalov, K., Gatto, C., Mirarchi, C., Pavan, A., & König, M. (2025). Semantic Integration of Cost, Time and Geometry for a Resource-centred Perspective of Managing Construction Projects: . Proceedings of the 2025 European Conference on Computing in Construction. Publiziert. European Conference on Computing in Construction, Porto. https://doi.org/10.35490/ec3.2025.263",
         "type" : "label"
       } ],
       "codeRepository" : [ {
@@ -91,18 +125,6 @@
         "language" : "undefined",
         "value" : "https://github.com/cpm-ont-network/cost",
         "type" : "iri"
-      } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "https://w3id.org/ci#",
-        "type" : "iri"
-      } ],
-      "title" : [ {
-        "identifier" : "title",
-        "language" : "en",
-        "value" : "The Cost Item (CI) Ontology",
-        "type" : "label"
       } ]
     }
   },
@@ -156,7 +178,7 @@
     "id" : "23",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "31",
+    "id" : "27",
     "type" : "owl:Class"
   }, {
     "id" : "32",
@@ -189,7 +211,7 @@
     "id" : "40",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "29",
+    "id" : "28",
     "type" : "owl:Class"
   }, {
     "id" : "45",
@@ -243,7 +265,7 @@
     "id" : "68",
     "type" : "owl:Class"
   }, {
-    "id" : "28",
+    "id" : "30",
     "type" : "owl:Class"
   }, {
     "id" : "77",
@@ -330,7 +352,7 @@
     "id" : "112",
     "type" : "owl:Class"
   }, {
-    "id" : "145",
+    "id" : "146",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "47",
@@ -363,10 +385,10 @@
     "id" : "167",
     "type" : "owl:Class"
   }, {
-    "id" : "169",
+    "id" : "165",
     "type" : "owl:Class"
   }, {
-    "id" : "165",
+    "id" : "172",
     "type" : "owl:Class"
   }, {
     "id" : "180",
@@ -375,13 +397,13 @@
     "id" : "135",
     "type" : "owl:Class"
   }, {
-    "id" : "189",
+    "id" : "190",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "194",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "171",
+    "id" : "170",
     "type" : "owl:Class"
   }, {
     "id" : "34",
@@ -535,16 +557,16 @@
       "en" : "A CostComponent representing a completed construction work. It combines an Activity with a WorkOfConstructionComponent to describe, in a structured form, the action performed and the physical part involved in the construction result.",
       "it" : "Un CostComponent che rappresenta un'opera compiuta. Combina un'Activity con un WorkOfConstructionComponent per descrivere, in forma strutturata, l'azione eseguita e la parte fisica coinvolta nel risultato costruttivo."
     },
-    "id" : "31",
-    "superClasses" : [ "29" ]
+    "id" : "27",
+    "superClasses" : [ "28" ]
   }, {
     "instances" : 0,
-    "union" : [ "29", "33" ],
+    "union" : [ "28", "33" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "32"
   }, {
     "instances" : 0,
-    "union" : [ "29", "34", "28", "8" ],
+    "union" : [ "28", "34", "30", "8" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "25"
   }, {
@@ -568,7 +590,7 @@
     }
   }, {
     "instances" : 0,
-    "union" : [ "28", "8" ],
+    "union" : [ "30", "8" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "18"
   }, {
@@ -609,12 +631,12 @@
       "IRI-based" : "CostComponent",
       "undefined" : "CostComponent"
     },
-    "subClasses" : [ "31", "41", "42" ],
+    "subClasses" : [ "27", "41", "42" ],
     "comment" : {
       "en" : "A structured semantic information component used to describe a CostItem through standardized descriptive, technical, dimensional, performance, classification, and other domain-specific attributes. A CostComponent represents an informational structure rather than a priced item and does not carry a unit price.",
       "it" : "Una componente informativa semantica strutturata utilizzata per descrivere un CostItem mediante attributi standardizzati descrittivi, tecnici, dimensionali, prestazionali, di classificazione e altri attributi specifici del dominio. Un CostComponent rappresenta una struttura informativa e non una voce prezzata e non contiene un prezzo unitario."
     },
-    "id" : "29"
+    "id" : "28"
   }, {
     "iri" : "https://w3id.org/cr#MaterialResource",
     "baseIri" : "https://w3id.org/cr",
@@ -626,7 +648,7 @@
     "id" : "45"
   }, {
     "instances" : 0,
-    "union" : [ "29", "28", "8" ],
+    "union" : [ "28", "30", "8" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "51"
   }, {
@@ -665,7 +687,7 @@
       "it" : "Un CostComponent che rappresenta un prodotto incorporato in, o ottenuto attraverso, un processo produttivo. Combina un'Activity con un WorkOfProductComponent per descrivere, in forma strutturata, l'azione eseguita e il prodotto fisico coinvolto."
     },
     "id" : "42",
-    "superClasses" : [ "29" ]
+    "superClasses" : [ "28" ]
   }, {
     "iri" : "https://w3id.org/cterm#FinishingOfWorkOfTemporaryComponent",
     "baseIri" : "https://w3id.org/cterm",
@@ -774,7 +796,7 @@
       "it" : "Un CostComponent che rappresenta un'opera temporanea o ausiliaria necessaria a supportare l'esecuzione delle attività di costruzione. Combina un'Activity con un WorkOfTemporaryComponent per descrivere, in forma strutturata, l'azione eseguita e l'opera fisica temporanea coinvolta."
     },
     "id" : "41",
-    "superClasses" : [ "29" ]
+    "superClasses" : [ "28" ]
   }, {
     "iri" : "https://w3id.org/cterm#CategoryOfActivity",
     "baseIri" : "https://w3id.org/cterm",
@@ -796,7 +818,7 @@
       "en" : "A structured semantic entity representing the action performed within a production result to realize, install, modify, remove, or otherwise act upon a physical Work. An Activity can be characterized through standardized terminology and can be decomposed into the labour, equipment, and temporary components or resources required to perform it.",
       "it" : "Un'entità semantica strutturata che rappresenta l'azione eseguita all'interno di un risultato produttivo per realizzare, installare, modificare, rimuovere o comunque intervenire su un Work fisico. Un'Activity può essere caratterizzata mediante terminologia standardizzata e può essere scomposta nelle componenti o risorse di manodopera, attrezzature e opere temporanee necessarie alla sua esecuzione."
     },
-    "id" : "28"
+    "id" : "30"
   }, {
     "iri" : "https://w3id.org/cterm#AspectOfWorkOfProductComponent",
     "baseIri" : "https://w3id.org/cterm",
@@ -1037,7 +1059,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "145",
+    "id" : "146",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1129,7 +1151,7 @@
       "IRI-based" : "FunctionOfWorkOfTemporaryComponent"
     },
     "attributes" : [ "external" ],
-    "id" : "169"
+    "id" : "165"
   }, {
     "iri" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent",
     "baseIri" : "https://w3id.org/cterm",
@@ -1138,7 +1160,7 @@
       "IRI-based" : "TypeOfWorkOfTemporaryComponent"
     },
     "attributes" : [ "external" ],
-    "id" : "165"
+    "id" : "172"
   }, {
     "iri" : "https://schema.org/Person",
     "baseIri" : "https://schema.org",
@@ -1160,7 +1182,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "189",
+    "id" : "190",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1179,7 +1201,7 @@
       "IRI-based" : "CategoryOfWorkOfConstructionComponent"
     },
     "attributes" : [ "external" ],
-    "id" : "171"
+    "id" : "170"
   }, {
     "iri" : "https://w3id.org/ci#CostItem",
     "equivalent" : [ "36" ],
@@ -1216,10 +1238,10 @@
     "id" : "24",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "27",
+    "id" : "29",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "30",
+    "id" : "31",
     "type" : "owl:objectProperty"
   }, {
     "id" : "43",
@@ -1402,7 +1424,7 @@
     "id" : "144",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "146",
+    "id" : "145",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "147",
@@ -1444,10 +1466,10 @@
     "id" : "168",
     "type" : "owl:allValuesFrom"
   }, {
-    "id" : "170",
+    "id" : "169",
     "type" : "owl:allValuesFrom"
   }, {
-    "id" : "172",
+    "id" : "171",
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "173",
@@ -1495,8 +1517,8 @@
     "id" : "188",
     "type" : "owl:allValuesFrom"
   }, {
-    "id" : "190",
-    "type" : "owl:datatypeProperty"
+    "id" : "189",
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "191",
     "type" : "owl:disjointWith"
@@ -1505,7 +1527,7 @@
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "193",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "59",
     "type" : "owl:objectProperty"
@@ -1567,35 +1589,35 @@
     "id" : "24"
   }, {
     "iri" : "https://w3id.org/ci#activityOf",
-    "inverse" : "30",
+    "inverse" : "31",
     "baseIri" : "https://w3id.org/ci",
-    "range" : "29",
+    "range" : "28",
     "label" : {
       "IRI-based" : "activityOf",
       "undefined" : "activity of"
     },
-    "domain" : "28",
+    "domain" : "30",
     "comment" : {
       "en" : "Relates an Activity to the CostComponent for which the activity provides the operational description.",
       "it" : "Mette in relazione un'Activity con il CostComponent per il quale l'attività fornisce la descrizione operativa."
     },
     "attributes" : [ "object" ],
-    "id" : "27"
+    "id" : "29"
   }, {
     "iri" : "https://w3id.org/ci#hasActivity",
     "baseIri" : "https://w3id.org/ci",
-    "range" : "28",
+    "range" : "30",
     "label" : {
       "IRI-based" : "hasActivity",
       "undefined" : "hasActivity"
     },
-    "domain" : "29",
+    "domain" : "28",
     "comment" : {
       "en" : "Relates a CostComponent to the Activity that describes the action performed as part of that component.",
       "it" : "Mette in relazione un CostComponent con l'Activity che descrive l'azione eseguita come parte di tale componente."
     },
     "attributes" : [ "object" ],
-    "id" : "30"
+    "id" : "31"
   }, {
     "iri" : "https://w3id.org/ci#hasWork",
     "inverse" : "44",
@@ -1605,7 +1627,7 @@
       "IRI-based" : "hasWork",
       "undefined" : "hasWork"
     },
-    "domain" : "29",
+    "domain" : "28",
     "comment" : {
       "en" : "Relates a CostComponent to the Work that describes its physical part.",
       "it" : "Mette in relazione un CostComponent con il Work che ne descrive la parte fisica."
@@ -1620,7 +1642,7 @@
       "IRI-based" : "hasCategory"
     },
     "domain" : "10",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "46"
   }, {
     "iri" : "https://w3id.org/cterm#hasFinishing",
@@ -1630,7 +1652,7 @@
       "IRI-based" : "hasFinishing"
     },
     "domain" : "10",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "48"
   }, {
     "iri" : "https://w3id.org/ci#hasWork",
@@ -1641,7 +1663,7 @@
       "undefined" : "hasWork"
     },
     "cardinality" : "1",
-    "domain" : "31",
+    "domain" : "27",
     "comment" : {
       "en" : "Relates a CostComponent to the Work that describes its physical part.",
       "it" : "Mette in relazione un CostComponent con il Work che ne descrive la parte fisica."
@@ -1687,7 +1709,7 @@
       "IRI-based" : "partOf",
       "undefined" : "partOf"
     },
-    "domain" : "29",
+    "domain" : "28",
     "comment" : {
       "en" : "Relates a CostComponent to the CostItem or ProductionResult of whose structured semantic description it forms a part.",
       "it" : "Mette in relazione un CostComponent con il CostItem o ProductionResult della cui descrizione semantica strutturata costituisce una parte."
@@ -1711,14 +1733,14 @@
     "attributes" : [ "object" ],
     "id" : "65"
   }, {
-    "range" : "29",
+    "range" : "28",
     "domain" : "42",
     "attributes" : [ "anonymous", "object" ],
     "id" : "67"
   }, {
     "iri" : "https://w3id.org/ci#workOf",
     "baseIri" : "https://w3id.org/ci",
-    "range" : "29",
+    "range" : "28",
     "label" : {
       "IRI-based" : "workOf",
       "undefined" : "workOf"
@@ -1782,12 +1804,12 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "72"
   }, {
-    "range" : "29",
-    "domain" : "31",
+    "range" : "28",
+    "domain" : "27",
     "attributes" : [ "anonymous", "object" ],
     "id" : "73"
   }, {
-    "range" : "29",
+    "range" : "28",
     "domain" : "41",
     "attributes" : [ "anonymous", "object" ],
     "id" : "74"
@@ -1798,8 +1820,8 @@
     "label" : {
       "IRI-based" : "hasFunction"
     },
-    "domain" : "28",
-    "attributes" : [ "allValues", "object", "external" ],
+    "domain" : "30",
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "75"
   }, {
     "iri" : "https://w3id.org/ci#code",
@@ -1937,11 +1959,11 @@
       "IRI-based" : "hasClassification"
     },
     "domain" : "34",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "94"
   }, {
     "range" : "41",
-    "domain" : "31",
+    "domain" : "27",
     "attributes" : [ "anonymous", "object" ],
     "id" : "95"
   }, {
@@ -1979,7 +2001,7 @@
   }, {
     "iri" : "https://w3id.org/ci#hasPart",
     "baseIri" : "https://w3id.org/ci",
-    "range" : "29",
+    "range" : "28",
     "label" : {
       "IRI-based" : "hasPart",
       "undefined" : "hasPart"
@@ -1989,23 +2011,13 @@
       "en" : "Relates a CostItem or ProductionResult to a CostComponent that forms part of its structured semantic description.",
       "it" : "Mette in relazione un CostItem o ProductionResult con un CostComponent che costituisce parte della sua descrizione semantica strutturata."
     },
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "99"
   }, {
     "range" : "9",
     "domain" : "11",
     "attributes" : [ "anonymous", "object" ],
     "id" : "100"
-  }, {
-    "iri" : "https://w3id.org/cterm#hasAspect",
-    "baseIri" : "https://w3id.org/cterm",
-    "range" : "77",
-    "label" : {
-      "IRI-based" : "hasAspect"
-    },
-    "domain" : "9",
-    "attributes" : [ "allValues", "object", "external" ],
-    "id" : "101"
   }, {
     "iri" : "https://w3id.org/cterm#hasType",
     "baseIri" : "https://w3id.org/cterm",
@@ -2014,7 +2026,17 @@
       "IRI-based" : "hasType"
     },
     "domain" : "9",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
+    "id" : "101"
+  }, {
+    "iri" : "https://w3id.org/cterm#hasAspect",
+    "baseIri" : "https://w3id.org/cterm",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "hasAspect"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "102"
   }, {
     "iri" : "https://w3id.org/ci#quantityUnitOfMeasure",
@@ -2040,7 +2062,7 @@
       "IRI-based" : "hasPerformanceParameter"
     },
     "domain" : "8",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "107"
   }, {
     "iri" : "https://w3id.org/ci#cam",
@@ -2095,8 +2117,8 @@
     "label" : {
       "IRI-based" : "hasObject"
     },
-    "domain" : "28",
-    "attributes" : [ "allValues", "object", "external" ],
+    "domain" : "30",
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "111"
   }, {
     "iri" : "https://w3id.org/ci#code",
@@ -2122,7 +2144,7 @@
       "IRI-based" : "hasDimensionParameter"
     },
     "domain" : "8",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "114"
   }, {
     "iri" : "https://w3id.org/ci#techSpecs",
@@ -2133,7 +2155,7 @@
       "undefined" : "tech specs"
     },
     "maxCardinality" : "1",
-    "domain" : "28",
+    "domain" : "30",
     "comment" : {
       "en" : "Provides technical specifications, requirements, or execution conditions associated with an Activity or Work.",
       "it" : "Fornisce specifiche tecniche, requisiti o condizioni di esecuzione associati a un'Activity o a un Work."
@@ -2149,7 +2171,7 @@
       "undefined" : "quantityUnitOfMeasure"
     },
     "cardinality" : "1",
-    "domain" : "28",
+    "domain" : "30",
     "comment" : {
       "en" : "Specifies the numerical quantity associated with the reference unit of measure used to express the represented entity, for example 1 square metre or 100 units.",
       "it" : "Specifica la quantità numerica associata all'unità di misura di riferimento utilizzata per esprimere l'entità rappresentata, ad esempio 1 metro quadrato o 100 unità."
@@ -2165,7 +2187,7 @@
       "undefined" : "descriptionDetail"
     },
     "maxCardinality" : "1",
-    "domain" : "28",
+    "domain" : "30",
     "comment" : {
       "en" : "Provides a detailed textual description that complements the general description of the represented entity.",
       "it" : "Fornisce una descrizione testuale di dettaglio che integra la descrizione generale dell'entità rappresentata."
@@ -2181,7 +2203,7 @@
       "undefined" : "code"
     },
     "cardinality" : "1",
-    "domain" : "28",
+    "domain" : "30",
     "comment" : {
       "en" : "Provides the alphanumeric identifier or classification code assigned to an Activity, CostComponent, CostItem, or Work.",
       "it" : "Fornisce l'identificatore alfanumerico o il codice di classificazione assegnato a un'Activity, CostComponent, CostItem o Work."
@@ -2212,7 +2234,7 @@
       "undefined" : "descriptionGeneral"
     },
     "cardinality" : "1",
-    "domain" : "28",
+    "domain" : "30",
     "comment" : {
       "en" : "Provides the general textual description used to identify and describe the represented entity in a standardized form.",
       "it" : "Fornisce la descrizione testuale generale utilizzata per identificare e descrivere l'entità rappresentata in forma standardizzata."
@@ -2241,8 +2263,8 @@
     "label" : {
       "IRI-based" : "hasCategory"
     },
-    "domain" : "28",
-    "attributes" : [ "allValues", "object", "external" ],
+    "domain" : "30",
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "129"
   }, {
     "iri" : "https://w3id.org/cterm#hasType",
@@ -2251,8 +2273,8 @@
     "label" : {
       "IRI-based" : "hasType"
     },
-    "domain" : "28",
-    "attributes" : [ "allValues", "object", "external" ],
+    "domain" : "30",
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "130"
   }, {
     "iri" : "https://w3id.org/ci#hasUnit",
@@ -2263,7 +2285,7 @@
       "undefined" : "hasUnit"
     },
     "cardinality" : "1",
-    "domain" : "28",
+    "domain" : "30",
     "comment" : {
       "en" : "Relates an entity in the CI ontology to the QUDT unit used to express its associated quantity.",
       "it" : "Mette in relazione un'entità dell'ontologia CI con l'unità QUDT utilizzata per esprimere la quantità associata."
@@ -2277,8 +2299,8 @@
     "label" : {
       "IRI-based" : "hasFamily"
     },
-    "domain" : "28",
-    "attributes" : [ "allValues", "object", "external" ],
+    "domain" : "30",
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "132"
   }, {
     "iri" : "https://w3id.org/cterm#hasUse",
@@ -2287,8 +2309,8 @@
     "label" : {
       "IRI-based" : "hasUse"
     },
-    "domain" : "28",
-    "attributes" : [ "allValues", "object", "external" ],
+    "domain" : "30",
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "134"
   }, {
     "iri" : "https://w3id.org/cterm#hasClassification",
@@ -2297,8 +2319,8 @@
     "label" : {
       "IRI-based" : "hasClassification"
     },
-    "domain" : "29",
-    "attributes" : [ "allValues", "object", "external" ],
+    "domain" : "28",
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "136"
   }, {
     "iri" : "https://w3id.org/cterm#hasCategory",
@@ -2307,8 +2329,8 @@
     "label" : {
       "IRI-based" : "hasCategory"
     },
-    "domain" : "29",
-    "attributes" : [ "allValues", "object", "external" ],
+    "domain" : "28",
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "137"
   }, {
     "iri" : "https://w3id.org/ci#quantityUnitOfMeasure",
@@ -2319,7 +2341,7 @@
       "undefined" : "quantityUnitOfMeasure"
     },
     "cardinality" : "1",
-    "domain" : "29",
+    "domain" : "28",
     "comment" : {
       "en" : "Specifies the numerical quantity associated with the reference unit of measure used to express the represented entity, for example 1 square metre or 100 units.",
       "it" : "Specifica la quantità numerica associata all'unità di misura di riferimento utilizzata per esprimere l'entità rappresentata, ad esempio 1 metro quadrato o 100 unità."
@@ -2335,7 +2357,7 @@
       "undefined" : "hasUnit"
     },
     "cardinality" : "1",
-    "domain" : "29",
+    "domain" : "28",
     "comment" : {
       "en" : "Relates an entity in the CI ontology to the QUDT unit used to express its associated quantity.",
       "it" : "Mette in relazione un'entità dell'ontologia CI con l'unità QUDT utilizzata per esprimere la quantità associata."
@@ -2349,8 +2371,8 @@
     "label" : {
       "IRI-based" : "hasObject"
     },
-    "domain" : "29",
-    "attributes" : [ "allValues", "object", "external" ],
+    "domain" : "28",
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "142"
   }, {
     "iri" : "https://w3id.org/ci#measurementRules",
@@ -2360,7 +2382,7 @@
       "IRI-based" : "measurementRules",
       "undefined" : "measurementRules"
     },
-    "domain" : "29",
+    "domain" : "28",
     "comment" : {
       "en" : "Specifies the rules or criteria to be applied when measuring or quantifying a CostComponent.",
       "it" : "Specifica le regole o i criteri da applicare nella misurazione o quantificazione di un CostComponent."
@@ -2370,13 +2392,13 @@
   }, {
     "iri" : "https://w3id.org/ci#hasActivity",
     "baseIri" : "https://w3id.org/ci",
-    "range" : "28",
+    "range" : "30",
     "label" : {
       "IRI-based" : "hasActivity",
       "undefined" : "hasActivity"
     },
     "cardinality" : "1",
-    "domain" : "29",
+    "domain" : "28",
     "comment" : {
       "en" : "Relates a CostComponent to the Activity that describes the action performed as part of that component.",
       "it" : "Mette in relazione un CostComponent con l'Activity che descrive l'azione eseguita come parte di tale componente."
@@ -2386,7 +2408,7 @@
   }, {
     "iri" : "https://w3id.org/ci#techSpecs",
     "baseIri" : "https://w3id.org/ci",
-    "range" : "145",
+    "range" : "146",
     "label" : {
       "IRI-based" : "techSpecs",
       "undefined" : "tech specs"
@@ -2398,17 +2420,7 @@
       "it" : "Fornisce specifiche tecniche, requisiti o condizioni di esecuzione associati a un'Activity o a un Work."
     },
     "attributes" : [ "datatype" ],
-    "id" : "146"
-  }, {
-    "iri" : "https://w3id.org/cterm#hasMaterial",
-    "baseIri" : "https://w3id.org/cterm",
-    "range" : "53",
-    "label" : {
-      "IRI-based" : "hasMaterial"
-    },
-    "domain" : "8",
-    "attributes" : [ "allValues", "object", "external" ],
-    "id" : "147"
+    "id" : "145"
   }, {
     "iri" : "https://w3id.org/cterm#hasPhysicalParameter",
     "baseIri" : "https://w3id.org/cterm",
@@ -2417,7 +2429,17 @@
       "IRI-based" : "hasPhysicalParameter"
     },
     "domain" : "8",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
+    "id" : "147"
+  }, {
+    "iri" : "https://w3id.org/cterm#hasMaterial",
+    "baseIri" : "https://w3id.org/cterm",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "hasMaterial"
+    },
+    "domain" : "8",
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "148"
   }, {
     "iri" : "https://w3id.org/ci#cam",
@@ -2448,7 +2470,7 @@
       "en" : "Provides a textual reference to legislation or regulatory requirements applicable to a Work.",
       "it" : "Fornisce un riferimento testuale alla legislazione o ai requisiti normativi applicabili a un Work."
     },
-    "attributes" : [ "allValues", "datatype" ],
+    "attributes" : [ "datatype", "allValues" ],
     "id" : "152"
   }, {
     "iri" : "https://w3id.org/ci#keywords",
@@ -2489,7 +2511,7 @@
       "IRI-based" : "hasOtherStandard"
     },
     "domain" : "8",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "159"
   }, {
     "iri" : "https://w3id.org/cterm#hasFamily",
@@ -2499,7 +2521,7 @@
       "IRI-based" : "hasFamily"
     },
     "domain" : "8",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "160"
   }, {
     "iri" : "https://w3id.org/ci#descriptionDetail",
@@ -2525,17 +2547,17 @@
       "IRI-based" : "hasObject"
     },
     "domain" : "10",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "163"
   }, {
-    "iri" : "https://w3id.org/cterm#hasType",
+    "iri" : "https://w3id.org/cterm#hasFunction",
     "baseIri" : "https://w3id.org/cterm",
     "range" : "165",
     "label" : {
-      "IRI-based" : "hasType"
+      "IRI-based" : "hasFunction"
     },
     "domain" : "10",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "164"
   }, {
     "iri" : "https://w3id.org/cterm#hasAspect",
@@ -2545,7 +2567,7 @@
       "IRI-based" : "hasAspect"
     },
     "domain" : "10",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "166"
   }, {
     "iri" : "https://w3id.org/cterm#hasUse",
@@ -2555,28 +2577,28 @@
       "IRI-based" : "hasUse"
     },
     "domain" : "10",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "168"
   }, {
     "iri" : "https://w3id.org/cterm#hasCategory",
     "baseIri" : "https://w3id.org/cterm",
-    "range" : "171",
+    "range" : "170",
     "label" : {
       "IRI-based" : "hasCategory"
     },
     "domain" : "11",
-    "attributes" : [ "allValues", "object", "external" ],
-    "id" : "170"
+    "attributes" : [ "object", "external", "allValues" ],
+    "id" : "169"
   }, {
-    "iri" : "https://w3id.org/cterm#hasFunction",
+    "iri" : "https://w3id.org/cterm#hasType",
     "baseIri" : "https://w3id.org/cterm",
-    "range" : "169",
+    "range" : "172",
     "label" : {
-      "IRI-based" : "hasFunction"
+      "IRI-based" : "hasType"
     },
     "domain" : "10",
-    "attributes" : [ "allValues", "object", "external" ],
-    "id" : "172"
+    "attributes" : [ "object", "external", "allValues" ],
+    "id" : "171"
   }, {
     "iri" : "https://w3id.org/cterm#hasObject",
     "baseIri" : "https://w3id.org/cterm",
@@ -2585,17 +2607,17 @@
       "IRI-based" : "hasObject"
     },
     "domain" : "11",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "173"
   }, {
     "range" : "42",
-    "domain" : "31",
+    "domain" : "27",
     "attributes" : [ "anonymous", "object" ],
     "id" : "174"
   }, {
     "iri" : "https://w3id.org/ci#hasPart",
     "baseIri" : "https://w3id.org/ci",
-    "range" : "29",
+    "range" : "28",
     "label" : {
       "IRI-based" : "hasPart",
       "undefined" : "hasPart"
@@ -2605,7 +2627,7 @@
       "en" : "Relates a CostItem or ProductionResult to a CostComponent that forms part of its structured semantic description.",
       "it" : "Mette in relazione un CostItem o ProductionResult con un CostComponent che costituisce parte della sua descrizione semantica strutturata."
     },
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "175"
   }, {
     "iri" : "https://w3id.org/cterm#hasCategory",
@@ -2615,7 +2637,7 @@
       "IRI-based" : "hasCategory"
     },
     "domain" : "9",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "176"
   }, {
     "iri" : "https://w3id.org/cterm#hasFinishing",
@@ -2625,7 +2647,7 @@
       "IRI-based" : "hasFinishing"
     },
     "domain" : "9",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "177"
   }, {
     "range" : "10",
@@ -2640,7 +2662,7 @@
       "IRI-based" : "hasUse"
     },
     "domain" : "9",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "179"
   }, {
     "iri" : "https://w3id.org/cterm#hasObject",
@@ -2650,7 +2672,7 @@
       "IRI-based" : "hasObject"
     },
     "domain" : "9",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "181"
   }, {
     "iri" : "https://w3id.org/cterm#hasFunction",
@@ -2660,7 +2682,7 @@
       "IRI-based" : "hasFunction"
     },
     "domain" : "9",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "182"
   }, {
     "iri" : "https://w3id.org/ci#hasWork",
@@ -2691,7 +2713,7 @@
       "IRI-based" : "hasFinishing"
     },
     "domain" : "11",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "185"
   }, {
     "iri" : "https://w3id.org/cterm#hasUse",
@@ -2701,7 +2723,7 @@
       "IRI-based" : "hasUse"
     },
     "domain" : "11",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "186"
   }, {
     "iri" : "https://w3id.org/cterm#hasFunction",
@@ -2711,7 +2733,7 @@
       "IRI-based" : "hasFunction"
     },
     "domain" : "11",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "187"
   }, {
     "iri" : "https://w3id.org/cterm#hasType",
@@ -2721,24 +2743,18 @@
       "IRI-based" : "hasType"
     },
     "domain" : "11",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "188"
   }, {
-    "iri" : "https://w3id.org/ci#descriptionGeneral",
-    "baseIri" : "https://w3id.org/ci",
-    "range" : "189",
+    "iri" : "https://w3id.org/cterm#hasMaterial",
+    "baseIri" : "https://w3id.org/cterm",
+    "range" : "53",
     "label" : {
-      "IRI-based" : "descriptionGeneral",
-      "undefined" : "descriptionGeneral"
+      "IRI-based" : "hasMaterial"
     },
-    "cardinality" : "1",
-    "domain" : "29",
-    "comment" : {
-      "en" : "Provides the general textual description used to identify and describe the represented entity in a standardized form.",
-      "it" : "Fornisce la descrizione testuale generale utilizzata per identificare e descrivere l'entità rappresentata in forma standardizzata."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "190"
+    "domain" : "28",
+    "attributes" : [ "object", "external", "allValues" ],
+    "id" : "189"
   }, {
     "range" : "10",
     "domain" : "11",
@@ -2752,22 +2768,28 @@
       "IRI-based" : "hasAspect"
     },
     "domain" : "11",
-    "attributes" : [ "allValues", "object", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "192"
   }, {
-    "iri" : "https://w3id.org/cterm#hasMaterial",
-    "baseIri" : "https://w3id.org/cterm",
-    "range" : "53",
+    "iri" : "https://w3id.org/ci#descriptionGeneral",
+    "baseIri" : "https://w3id.org/ci",
+    "range" : "190",
     "label" : {
-      "IRI-based" : "hasMaterial"
+      "IRI-based" : "descriptionGeneral",
+      "undefined" : "descriptionGeneral"
     },
-    "domain" : "29",
-    "attributes" : [ "allValues", "object", "external" ],
+    "cardinality" : "1",
+    "domain" : "28",
+    "comment" : {
+      "en" : "Provides the general textual description used to identify and describe the represented entity in a standardized form.",
+      "it" : "Fornisce la descrizione testuale generale utilizzata per identificare e descrivere l'entità rappresentata in forma standardizzata."
+    },
+    "attributes" : [ "datatype" ],
     "id" : "193"
   }, {
     "iri" : "https://w3id.org/ci#hasPart",
     "baseIri" : "https://w3id.org/ci",
-    "range" : "29",
+    "range" : "28",
     "label" : {
       "IRI-based" : "hasPart",
       "undefined" : "hasPart"
@@ -2803,7 +2825,7 @@
       "undefined" : "descriptionDetail"
     },
     "maxCardinality" : "1",
-    "domain" : "29",
+    "domain" : "28",
     "comment" : {
       "en" : "Provides a detailed textual description that complements the general description of the represented entity.",
       "it" : "Fornisce una descrizione testuale di dettaglio che integra la descrizione generale dell'entità rappresentata."
@@ -2819,12 +2841,12 @@
       "IRI-based" : "partOf",
       "undefined" : "partOf"
     },
-    "domain" : "29",
+    "domain" : "28",
     "comment" : {
       "en" : "Relates a CostComponent to the CostItem or ProductionResult of whose structured semantic description it forms a part.",
       "it" : "Mette in relazione un CostComponent con il CostItem o ProductionResult della cui descrizione semantica strutturata costituisce una parte."
     },
-    "attributes" : [ "allValues", "object" ],
+    "attributes" : [ "object", "allValues" ],
     "id" : "197"
   }, {
     "iri" : "https://w3id.org/cterm#hasFamily",
@@ -2833,8 +2855,8 @@
     "label" : {
       "IRI-based" : "hasFamily"
     },
-    "domain" : "29",
-    "attributes" : [ "allValues", "object", "external" ],
+    "domain" : "28",
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "198"
   }, {
     "iri" : "https://w3id.org/ci#code",
@@ -2845,7 +2867,7 @@
       "undefined" : "code"
     },
     "cardinality" : "1",
-    "domain" : "29",
+    "domain" : "28",
     "comment" : {
       "en" : "Provides the alphanumeric identifier or classification code assigned to an Activity, CostComponent, CostItem, or Work.",
       "it" : "Fornisce l'identificatore alfanumerico o il codice di classificazione assegnato a un'Activity, CostComponent, CostItem o Work."
