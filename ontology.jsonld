@@ -28,37 +28,6 @@
 }, {
   "@id" : "_:genid100",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#Material"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasMaterial"
-  } ]
-}, {
-  "@id" : "_:genid101",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://qudt.org/schema/qudt/Unit"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#hasUnit"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid102",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#law"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "_:genid103",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
@@ -70,7 +39,20 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid104",
+  "@id" : "_:genid101",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ci#descriptionDetail"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid102",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -83,10 +65,23 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid105",
+  "@id" : "_:genid103",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ci#prefix"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid104",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/ci#quantityUnitOfMeasure"
@@ -96,7 +91,170 @@
     "@value" : "1"
   } ]
 }, {
+  "@id" : "_:genid105",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ci#unitPrice"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
   "@id" : "_:genid106",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/ci#WorkOfProductComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ci#hasWork"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid107",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ci#hasPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/ci#CostComponent"
+  } ]
+}, {
+  "@id" : "_:genid108",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/ci#WorkOfTemporaryComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ci#hasWork"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid109",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#DimensionParameter"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasDimensionParameter"
+  } ]
+}, {
+  "@id" : "_:genid110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#FamilyOfWork"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasFamily"
+  } ]
+}, {
+  "@id" : "_:genid111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#Material"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasMaterial"
+  } ]
+}, {
+  "@id" : "_:genid112",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#Standard"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasOtherStandard"
+  } ]
+}, {
+  "@id" : "_:genid113",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#PerformanceParameter"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasPerformanceParameter"
+  } ]
+}, {
+  "@id" : "_:genid114",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#PhysicalParameter"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasPhysicalParameter"
+  } ]
+}, {
+  "@id" : "_:genid115",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://qudt.org/schema/qudt/Unit"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ci#hasUnit"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid116",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ci#law"
+  } ]
+}, {
+  "@id" : "_:genid117",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ci#code"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid118",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ci#descriptionGeneral"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid119",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ci#quantityUnitOfMeasure"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid120",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -109,7 +267,7 @@
     "@id" : "https://w3id.org/ci#cam"
   } ]
 }, {
-  "@id" : "_:genid107",
+  "@id" : "_:genid121",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -122,7 +280,7 @@
     "@id" : "https://w3id.org/ci#descriptionDetail"
   } ]
 }, {
-  "@id" : "_:genid108",
+  "@id" : "_:genid122",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -135,145 +293,19 @@
     "@id" : "https://w3id.org/ci#techSpecs"
   } ]
 }, {
-  "@id" : "_:genid109",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#hasSubComponent"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/ci#ConstructionComponent"
-  } ]
-}, {
-  "@id" : "_:genid110",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#hasSubComponent"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/ci#ProductComponent"
-  } ]
-}, {
-  "@id" : "_:genid111",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#hasSubComponent"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cr#MaterialResource"
-  } ]
-}, {
-  "@id" : "_:genid112",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasAspect"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#AspectOfWorkOfConstructionWork"
-  } ]
-}, {
-  "@id" : "_:genid113",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasFinishing"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
-  } ]
-}, {
-  "@id" : "_:genid114",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasFunction"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
-  } ]
-}, {
-  "@id" : "_:genid115",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasUse"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
-  } ]
-}, {
-  "@id" : "_:genid116",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfConstructionWork"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasCategory"
-  } ]
-}, {
-  "@id" : "_:genid117",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfConstructionWork"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasObject"
-  } ]
-}, {
-  "@id" : "_:genid118",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasType"
-  } ]
-}, {
-  "@id" : "_:genid119",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#hasSubComponent"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cr#MaterialResource"
-  } ]
-}, {
-  "@id" : "_:genid120",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasAspect"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#AspectOfWorkOfProductWork"
-  } ]
-}, {
-  "@id" : "_:genid121",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasFinishing"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfProductWork"
-  } ]
-}, {
-  "@id" : "_:genid122",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasFunction"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfProductWork"
-  } ]
-}, {
   "@id" : "_:genid123",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasUse"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#AspectOfWorkOfConstructionComponent"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfProductWork"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasAspect"
   } ]
 }, {
   "@id" : "_:genid124",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfProductWork"
+    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/cterm#hasCategory"
@@ -282,46 +314,46 @@
   "@id" : "_:genid125",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfProductWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasObject"
+    "@id" : "https://w3id.org/cterm#hasFinishing"
   } ]
 }, {
   "@id" : "_:genid126",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfProductWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasFunction"
+  } ]
+}, {
+  "@id" : "_:genid127",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasObject"
+  } ]
+}, {
+  "@id" : "_:genid128",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/cterm#hasType"
   } ]
 }, {
-  "@id" : "_:genid127",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#hasSubComponent"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/ci#ProductComponent"
-  } ]
-}, {
-  "@id" : "_:genid128",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#hasSubComponent"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cr#EquipmentResource"
-  } ]
-}, {
   "@id" : "_:genid129",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#hasSubComponent"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cr#MaterialResource"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasUse"
   } ]
 }, {
   "@id" : "_:genid13",
@@ -338,65 +370,128 @@
 }, {
   "@id" : "_:genid130",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#AspectOfWorkOfProductComponent"
+  } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/cterm#hasAspect"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#AspectOfWorkOfTemporaryWork"
   } ]
 }, {
   "@id" : "_:genid131",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasFinishing"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfTemporaryWork"
-  } ]
-}, {
-  "@id" : "_:genid132",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasFunction"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfTemporaryWork"
-  } ]
-}, {
-  "@id" : "_:genid133",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasUse"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork"
-  } ]
-}, {
-  "@id" : "_:genid134",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfProductComponent"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/cterm#hasCategory"
   } ]
 }, {
-  "@id" : "_:genid135",
+  "@id" : "_:genid132",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfProductComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasFinishing"
+  } ]
+}, {
+  "@id" : "_:genid133",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfProductComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasFunction"
+  } ]
+}, {
+  "@id" : "_:genid134",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfProductComponent"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/cterm#hasObject"
   } ]
 }, {
-  "@id" : "_:genid136",
+  "@id" : "_:genid135",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfProductComponent"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/cterm#hasType"
+  } ]
+}, {
+  "@id" : "_:genid136",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfProductComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasUse"
+  } ]
+}, {
+  "@id" : "_:genid137",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#AspectOfWorkOfTemporaryComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasAspect"
+  } ]
+}, {
+  "@id" : "_:genid138",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasCategory"
+  } ]
+}, {
+  "@id" : "_:genid139",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfTemporaryComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasFinishing"
+  } ]
+}, {
+  "@id" : "_:genid140",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfTemporaryComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasFunction"
+  } ]
+}, {
+  "@id" : "_:genid141",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfTemporaryComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasObject"
+  } ]
+}, {
+  "@id" : "_:genid142",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasType"
+  } ]
+}, {
+  "@id" : "_:genid143",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasUse"
   } ]
 }, {
   "@id" : "_:genid17",
@@ -425,11 +520,13 @@
     }, {
       "@id" : "https://w3id.org/ci#CostComponent"
     }, {
+      "@id" : "https://w3id.org/ci#CostItem"
+    }, {
       "@id" : "https://w3id.org/ci#Work"
     } ]
   } ]
 }, {
-  "@id" : "_:genid24",
+  "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -439,7 +536,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid27",
+  "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -466,7 +563,7 @@
     "@value" : "Sigalov, Katharina"
   } ]
 }, {
-  "@id" : "_:genid30",
+  "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -478,19 +575,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid34",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ci#Activity"
-    }, {
-      "@id" : "https://w3id.org/ci#CostComponent"
-    }, {
-      "@id" : "https://w3id.org/ci#Work"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid38",
+  "@id" : "_:genid35",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -512,31 +597,29 @@
     "@value" : "Ruhr University Bochum"
   } ]
 }, {
-  "@id" : "_:genid43",
+  "@id" : "_:genid40",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
       "@id" : "https://w3id.org/ci#Activity"
     }, {
-      "@id" : "https://w3id.org/ci#Work"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid46",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ci#Activity"
+      "@id" : "https://w3id.org/ci#CostComponent"
+    }, {
+      "@id" : "https://w3id.org/ci#CostItem"
     }, {
       "@id" : "https://w3id.org/ci#Work"
     } ]
   } ]
 }, {
-  "@id" : "_:genid49",
+  "@id" : "_:genid45",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
       "@id" : "https://w3id.org/ci#Activity"
+    }, {
+      "@id" : "https://w3id.org/ci#CostComponent"
+    }, {
+      "@id" : "https://w3id.org/ci#CostItem"
     }, {
       "@id" : "https://w3id.org/ci#Work"
     } ]
@@ -559,7 +642,21 @@
     "@value" : "Cassandro, Jacopo"
   } ]
 }, {
-  "@id" : "_:genid52",
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ci#Activity"
+    }, {
+      "@id" : "https://w3id.org/ci#CostComponent"
+    }, {
+      "@id" : "https://w3id.org/ci#CostItem"
+    }, {
+      "@id" : "https://w3id.org/ci#Work"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid55",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -569,49 +666,14 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid55",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#hasSubComponent"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/ci#TemporaryComponent"
-  } ]
-}, {
-  "@id" : "_:genid56",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#hasSubComponent"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cr#EquipmentResource"
-  } ]
-}, {
-  "@id" : "_:genid57",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#hasSubComponent"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cr#LaborResource"
-  } ]
-}, {
   "@id" : "_:genid58",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasFunction"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfActivity"
-  } ]
-}, {
-  "@id" : "_:genid59",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasUse"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfActivity"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ci#Activity"
+    }, {
+      "@id" : "https://w3id.org/ci#Work"
+    } ]
   } ]
 }, {
   "@id" : "_:genid6",
@@ -622,118 +684,38 @@
     "@value" : "Politecnico di Milano"
   } ]
 }, {
-  "@id" : "_:genid60",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfActivity"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasCategory"
-  } ]
-}, {
   "@id" : "_:genid61",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#FamilyOfActivity"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasFamily"
-  } ]
-}, {
-  "@id" : "_:genid62",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#ObjectOfActivity"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasObject"
-  } ]
-}, {
-  "@id" : "_:genid63",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfActivity"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasType"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ci#Activity"
+    }, {
+      "@id" : "https://w3id.org/ci#Work"
+    } ]
   } ]
 }, {
   "@id" : "_:genid64",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://qudt.org/schema/qudt/Unit"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#hasUnit"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid65",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#code"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid66",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#descriptionGeneral"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid67",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#quantityUnitOfMeasure"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid68",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#descriptionDetail"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ci#Activity"
+    }, {
+      "@id" : "https://w3id.org/ci#CostComponent"
+    }, {
+      "@id" : "https://w3id.org/ci#CostItem"
+    }, {
+      "@id" : "https://w3id.org/ci#Work"
+    } ]
   } ]
 }, {
   "@id" : "_:genid69",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#techSpecs"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ci#Activity"
+    }, {
+      "@id" : "https://w3id.org/ci#Work"
+    } ]
   } ]
 }, {
   "@id" : "_:genid7",
@@ -755,84 +737,58 @@
     "@value" : "Hagedorn, Philipp"
   } ]
 }, {
-  "@id" : "_:genid70",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/ci#WorkOfConstructionComponent"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#hasWork"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid71",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#partOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/ci#CostItem"
-  } ]
-}, {
   "@id" : "_:genid72",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasClassification"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#Classification"
-  } ]
-}, {
-  "@id" : "_:genid73",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfCostComponent"
+    "@id" : "https://w3id.org/cterm#CategoryOfActivity"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/cterm#hasCategory"
   } ]
 }, {
-  "@id" : "_:genid74",
+  "@id" : "_:genid73",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#FamilyOfCostComponent"
+    "@id" : "https://w3id.org/cterm#FamilyOfActivity"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/cterm#hasFamily"
   } ]
 }, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#FunctionOfActivity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasFunction"
+  } ]
+}, {
   "@id" : "_:genid75",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#Material"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasMaterial"
-  } ]
-}, {
-  "@id" : "_:genid76",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#ObjectOfCostComponent"
+    "@id" : "https://w3id.org/cterm#ObjectOfActivity"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/cterm#hasObject"
   } ]
 }, {
-  "@id" : "_:genid77",
+  "@id" : "_:genid76",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/ci#Activity"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#TypeOfActivity"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#hasActivity"
+    "@id" : "https://w3id.org/cterm#hasType"
+  } ]
+}, {
+  "@id" : "_:genid77",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#UseOfActivity"
   } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasUse"
   } ]
 }, {
   "@id" : "_:genid78",
@@ -885,7 +841,7 @@
   "@id" : "_:genid81",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/ci#quantityUnitOfMeasure"
@@ -910,26 +866,106 @@
 }, {
   "@id" : "_:genid83",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#hasPart"
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/ci#CostComponent"
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ci#techSpecs"
   } ]
 }, {
   "@id" : "_:genid84",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasClassification"
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/ci#WorkOfConstructionComponent"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#Classification"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ci#hasWork"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid85",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/ci#CostItem"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ci#partOf"
+  } ]
+}, {
+  "@id" : "_:genid86",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#CategoryOfCostComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasCategory"
+  } ]
+}, {
+  "@id" : "_:genid87",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#Classification"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasClassification"
+  } ]
+}, {
+  "@id" : "_:genid88",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#FamilyOfCostComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasFamily"
+  } ]
+}, {
+  "@id" : "_:genid89",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#Material"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasMaterial"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "https://schema.org/name" : [ {
+    "@value" : "Politecnico di Milano"
+  } ]
+}, {
+  "@id" : "_:genid90",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#ObjectOfCostComponent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasObject"
+  } ]
+}, {
+  "@id" : "_:genid91",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://qudt.org/schema/qudt/unit"
+    "@id" : "https://w3id.org/ci#Activity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ci#hasActivity"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid92",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://qudt.org/schema/qudt/Unit"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/ci#hasUnit"
@@ -939,7 +975,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid86",
+  "@id" : "_:genid93",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -952,20 +988,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid87",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#descriptionDetail"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid88",
+  "@id" : "_:genid94",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -978,28 +1001,10 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid89",
+  "@id" : "_:genid95",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#prefix"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid9",
-  "https://schema.org/name" : [ {
-    "@value" : "Politecnico di Milano"
-  } ]
-}, {
-  "@id" : "_:genid90",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/ci#quantityUnitOfMeasure"
@@ -1009,33 +1014,20 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid91",
+  "@id" : "_:genid96",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#unitPrice"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+    "@id" : "https://w3id.org/ci#descriptionDetail"
   } ]
 }, {
-  "@id" : "_:genid92",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/ci#WorkOfProductComponent"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#hasWork"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid93",
+  "@id" : "_:genid97",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/ci#hasPart"
@@ -1044,62 +1036,26 @@
     "@id" : "https://w3id.org/ci#CostComponent"
   } ]
 }, {
-  "@id" : "_:genid94",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/ci#WorkOfTemporaryComponent"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ci#hasWork"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid95",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasDimensionParameter"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#DimensionParameter"
-  } ]
-}, {
-  "@id" : "_:genid96",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasOtherStandard"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#Standard"
-  } ]
-}, {
-  "@id" : "_:genid97",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasPerformanceParameter"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#PerformanceParameter"
-  } ]
-}, {
   "@id" : "_:genid98",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasPhysicalParameter"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/cterm#Classification"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#PhysicalParameter"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasClassification"
   } ]
 }, {
   "@id" : "_:genid99",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/cterm#FamilyOfWork"
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://qudt.org/schema/qudt/Unit"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasFamily"
+    "@id" : "https://w3id.org/ci#hasUnit"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "http://purl.org/dc/terms/bibliographicCitation",
@@ -1138,10 +1094,28 @@
   "@id" : "http://qudt.org/schema/qudt/Unit",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://qudt.org/schema/qudt/unit",
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "https://schema.org/Person",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://w3id.org/ci",
+  "@id" : "https://schema.org/codeRepository",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/email",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/memberOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/ci",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/bibliographicCitation" : [ {
     "@value" : ""
@@ -1161,15 +1135,18 @@
     "@id" : "_:genid7"
   } ],
   "http://purl.org/dc/terms/description" : [ {
+    "@language" : "it",
+    "@value" : "L'ontologia Cost Item (CI) si basa su concetti e principi della stima dei costi dei progetti di costruzione e può essere utilizzata insieme all'ontologia Construction Resources (CR), utilizzando la terminologia della Construction Terminology (CTERM)."
+  }, {
     "@language" : "en",
-    "@value" : "The Cost Item (CI) Ontology is based on concepts and principles of construction project cost estimation an can be used together with the Construction Resources (CR) ontology and can use terminology from the Construction Terminology (CTERM)."
+    "@value" : "The Cost Item (CI) Ontology is based on concepts and principles of construction project cost estimation and can be used together with the Construction Resources (CR) ontology and can use terminology from the Construction Terminology (CTERM)."
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2025-04-07"
+    "@value" : "2026-10-12"
   } ],
   "http://purl.org/dc/terms/rights" : [ {
     "@value" : "Copyright 2025 by DABC, PoliMi"
@@ -1182,103 +1159,32 @@
     "@value" : "ci"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@id" : "http://w3id.org/ci#"
+    "@id" : "https://w3id.org/ci#"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://w3id.org/cterm"
+    "@id" : "https://w3id.org/cterm"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.2"
+    "@value" : "0.3"
   } ],
-  "https://schema.org/schema:codeRepository" : [ {
+  "https://schema.org/codeRepository" : [ {
     "@id" : "https://github.com/cpm-ont-network/cost"
   } ]
 }, {
-  "@id" : "http://www.w3.org/2001/XMLSchema#date",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
-}, {
-  "@id" : "https://schema.org/Person",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://schema.org/email",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://schema.org/identifier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://schema.org/memberOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://schema.org/name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://schema.org/schema:codeRepository",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "https://w3id.org/ci#Activity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A structured semantic entity representing the action performed within a production result to realize, install, modify, remove, or otherwise act upon a physical Work. An Activity can be characterized through standardized terminology and can be decomposed into the labour, equipment, and temporary components or resources required to perform it."
+  }, {
+    "@language" : "it",
+    "@value" : "Un'entità semantica strutturata che rappresenta l'azione eseguita all'interno di un risultato produttivo per realizzare, installare, modificare, rimuovere o comunque intervenire su un Work fisico. Un'Activity può essere caratterizzata mediante terminologia standardizzata e può essere scomposta nelle componenti o risorse di manodopera, attrezzature e opere temporanee necessarie alla sua esecuzione."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Activity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  }, {
-    "@id" : "_:genid55"
-  }, {
-    "@id" : "_:genid56"
-  }, {
-    "@id" : "_:genid57"
-  }, {
-    "@id" : "_:genid58"
-  }, {
-    "@id" : "_:genid59"
-  }, {
-    "@id" : "_:genid60"
-  }, {
-    "@id" : "_:genid61"
-  }, {
-    "@id" : "_:genid62"
-  }, {
-    "@id" : "_:genid63"
-  }, {
-    "@id" : "_:genid64"
-  }, {
-    "@id" : "_:genid65"
-  }, {
-    "@id" : "_:genid66"
-  }, {
-    "@id" : "_:genid67"
-  }, {
-    "@id" : "_:genid68"
-  }, {
-    "@id" : "_:genid69"
-  } ]
-}, {
-  "@id" : "https://w3id.org/ci#ConstructionComponent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Construction Work"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/ci#CostComponent"
-  }, {
-    "@id" : "_:genid70"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/ci#ProductComponent"
-  }, {
-    "@id" : "https://w3id.org/ci#TemporaryComponent"
-  } ]
-}, {
-  "@id" : "https://w3id.org/ci#CostComponent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "CostComponent"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  }, {
-    "@id" : "_:genid71"
   }, {
     "@id" : "_:genid72"
   }, {
@@ -1301,19 +1207,47 @@
     "@id" : "_:genid81"
   }, {
     "@id" : "_:genid82"
+  }, {
+    "@id" : "_:genid83"
   } ]
 }, {
-  "@id" : "https://w3id.org/ci#CostItem",
+  "@id" : "https://w3id.org/ci#ConstructionComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A CostComponent representing a completed construction work. It combines an Activity with a WorkOfConstructionComponent to describe, in a structured form, the action performed and the physical part involved in the construction result."
+  }, {
+    "@language" : "it",
+    "@value" : "Un CostComponent che rappresenta un'opera compiuta. Combina un'Activity con un WorkOfConstructionComponent per descrivere, in forma strutturata, l'azione eseguita e la parte fisica coinvolta nel risultato costruttivo."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "CostItem"
+    "@value" : "Construction Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ci#CostComponent"
+  }, {
+    "@id" : "_:genid84"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/ci#ProductComponent"
+  }, {
+    "@id" : "https://w3id.org/ci#TemporaryComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ci#CostComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A structured semantic information component used to describe a CostItem through standardized descriptive, technical, dimensional, performance, classification, and other domain-specific attributes. A CostComponent represents an informational structure rather than a priced item and does not carry a unit price."
+  }, {
+    "@language" : "it",
+    "@value" : "Una componente informativa semantica strutturata utilizzata per descrivere un CostItem mediante attributi standardizzati descrittivi, tecnici, dimensionali, prestazionali, di classificazione e altri attributi specifici del dominio. Un CostComponent rappresenta una struttura informativa e non una voce prezzata e non contiene un prezzo unitario."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CostComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  }, {
-    "@id" : "_:genid83"
-  }, {
-    "@id" : "_:genid84"
   }, {
     "@id" : "_:genid85"
   }, {
@@ -1328,58 +1262,32 @@
     "@id" : "_:genid90"
   }, {
     "@id" : "_:genid91"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "https://w3id.org/ci#ProductionResult"
-  } ]
-}, {
-  "@id" : "https://w3id.org/ci#ProductComponent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Product Work"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/ci#CostComponent"
   }, {
     "@id" : "_:genid92"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/ci#TemporaryComponent"
-  } ]
-}, {
-  "@id" : "https://w3id.org/ci#ProductionResult",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ProductionResult"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
   }, {
     "@id" : "_:genid93"
-  } ]
-}, {
-  "@id" : "https://w3id.org/ci#TemporaryComponent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Temporary Work"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/ci#CostComponent"
   }, {
     "@id" : "_:genid94"
-  } ]
-}, {
-  "@id" : "https://w3id.org/ci#Work",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Work"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
   }, {
     "@id" : "_:genid95"
   }, {
     "@id" : "_:genid96"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ci#CostItem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A priced production result represented as an item in a construction cost catalogue or price list. It contains identifying, descriptive, quantitative, and economic information, including its unit price, and is semantically described through one or more CostComponents."
+  }, {
+    "@language" : "it",
+    "@value" : "Un risultato produttivo prezzato rappresentato come voce in un catalogo dei costi o prezzario delle costruzioni. Contiene informazioni identificative, descrittive, quantitative ed economiche, incluso il prezzo unitario, ed è descritto semanticamente mediante uno o più CostComponent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CostItem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
   }, {
     "@id" : "_:genid97"
   }, {
@@ -1398,21 +1306,82 @@
     "@id" : "_:genid104"
   }, {
     "@id" : "_:genid105"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/ci#ProductionResult"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ci#ProductComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A CostComponent representing a product incorporated into or obtained through a production process. It combines an Activity with a WorkOfProductComponent to describe, in a structured form, the action performed and the physical product involved."
+  }, {
+    "@language" : "it",
+    "@value" : "Un CostComponent che rappresenta un prodotto incorporato in, o ottenuto attraverso, un processo produttivo. Combina un'Activity con un WorkOfProductComponent per descrivere, in forma strutturata, l'azione eseguita e il prodotto fisico coinvolto."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Product Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ci#CostComponent"
   }, {
     "@id" : "_:genid106"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/ci#TemporaryComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ci#ProductionResult",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A result of a construction production process represented as a priced item in a construction cost catalogue or price list. In the CI ontology, a ProductionResult is equivalent to a CostItem and is described through one or more CostComponents."
+  }, {
+    "@language" : "it",
+    "@value" : "Un risultato di un processo produttivo delle costruzioni rappresentato come voce prezzata in un catalogo dei costi o prezzario. Nell'ontologia CI, un ProductionResult è equivalente a un CostItem ed è descritto mediante uno o più CostComponent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ProductionResult"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
   }, {
     "@id" : "_:genid107"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ci#TemporaryComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A CostComponent representing a temporary or auxiliary work required to support the execution of construction activities. It combines an Activity with a WorkOfTemporaryComponent to describe, in a structured form, the action performed and the temporary physical work involved."
+  }, {
+    "@language" : "it",
+    "@value" : "Un CostComponent che rappresenta un'opera temporanea o ausiliaria necessaria a supportare l'esecuzione delle attività di costruzione. Combina un'Activity con un WorkOfTemporaryComponent per descrivere, in forma strutturata, l'azione eseguita e l'opera fisica temporanea coinvolta."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Temporary Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ci#CostComponent"
   }, {
     "@id" : "_:genid108"
   } ]
 }, {
-  "@id" : "https://w3id.org/ci#WorkOfConstructionComponent",
+  "@id" : "https://w3id.org/ci#Work",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A structured semantic entity representing the physical part involved in a production result, as distinct from the Activity performed on or for it. A Work is described through object, material, dimensional, physical, performance, regulatory, and other technical characteristics."
+  }, {
+    "@language" : "it",
+    "@value" : "Un'entità semantica strutturata che rappresenta la parte fisica coinvolta in un risultato produttivo, distinta dall'Activity eseguita su di essa o per essa. Un Work è descritto mediante caratteristiche relative a oggetto, materiale, dimensioni, proprietà fisiche, prestazioni, requisiti normativi e altri aspetti tecnici."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "WorkOfConstructionWork"
+    "@value" : "Work"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/ci#Work"
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
   }, {
     "@id" : "_:genid109"
   }, {
@@ -1433,6 +1402,44 @@
     "@id" : "_:genid117"
   }, {
     "@id" : "_:genid118"
+  }, {
+    "@id" : "_:genid119"
+  }, {
+    "@id" : "_:genid120"
+  }, {
+    "@id" : "_:genid121"
+  }, {
+    "@id" : "_:genid122"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ci#WorkOfConstructionComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Work specialization representing the physical part of a ConstructionComponent. It describes the construction object and its technical characteristics and may be decomposed into construction components, product components, and material resources."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Work che rappresenta la parte fisica di un ConstructionComponent. Descrive l'oggetto costruito e le relative caratteristiche tecniche e può essere scomposta in ConstructionComponent, ProductComponent e MaterialResource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "WorkOfConstructionComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ci#Work"
+  }, {
+    "@id" : "_:genid123"
+  }, {
+    "@id" : "_:genid124"
+  }, {
+    "@id" : "_:genid125"
+  }, {
+    "@id" : "_:genid126"
+  }, {
+    "@id" : "_:genid127"
+  }, {
+    "@id" : "_:genid128"
+  }, {
+    "@id" : "_:genid129"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/ci#WorkOfProductComponent"
@@ -1442,45 +1449,18 @@
 }, {
   "@id" : "https://w3id.org/ci#WorkOfProductComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Work specialization representing the physical part of a ProductComponent. It describes the product and its technical characteristics and may be decomposed into the material resources from which the product is formed."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Work che rappresenta la parte fisica di un ProductComponent. Descrive il prodotto e le relative caratteristiche tecniche e può essere scomposta nelle MaterialResource da cui il prodotto è costituito."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "WorkOfProductWork"
+    "@value" : "WorkOfProductComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ci#Work"
-  }, {
-    "@id" : "_:genid119"
-  }, {
-    "@id" : "_:genid120"
-  }, {
-    "@id" : "_:genid121"
-  }, {
-    "@id" : "_:genid122"
-  }, {
-    "@id" : "_:genid123"
-  }, {
-    "@id" : "_:genid124"
-  }, {
-    "@id" : "_:genid125"
-  }, {
-    "@id" : "_:genid126"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/ci#WorkOfTemporaryComponent"
-  } ]
-}, {
-  "@id" : "https://w3id.org/ci#WorkOfTemporaryComponent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "WorkOfTemporaryWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/ci#Work"
-  }, {
-    "@id" : "_:genid127"
-  }, {
-    "@id" : "_:genid128"
-  }, {
-    "@id" : "_:genid129"
   }, {
     "@id" : "_:genid130"
   }, {
@@ -1495,10 +1475,50 @@
     "@id" : "_:genid135"
   }, {
     "@id" : "_:genid136"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/ci#WorkOfTemporaryComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ci#WorkOfTemporaryComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Work specialization representing the physical part of a TemporaryComponent. It describes the temporary or auxiliary work and its technical characteristics and may be decomposed into product components, equipment resources, and material resources."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Work che rappresenta la parte fisica di un TemporaryComponent. Descrive l'opera temporanea o ausiliaria e le relative caratteristiche tecniche e può essere scomposta in ProductComponent, EquipmentResource e MaterialResource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "WorkOfTemporaryComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ci#Work"
+  }, {
+    "@id" : "_:genid137"
+  }, {
+    "@id" : "_:genid138"
+  }, {
+    "@id" : "_:genid139"
+  }, {
+    "@id" : "_:genid140"
+  }, {
+    "@id" : "_:genid141"
+  }, {
+    "@id" : "_:genid142"
+  }, {
+    "@id" : "_:genid143"
   } ]
 }, {
   "@id" : "https://w3id.org/ci#activityOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'Activity con il CostComponent per il quale l'attività fornisce la descrizione operativa."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an Activity to the CostComponent for which the activity provides the operational description."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ci#Activity"
   } ],
@@ -1514,6 +1534,13 @@
 }, {
   "@id" : "https://w3id.org/ci#cam",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Indica se un Work è associato ai Criteri Ambientali Minimi (CAM) definiti dal Ministero italiano dell'Ambiente."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates whether a Work is associated with the Minimum Environmental Criteria (Criteri Ambientali Minimi, CAM) defined by the Italian Ministry of Environment."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ci#Work"
   } ],
@@ -1526,8 +1553,15 @@
 }, {
   "@id" : "https://w3id.org/ci#code",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Fornisce l'identificatore alfanumerico o il codice di classificazione assegnato a un'Activity, CostComponent, CostItem o Work."
+  }, {
+    "@language" : "en",
+    "@value" : "Provides the alphanumeric identifier or classification code assigned to an Activity, CostComponent, CostItem, or Work."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid38"
+    "@id" : "_:genid40"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "code"
@@ -1538,8 +1572,15 @@
 }, {
   "@id" : "https://w3id.org/ci#descriptionDetail",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Fornisce una descrizione testuale di dettaglio che integra la descrizione generale dell'entità rappresentata."
+  }, {
+    "@language" : "en",
+    "@value" : "Provides a detailed textual description that complements the general description of the represented entity."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ci#CostComponent"
+    "@id" : "_:genid45"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "descriptionDetail"
@@ -1550,8 +1591,15 @@
 }, {
   "@id" : "https://w3id.org/ci#descriptionGeneral",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Fornisce la descrizione testuale generale utilizzata per identificare e descrivere l'entità rappresentata in forma standardizzata."
+  }, {
+    "@language" : "en",
+    "@value" : "Provides the general textual description used to identify and describe the represented entity in a standardized form."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ci#CostComponent"
+    "@id" : "_:genid50"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "descriptionGeneral"
@@ -1562,8 +1610,15 @@
 }, {
   "@id" : "https://w3id.org/ci#excluded",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Specifica, in forma testuale, voci, operazioni, condizioni o prescrizioni esplicitamente escluse dall'ambito di un'Activity o di un Work."
+  }, {
+    "@language" : "en",
+    "@value" : "Specifies, in textual form, items, operations, conditions, or provisions that are explicitly excluded from the scope of an Activity or Work."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid43"
+    "@id" : "_:genid55"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "excluded"
@@ -1574,6 +1629,13 @@
 }, {
   "@id" : "https://w3id.org/ci#hasActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un CostComponent con l'Activity che descrive l'azione eseguita come parte di tale componente."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a CostComponent to the Activity that describes the action performed as part of that component."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ci#CostComponent"
   } ],
@@ -1586,6 +1648,13 @@
 }, {
   "@id" : "https://w3id.org/ci#hasPart",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un CostItem o ProductionResult con un CostComponent che costituisce parte della sua descrizione semantica strutturata."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a CostItem or ProductionResult to a CostComponent that forms part of its structured semantic description."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid10"
   } ],
@@ -1598,6 +1667,13 @@
 }, {
   "@id" : "https://w3id.org/ci#hasSubComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'Activity, un Work o un CostComponent con un CostComponent costituente o una Resource delle costruzioni utilizzata per rappresentarne la composizione interna."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an Activity, Work, or CostComponent to a constituent CostComponent or construction Resource used to represent its internal composition."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid13"
   } ],
@@ -1610,6 +1686,13 @@
 }, {
   "@id" : "https://w3id.org/ci#hasUnit",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'entità dell'ontologia CI con l'unità QUDT utilizzata per esprimere la quantità associata."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an entity in the CI ontology to the QUDT unit used to express its associated quantity."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid20"
   } ],
@@ -1622,6 +1705,13 @@
 }, {
   "@id" : "https://w3id.org/ci#hasWork",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un CostComponent con il Work che ne descrive la parte fisica."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a CostComponent to the Work that describes its physical part."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ci#CostComponent"
   } ],
@@ -1637,8 +1727,15 @@
 }, {
   "@id" : "https://w3id.org/ci#included",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Specifica, in forma testuale, voci, operazioni, condizioni o prescrizioni esplicitamente incluse nell'ambito di un'Activity o di un Work."
+  }, {
+    "@language" : "en",
+    "@value" : "Specifies, in textual form, items, operations, conditions, or provisions that are explicitly included within the scope of an Activity or Work."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid46"
+    "@id" : "_:genid58"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "included"
@@ -1649,8 +1746,15 @@
 }, {
   "@id" : "https://w3id.org/ci#keywords",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Fornisce parole chiave utilizzate per supportare l'identificazione, l'indicizzazione, il recupero o l'interpretazione di un'Activity o di un Work."
+  }, {
+    "@language" : "en",
+    "@value" : "Provides keywords used to support the identification, indexing, retrieval, or interpretation of an Activity or Work."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid49"
+    "@id" : "_:genid61"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "keywords"
@@ -1661,6 +1765,13 @@
 }, {
   "@id" : "https://w3id.org/ci#law",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Fornisce un riferimento testuale alla legislazione o ai requisiti normativi applicabili a un Work."
+  }, {
+    "@language" : "en",
+    "@value" : "Provides a textual reference to legislation or regulatory requirements applicable to a Work."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ci#Work"
   } ],
@@ -1673,6 +1784,13 @@
 }, {
   "@id" : "https://w3id.org/ci#measurementRules",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Specifica le regole o i criteri da applicare nella misurazione o quantificazione di un CostComponent."
+  }, {
+    "@language" : "en",
+    "@value" : "Specifies the rules or criteria to be applied when measuring or quantifying a CostComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ci#CostComponent"
   } ],
@@ -1685,6 +1803,13 @@
 }, {
   "@id" : "https://w3id.org/ci#partOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un CostComponent con il CostItem o ProductionResult della cui descrizione semantica strutturata costituisce una parte."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a CostComponent to the CostItem or ProductionResult of whose structured semantic description it forms a part."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ci#CostComponent"
   } ],
@@ -1692,7 +1817,7 @@
     "@value" : "partOf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid24"
+    "@id" : "_:genid25"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/ci#hasPart"
@@ -1700,6 +1825,13 @@
 }, {
   "@id" : "https://w3id.org/ci#prefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Fornisce il prefisso utilizzato come segmento identificativo del codice assegnato a un CostItem."
+  }, {
+    "@language" : "en",
+    "@value" : "Provides the prefix used as an identifying segment of the code assigned to a CostItem."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ci#CostItem"
   } ],
@@ -1716,26 +1848,40 @@
 }, {
   "@id" : "https://w3id.org/ci#quantityUnitOfMeasure",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Specifica la quantità numerica associata all'unità di misura di riferimento utilizzata per esprimere l'entità rappresentata, ad esempio 1 metro quadrato o 100 unità."
+  }, {
+    "@language" : "en",
+    "@value" : "Specifies the numerical quantity associated with the reference unit of measure used to express the represented entity, for example 1 square metre or 100 units."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ci#CostComponent"
+    "@id" : "_:genid64"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "quantityUnitOfMeasure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ]
 }, {
   "@id" : "https://w3id.org/ci#subComponentOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un CostComponent o una Resource delle costruzioni con l'Activity, il Work o il CostComponent di cui costituisce un sottocomponente."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a CostComponent or construction Resource to the Activity, Work, or CostComponent of which it is a constituent subcomponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid27"
+    "@id" : "_:genid28"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "subComponentOf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid30"
+    "@id" : "_:genid31"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/ci#hasSubComponent"
@@ -1743,8 +1889,15 @@
 }, {
   "@id" : "https://w3id.org/ci#techSpecs",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Fornisce specifiche tecniche, requisiti o condizioni di esecuzione associati a un'Activity o a un Work."
+  }, {
+    "@language" : "en",
+    "@value" : "Provides technical specifications, requirements, or execution conditions associated with an Activity or Work."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid52"
+    "@id" : "_:genid69"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "tech specs"
@@ -1755,6 +1908,13 @@
 }, {
   "@id" : "https://w3id.org/ci#unitOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'unità QUDT con un'entità dell'ontologia CI la cui quantità associata è espressa mediante tale unità."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a QUDT unit to an entity in the CI ontology whose associated quantity is expressed using that unit."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://qudt.org/schema/qudt/Unit"
   } ],
@@ -1762,7 +1922,7 @@
     "@value" : "unitOf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid34"
+    "@id" : "_:genid35"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://w3id.org/ci#hasUnit"
@@ -1770,6 +1930,13 @@
 }, {
   "@id" : "https://w3id.org/ci#unitPrice",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Specifica il prezzo unitario monetario assegnato a un CostItem o ProductionResult per la relativa unità di misura di riferimento."
+  }, {
+    "@language" : "en",
+    "@value" : "Specifies the monetary unit price assigned to a CostItem or ProductionResult for its reference unit of measure."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ci#CostItem"
   } ],
@@ -1782,6 +1949,13 @@
 }, {
   "@id" : "https://w3id.org/ci#workOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un Work con il CostComponent di cui descrive la parte fisica."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a Work to the CostComponent whose physical part it describes."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ci#Work"
   } ],
@@ -1795,7 +1969,7 @@
   "@id" : "https://w3id.org/cr#EquipmentResource",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cr#LaborResource",
+  "@id" : "https://w3id.org/cr#LabourResource",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/cr#MaterialResource",
@@ -1804,13 +1978,13 @@
   "@id" : "https://w3id.org/cr#Resource",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#AspectOfWorkOfConstructionWork",
+  "@id" : "https://w3id.org/cterm#AspectOfWorkOfConstructionComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#AspectOfWorkOfProductWork",
+  "@id" : "https://w3id.org/cterm#AspectOfWorkOfProductComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#AspectOfWorkOfTemporaryWork",
+  "@id" : "https://w3id.org/cterm#AspectOfWorkOfTemporaryComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/cterm#CategoryOfActivity",
@@ -1819,13 +1993,13 @@
   "@id" : "https://w3id.org/cterm#CategoryOfCostComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#CategoryOfWorkOfConstructionWork",
+  "@id" : "https://w3id.org/cterm#CategoryOfWorkOfConstructionComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#CategoryOfWorkOfProductWork",
+  "@id" : "https://w3id.org/cterm#CategoryOfWorkOfProductComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork",
+  "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/cterm#Classification",
@@ -1843,25 +2017,25 @@
   "@id" : "https://w3id.org/cterm#FamilyOfWork",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork",
+  "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#FinishingOfWorkOfProductWork",
+  "@id" : "https://w3id.org/cterm#FinishingOfWorkOfProductComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#FinishingOfWorkOfTemporaryWork",
+  "@id" : "https://w3id.org/cterm#FinishingOfWorkOfTemporaryComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/cterm#FunctionOfActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork",
+  "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#FunctionOfWorkOfProductWork",
+  "@id" : "https://w3id.org/cterm#FunctionOfWorkOfProductComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#FunctionOfWorkOfTemporaryWork",
+  "@id" : "https://w3id.org/cterm#FunctionOfWorkOfTemporaryComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/cterm#Material",
@@ -1873,13 +2047,13 @@
   "@id" : "https://w3id.org/cterm#ObjectOfCostComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#ObjectOfWorkOfConstructionWork",
+  "@id" : "https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#ObjectOfWorkOfProductWork",
+  "@id" : "https://w3id.org/cterm#ObjectOfWorkOfProductComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork",
+  "@id" : "https://w3id.org/cterm#ObjectOfWorkOfTemporaryComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/cterm#PerformanceParameter",
@@ -1894,25 +2068,25 @@
   "@id" : "https://w3id.org/cterm#TypeOfActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork",
+  "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#TypeOfWorkOfProductWork",
+  "@id" : "https://w3id.org/cterm#TypeOfWorkOfProductComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryWork",
+  "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/cterm#UseOfActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork",
+  "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#UseOfWorkOfProductWork",
+  "@id" : "https://w3id.org/cterm#UseOfWorkOfProductComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork",
+  "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/cterm#hasAspect",

@@ -1,28 +1,29 @@
-@prefix : <http://w3id.org/ci#> .
+@prefix : <https://w3id.org/ci#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://w3id.org/ci#> .
+@base <https://w3id.org/ci#> .
 
-<http://w3id.org/ci> rdf:type owl:Ontology ;
-                      owl:imports <http://w3id.org/cterm> ;
+<https://w3id.org/ci> rdf:type owl:Ontology ;
+                      owl:imports <https://w3id.org/cterm> ;
                       <http://purl.org/dc/terms/bibliographicCitation> "" ;
                       <http://purl.org/dc/terms/contributor> _:genid1 ,
                                                              _:genid3 ;
                       <http://purl.org/dc/terms/created> "2024-10-12"^^xsd:date ;
                       <http://purl.org/dc/terms/creator> _:genid5 ,
                                                          _:genid7 ;
-                      <http://purl.org/dc/terms/description> "The Cost Item (CI) Ontology is based on concepts and principles of construction project cost estimation an can be used together with the Construction Resources (CR) ontology and can use terminology from the Construction Terminology (CTERM)."@en ;
+                      <http://purl.org/dc/terms/description> "The Cost Item (CI) Ontology is based on concepts and principles of construction project cost estimation and can be used together with the Construction Resources (CR) ontology and can use terminology from the Construction Terminology (CTERM)."@en ;
+                      <http://purl.org/dc/terms/description> "L'ontologia Cost Item (CI) si basa su concetti e principi della stima dei costi dei progetti di costruzione e può essere utilizzata insieme all'ontologia Construction Resources (CR), utilizzando la terminologia della Construction Terminology (CTERM)."@it ;
                       <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                      <http://purl.org/dc/terms/modified> "2025-04-07"^^xsd:date ;
+                      <http://purl.org/dc/terms/modified> "2026-10-12"^^xsd:date ;
                       <http://purl.org/dc/terms/rights> "Copyright 2025 by DABC, PoliMi" ;
                       <http://purl.org/dc/terms/title> "The Cost Item (CI) Ontology"@en ;
                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "ci" ;
                       <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
-                      owl:versionInfo "0.2" ;
-                      <https://schema.org/schema:codeRepository> <https://github.com/cpm-ont-network/cost> .
+                      owl:versionInfo "0.3" ;
+                      <https://schema.org/codeRepository> <https://github.com/cpm-ont-network/cost> .
 
 _:genid1 rdf:type <https://schema.org/Person> ;
           <https://schema.org/email> <mailto:claudio.mirarchi@polimi.it> ;
@@ -126,8 +127,8 @@ _:genid8 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/
 <https://schema.org/name> rdf:type owl:AnnotationProperty .
 
 
-###  https://schema.org/schema:codeRepository
-<https://schema.org/schema:codeRepository> rdf:type owl:AnnotationProperty .
+###  https://schema.org/codeRepository
+<https://schema.org/codeRepository> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -147,6 +148,8 @@ xsd:date rdf:type rdfs:Datatype .
                                  owl:inverseOf <https://w3id.org/ci#hasActivity> ;
                                  rdfs:domain <https://w3id.org/ci#Activity> ;
                                  rdfs:range <https://w3id.org/ci#CostComponent> ;
+                                 rdfs:comment "Relates an Activity to the CostComponent for which the activity provides the operational description."@en ;
+                                 rdfs:comment "Mette in relazione un'Activity con il CostComponent per il quale l'attività fornisce la descrizione operativa."@it ;
                                  rdfs:label "activity of" .
 
 
@@ -154,6 +157,8 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/ci#hasActivity> rdf:type owl:ObjectProperty ;
                                   rdfs:domain <https://w3id.org/ci#CostComponent> ;
                                   rdfs:range <https://w3id.org/ci#Activity> ;
+                                  rdfs:comment "Relates a CostComponent to the Activity that describes the action performed as part of that component."@en ;
+                                  rdfs:comment "Mette in relazione un CostComponent con l'Activity che descrive l'azione eseguita come parte di tale componente."@it ;
                                   rdfs:label "hasActivity" .
 
 
@@ -165,6 +170,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                         )
                                           ] ;
                               rdfs:range <https://w3id.org/ci#CostComponent> ;
+                              rdfs:comment "Relates a CostItem or ProductionResult to a CostComponent that forms part of its structured semantic description."@en ;
+                              rdfs:comment "Mette in relazione un CostItem o ProductionResult con un CostComponent che costituisce parte della sua descrizione semantica strutturata."@it ;
                               rdfs:label "hasPart" .
 
 
@@ -181,6 +188,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                                  <https://w3id.org/cr#Resource>
                                                                )
                                                  ] ;
+                                      rdfs:comment "Relates an Activity, Work, or CostComponent to a constituent CostComponent or construction Resource used to represent its internal composition."@en ;
+                                      rdfs:comment "Mette in relazione un'Activity, un Work o un CostComponent con un CostComponent costituente o una Resource delle costruzioni utilizzata per rappresentarne la composizione interna."@it ;
                                       rdfs:label "hasSubComponent" .
 
 
@@ -189,10 +198,13 @@ xsd:date rdf:type rdfs:Datatype .
                               rdfs:domain [ rdf:type owl:Class ;
                                             owl:unionOf ( <https://w3id.org/ci#Activity>
                                                           <https://w3id.org/ci#CostComponent>
+                                                          <https://w3id.org/ci#CostItem>
                                                           <https://w3id.org/ci#Work>
                                                         )
                                           ] ;
                               rdfs:range <http://qudt.org/schema/qudt/Unit> ;
+                              rdfs:comment "Relates an entity in the CI ontology to the QUDT unit used to express its associated quantity."@en ;
+                              rdfs:comment "Mette in relazione un'entità dell'ontologia CI con l'unità QUDT utilizzata per esprimere la quantità associata."@it ;
                               rdfs:label "hasUnit" .
 
 
@@ -201,6 +213,8 @@ xsd:date rdf:type rdfs:Datatype .
                               owl:inverseOf <https://w3id.org/ci#workOf> ;
                               rdfs:domain <https://w3id.org/ci#CostComponent> ;
                               rdfs:range <https://w3id.org/ci#Work> ;
+                              rdfs:comment "Relates a CostComponent to the Work that describes its physical part."@en ;
+                              rdfs:comment "Mette in relazione un CostComponent con il Work che ne descrive la parte fisica."@it ;
                               rdfs:label "hasWork" .
 
 
@@ -213,6 +227,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                         <https://w3id.org/ci#ProductionResult>
                                                       )
                                         ] ;
+                             rdfs:comment "Relates a CostComponent to the CostItem or ProductionResult of whose structured semantic description it forms a part."@en ;
+                             rdfs:comment "Mette in relazione un CostComponent con il CostItem o ProductionResult della cui descrizione semantica strutturata costituisce una parte."@it ;
                              rdfs:label "partOf" .
 
 
@@ -230,6 +246,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                                 <https://w3id.org/ci#Work>
                                                               )
                                                 ] ;
+                                     rdfs:comment "Relates a CostComponent or construction Resource to the Activity, Work, or CostComponent of which it is a constituent subcomponent."@en ;
+                                     rdfs:comment "Mette in relazione un CostComponent o una Resource delle costruzioni con l'Activity, il Work o il CostComponent di cui costituisce un sottocomponente."@it ;
                                      rdfs:label "subComponentOf" .
 
 
@@ -240,9 +258,12 @@ xsd:date rdf:type rdfs:Datatype .
                              rdfs:range [ rdf:type owl:Class ;
                                           owl:unionOf ( <https://w3id.org/ci#Activity>
                                                         <https://w3id.org/ci#CostComponent>
+                                                        <https://w3id.org/ci#CostItem>
                                                         <https://w3id.org/ci#Work>
                                                       )
                                         ] ;
+                             rdfs:comment "Relates a QUDT unit to an entity in the CI ontology whose associated quantity is expressed using that unit."@en ;
+                             rdfs:comment "Mette in relazione un'unità QUDT con un'entità dell'ontologia CI la cui quantità associata è espressa mediante tale unità."@it ;
                              rdfs:label "unitOf" .
 
 
@@ -250,6 +271,8 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/ci#workOf> rdf:type owl:ObjectProperty ;
                              rdfs:domain <https://w3id.org/ci#Work> ;
                              rdfs:range <https://w3id.org/ci#CostComponent> ;
+                             rdfs:comment "Relates a Work to the CostComponent whose physical part it describes."@en ;
+                             rdfs:comment "Mette in relazione un Work con il CostComponent di cui descrive la parte fisica."@it ;
                              rdfs:label "workOf" .
 
 
@@ -317,6 +340,8 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/ci#cam> rdf:type owl:DatatypeProperty ;
                           rdfs:domain <https://w3id.org/ci#Work> ;
                           rdfs:range xsd:boolean ;
+                          rdfs:comment "Indicates whether a Work is associated with the Minimum Environmental Criteria (Criteri Ambientali Minimi, CAM) defined by the Italian Ministry of Environment."@en ;
+                          rdfs:comment "Indica se un Work è associato ai Criteri Ambientali Minimi (CAM) definiti dal Ministero italiano dell'Ambiente."@it ;
                           rdfs:label "environmental and ecological requirements defined by the Italian Ministry of Environment" .
 
 
@@ -330,20 +355,38 @@ xsd:date rdf:type rdfs:Datatype .
                                                      )
                                        ] ;
                            rdfs:range xsd:string ;
+                           rdfs:comment "Provides the alphanumeric identifier or classification code assigned to an Activity, CostComponent, CostItem, or Work."@en ;
+                           rdfs:comment "Fornisce l'identificatore alfanumerico o il codice di classificazione assegnato a un'Activity, CostComponent, CostItem o Work."@it ;
                            rdfs:label "code" .
 
 
 ###  https://w3id.org/ci#descriptionDetail
 <https://w3id.org/ci#descriptionDetail> rdf:type owl:DatatypeProperty ;
-                                        rdfs:domain <https://w3id.org/ci#CostComponent> ;
+                                        rdfs:domain [ rdf:type owl:Class ;
+                                                      owl:unionOf ( <https://w3id.org/ci#CostItem>
+                                                                    <https://w3id.org/ci#CostComponent>
+                                                                    <https://w3id.org/ci#Activity>
+                                                                    <https://w3id.org/ci#Work>
+                                                                  )
+                                                    ] ;
                                         rdfs:range xsd:string ;
+                                        rdfs:comment "Provides a detailed textual description that complements the general description of the represented entity."@en ;
+                                        rdfs:comment "Fornisce una descrizione testuale di dettaglio che integra la descrizione generale dell'entità rappresentata."@it ;
                                         rdfs:label "descriptionDetail" .
 
 
 ###  https://w3id.org/ci#descriptionGeneral
 <https://w3id.org/ci#descriptionGeneral> rdf:type owl:DatatypeProperty ;
-                                         rdfs:domain <https://w3id.org/ci#CostComponent> ;
+                                         rdfs:domain [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://w3id.org/ci#CostItem>
+                                                                     <https://w3id.org/ci#CostComponent>
+                                                                     <https://w3id.org/ci#Activity>
+                                                                     <https://w3id.org/ci#Work>
+                                                                   )
+                                                     ] ;
                                          rdfs:range xsd:string ;
+                                         rdfs:comment "Provides the general textual description used to identify and describe the represented entity in a standardized form."@en ;
+                                         rdfs:comment "Fornisce la descrizione testuale generale utilizzata per identificare e descrivere l'entità rappresentata in forma standardizzata."@it ;
                                          rdfs:label "descriptionGeneral" .
 
 
@@ -355,6 +398,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                          )
                                            ] ;
                                rdfs:range xsd:string ;
+                               rdfs:comment "Specifies, in textual form, items, operations, conditions, or provisions that are explicitly excluded from the scope of an Activity or Work."@en ;
+                               rdfs:comment "Specifica, in forma testuale, voci, operazioni, condizioni o prescrizioni esplicitamente escluse dall'ambito di un'Activity o di un Work."@it ;
                                rdfs:label "excluded" .
 
 
@@ -366,6 +411,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                          )
                                            ] ;
                                rdfs:range xsd:string ;
+                               rdfs:comment "Specifies, in textual form, items, operations, conditions, or provisions that are explicitly included within the scope of an Activity or Work."@en ;
+                               rdfs:comment "Specifica, in forma testuale, voci, operazioni, condizioni o prescrizioni esplicitamente incluse nell'ambito di un'Activity o di un Work."@it ;
                                rdfs:label "included" .
 
 
@@ -377,6 +424,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                          )
                                            ] ;
                                rdfs:range xsd:string ;
+                               rdfs:comment "Provides keywords used to support the identification, indexing, retrieval, or interpretation of an Activity or Work."@en ;
+                               rdfs:comment "Fornisce parole chiave utilizzate per supportare l'identificazione, l'indicizzazione, il recupero o l'interpretazione di un'Activity o di un Work."@it ;
                                rdfs:label "keywords" .
 
 
@@ -384,6 +433,8 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/ci#law> rdf:type owl:DatatypeProperty ;
                           rdfs:domain <https://w3id.org/ci#Work> ;
                           rdfs:range xsd:string ;
+                          rdfs:comment "Provides a textual reference to legislation or regulatory requirements applicable to a Work."@en ;
+                          rdfs:comment "Fornisce un riferimento testuale alla legislazione o ai requisiti normativi applicabili a un Work."@it ;
                           rdfs:label "law" .
 
 
@@ -391,6 +442,8 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/ci#measurementRules> rdf:type owl:DatatypeProperty ;
                                        rdfs:domain <https://w3id.org/ci#CostComponent> ;
                                        rdfs:range xsd:string ;
+                                       rdfs:comment "Specifies the rules or criteria to be applied when measuring or quantifying a CostComponent."@en ;
+                                       rdfs:comment "Specifica le regole o i criteri da applicare nella misurazione o quantificazione di un CostComponent."@it ;
                                        rdfs:label "measurementRules" .
 
 
@@ -398,14 +451,24 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/ci#prefix> rdf:type owl:DatatypeProperty ;
                              rdfs:domain <https://w3id.org/ci#CostItem> ;
                              rdfs:range xsd:string ;
+                             rdfs:comment "Provides the prefix used as an identifying segment of the code assigned to a CostItem."@en ;
+                             rdfs:comment "Fornisce il prefisso utilizzato come segmento identificativo del codice assegnato a un CostItem."@it ;
                              rdfs:label "prefisso"@it ,
                                         "prefix"@en .
 
 
 ###  https://w3id.org/ci#quantityUnitOfMeasure
 <https://w3id.org/ci#quantityUnitOfMeasure> rdf:type owl:DatatypeProperty ;
-                                            rdfs:domain <https://w3id.org/ci#CostComponent> ;
-                                            rdfs:range xsd:integer ;
+                                            rdfs:domain [ rdf:type owl:Class ;
+                                                          owl:unionOf ( <https://w3id.org/ci#CostItem>
+                                                                        <https://w3id.org/ci#CostComponent>
+                                                                        <https://w3id.org/ci#Activity>
+                                                                        <https://w3id.org/ci#Work>
+                                                                      )
+                                                        ] ;
+                                            rdfs:range xsd:decimal ;
+                                            rdfs:comment "Specifies the numerical quantity associated with the reference unit of measure used to express the represented entity, for example 1 square metre or 100 units."@en ;
+                                            rdfs:comment "Specifica la quantità numerica associata all'unità di misura di riferimento utilizzata per esprimere l'entità rappresentata, ad esempio 1 metro quadrato o 100 unità."@it ;
                                             rdfs:label "quantityUnitOfMeasure" .
 
 
@@ -417,6 +480,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                           )
                                             ] ;
                                 rdfs:range xsd:string ;
+                                rdfs:comment "Provides technical specifications, requirements, or execution conditions associated with an Activity or Work."@en ;
+                                rdfs:comment "Fornisce specifiche tecniche, requisiti o condizioni di esecuzione associati a un'Activity o a un Work."@it ;
                                 rdfs:label "tech specs" .
 
 
@@ -424,6 +489,8 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/ci#unitPrice> rdf:type owl:DatatypeProperty ;
                                 rdfs:domain <https://w3id.org/ci#CostItem> ;
                                 rdfs:range xsd:decimal ;
+                                rdfs:comment "Specifies the monetary unit price assigned to a CostItem or ProductionResult for its reference unit of measure."@en ;
+                                rdfs:comment "Specifica il prezzo unitario monetario assegnato a un CostItem o ProductionResult per la relativa unità di misura di riferimento."@it ;
                                 rdfs:label "unit price" .
 
 
@@ -435,10 +502,6 @@ xsd:date rdf:type rdfs:Datatype .
 <http://qudt.org/schema/qudt/Unit> rdf:type owl:Class .
 
 
-###  http://qudt.org/schema/qudt/unit
-<http://qudt.org/schema/qudt/unit> rdf:type owl:Class .
-
-
 ###  https://schema.org/Person
 <https://schema.org/Person> rdf:type owl:Class .
 
@@ -447,24 +510,12 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/ci#Activity> rdf:type owl:Class ;
                                rdfs:subClassOf owl:Thing ,
                                                [ rdf:type owl:Restriction ;
-                                                 owl:onProperty <https://w3id.org/ci#hasSubComponent> ;
-                                                 owl:someValuesFrom <https://w3id.org/ci#TemporaryComponent>
-                                               ] ,
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty <https://w3id.org/ci#hasSubComponent> ;
-                                                 owl:someValuesFrom <https://w3id.org/cr#EquipmentResource>
-                                               ] ,
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty <https://w3id.org/ci#hasSubComponent> ;
-                                                 owl:someValuesFrom <https://w3id.org/cr#LaborResource>
-                                               ] ,
-                                               [ rdf:type owl:Restriction ;
                                                  owl:onProperty <https://w3id.org/cterm#hasFunction> ;
-                                                 owl:someValuesFrom <https://w3id.org/cterm#FunctionOfActivity>
+                                                 owl:allValuesFrom <https://w3id.org/cterm#FunctionOfActivity>
                                                ] ,
                                                [ rdf:type owl:Restriction ;
                                                  owl:onProperty <https://w3id.org/cterm#hasUse> ;
-                                                 owl:someValuesFrom <https://w3id.org/cterm#UseOfActivity>
+                                                 owl:allValuesFrom <https://w3id.org/cterm#UseOfActivity>
                                                ] ,
                                                [ rdf:type owl:Restriction ;
                                                  owl:onProperty <https://w3id.org/cterm#hasCategory> ;
@@ -500,7 +551,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                [ rdf:type owl:Restriction ;
                                                  owl:onProperty <https://w3id.org/ci#quantityUnitOfMeasure> ;
                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                 owl:onDataRange xsd:integer
+                                                 owl:onDataRange xsd:decimal
                                                ] ,
                                                [ rdf:type owl:Restriction ;
                                                  owl:onProperty <https://w3id.org/ci#descriptionDetail> ;
@@ -512,6 +563,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                  owl:onDataRange xsd:string
                                                ] ;
+                               rdfs:comment "A structured semantic entity representing the action performed within a production result to realize, install, modify, remove, or otherwise act upon a physical Work. An Activity can be characterized through standardized terminology and can be decomposed into the labour, equipment, and temporary components or resources required to perform it."@en ;
+                               rdfs:comment "Un'entità semantica strutturata che rappresenta l'azione eseguita all'interno di un risultato produttivo per realizzare, installare, modificare, rimuovere o comunque intervenire su un Work fisico. Un'Activity può essere caratterizzata mediante terminologia standardizzata e può essere scomposta nelle componenti o risorse di manodopera, attrezzature e opere temporanee necessarie alla sua esecuzione."@it ;
                                rdfs:label "Activity" .
 
 
@@ -525,6 +578,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                             ] ;
                                             owl:disjointWith <https://w3id.org/ci#ProductComponent> ,
                                                              <https://w3id.org/ci#TemporaryComponent> ;
+                                            rdfs:comment "A CostComponent representing a completed construction work. It combines an Activity with a WorkOfConstructionComponent to describe, in a structured form, the action performed and the physical part involved in the construction result."@en ;
+                                            rdfs:comment "Un CostComponent che rappresenta un'opera compiuta. Combina un'Activity con un WorkOfConstructionComponent per descrivere, in forma strutturata, l'azione eseguita e la parte fisica coinvolta nel risultato costruttivo."@it ;
                                             rdfs:label "Construction Work" .
 
 
@@ -533,11 +588,11 @@ xsd:date rdf:type rdfs:Datatype .
                                     rdfs:subClassOf owl:Thing ,
                                                     [ rdf:type owl:Restriction ;
                                                       owl:onProperty <https://w3id.org/ci#partOf> ;
-                                                      owl:someValuesFrom <https://w3id.org/ci#CostItem>
+                                                      owl:allValuesFrom <https://w3id.org/ci#CostItem>
                                                     ] ,
                                                     [ rdf:type owl:Restriction ;
                                                       owl:onProperty <https://w3id.org/cterm#hasClassification> ;
-                                                      owl:someValuesFrom <https://w3id.org/cterm#Classification>
+                                                      owl:allValuesFrom <https://w3id.org/cterm#Classification>
                                                     ] ,
                                                     [ rdf:type owl:Restriction ;
                                                       owl:onProperty <https://w3id.org/cterm#hasCategory> ;
@@ -578,13 +633,15 @@ xsd:date rdf:type rdfs:Datatype .
                                                     [ rdf:type owl:Restriction ;
                                                       owl:onProperty <https://w3id.org/ci#quantityUnitOfMeasure> ;
                                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                      owl:onDataRange xsd:integer
+                                                      owl:onDataRange xsd:decimal
                                                     ] ,
                                                     [ rdf:type owl:Restriction ;
                                                       owl:onProperty <https://w3id.org/ci#descriptionDetail> ;
                                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                       owl:onDataRange xsd:string
                                                     ] ;
+                                    rdfs:comment "A structured semantic information component used to describe a CostItem through standardized descriptive, technical, dimensional, performance, classification, and other domain-specific attributes. A CostComponent represents an informational structure rather than a priced item and does not carry a unit price."@en ;
+                                    rdfs:comment "Una componente informativa semantica strutturata utilizzata per descrivere un CostItem mediante attributi standardizzati descrittivi, tecnici, dimensionali, prestazionali, di classificazione e altri attributi specifici del dominio. Un CostComponent rappresenta una struttura informativa e non una voce prezzata e non contiene un prezzo unitario."@it ;
                                     rdfs:label "CostComponent" .
 
 
@@ -598,12 +655,12 @@ xsd:date rdf:type rdfs:Datatype .
                                                ] ,
                                                [ rdf:type owl:Restriction ;
                                                  owl:onProperty <https://w3id.org/cterm#hasClassification> ;
-                                                 owl:someValuesFrom <https://w3id.org/cterm#Classification>
+                                                 owl:allValuesFrom <https://w3id.org/cterm#Classification>
                                                ] ,
                                                [ rdf:type owl:Restriction ;
                                                  owl:onProperty <https://w3id.org/ci#hasUnit> ;
                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                 owl:onClass <http://qudt.org/schema/qudt/unit>
+                                                 owl:onClass <http://qudt.org/schema/qudt/Unit>
                                                ] ,
                                                [ rdf:type owl:Restriction ;
                                                  owl:onProperty <https://w3id.org/ci#code> ;
@@ -628,13 +685,15 @@ xsd:date rdf:type rdfs:Datatype .
                                                [ rdf:type owl:Restriction ;
                                                  owl:onProperty <https://w3id.org/ci#quantityUnitOfMeasure> ;
                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                 owl:onDataRange xsd:integer
+                                                 owl:onDataRange xsd:decimal
                                                ] ,
                                                [ rdf:type owl:Restriction ;
                                                  owl:onProperty <https://w3id.org/ci#unitPrice> ;
                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                  owl:onDataRange xsd:decimal
                                                ] ;
+                               rdfs:comment "A priced production result represented as an item in a construction cost catalogue or price list. It contains identifying, descriptive, quantitative, and economic information, including its unit price, and is semantically described through one or more CostComponents."@en ;
+                               rdfs:comment "Un risultato produttivo prezzato rappresentato come voce in un catalogo dei costi o prezzario delle costruzioni. Contiene informazioni identificative, descrittive, quantitative ed economiche, incluso il prezzo unitario, ed è descritto semanticamente mediante uno o più CostComponent."@it ;
                                rdfs:label "CostItem" .
 
 
@@ -647,6 +706,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                          owl:onClass <https://w3id.org/ci#WorkOfProductComponent>
                                                        ] ;
                                        owl:disjointWith <https://w3id.org/ci#TemporaryComponent> ;
+                                       rdfs:comment "A CostComponent representing a product incorporated into or obtained through a production process. It combines an Activity with a WorkOfProductComponent to describe, in a structured form, the action performed and the physical product involved."@en ;
+                                       rdfs:comment "Un CostComponent che rappresenta un prodotto incorporato in, o ottenuto attraverso, un processo produttivo. Combina un'Activity con un WorkOfProductComponent per descrivere, in forma strutturata, l'azione eseguita e il prodotto fisico coinvolto."@it ;
                                        rdfs:label "Product Work" .
 
 
@@ -657,6 +718,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                          owl:onProperty <https://w3id.org/ci#hasPart> ;
                                                          owl:someValuesFrom <https://w3id.org/ci#CostComponent>
                                                        ] ;
+                                       rdfs:comment "A result of a construction production process represented as a priced item in a construction cost catalogue or price list. In the CI ontology, a ProductionResult is equivalent to a CostItem and is described through one or more CostComponents."@en ;
+                                       rdfs:comment "Un risultato di un processo produttivo delle costruzioni rappresentato come voce prezzata in un catalogo dei costi o prezzario. Nell'ontologia CI, un ProductionResult è equivalente a un CostItem ed è descritto mediante uno o più CostComponent."@it ;
                                        rdfs:label "ProductionResult" .
 
 
@@ -668,6 +731,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                            owl:onClass <https://w3id.org/ci#WorkOfTemporaryComponent>
                                                          ] ;
+                                         rdfs:comment "A CostComponent representing a temporary or auxiliary work required to support the execution of construction activities. It combines an Activity with a WorkOfTemporaryComponent to describe, in a structured form, the action performed and the temporary physical work involved."@en ;
+                                         rdfs:comment "Un CostComponent che rappresenta un'opera temporanea o ausiliaria necessaria a supportare l'esecuzione delle attività di costruzione. Combina un'Activity con un WorkOfTemporaryComponent per descrivere, in forma strutturata, l'azione eseguita e l'opera fisica temporanea coinvolta."@it ;
                                          rdfs:label "Temporary Work" .
 
 
@@ -676,19 +741,19 @@ xsd:date rdf:type rdfs:Datatype .
                            rdfs:subClassOf owl:Thing ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty <https://w3id.org/cterm#hasDimensionParameter> ;
-                                             owl:someValuesFrom <https://w3id.org/cterm#DimensionParameter>
+                                             owl:allValuesFrom <https://w3id.org/cterm#DimensionParameter>
                                            ] ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty <https://w3id.org/cterm#hasOtherStandard> ;
-                                             owl:someValuesFrom <https://w3id.org/cterm#Standard>
+                                             owl:allValuesFrom <https://w3id.org/cterm#Standard>
                                            ] ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty <https://w3id.org/cterm#hasPerformanceParameter> ;
-                                             owl:someValuesFrom <https://w3id.org/cterm#PerformanceParameter>
+                                             owl:allValuesFrom <https://w3id.org/cterm#PerformanceParameter>
                                            ] ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty <https://w3id.org/cterm#hasPhysicalParameter> ;
-                                             owl:someValuesFrom <https://w3id.org/cterm#PhysicalParameter>
+                                             owl:allValuesFrom <https://w3id.org/cterm#PhysicalParameter>
                                            ] ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty <https://w3id.org/cterm#hasFamily> ;
@@ -705,7 +770,7 @@ xsd:date rdf:type rdfs:Datatype .
                                            ] ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty <https://w3id.org/ci#law> ;
-                                             owl:someValuesFrom xsd:string
+                                             owl:allValuesFrom xsd:string
                                            ] ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty <https://w3id.org/ci#code> ;
@@ -720,7 +785,7 @@ xsd:date rdf:type rdfs:Datatype .
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty <https://w3id.org/ci#quantityUnitOfMeasure> ;
                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                             owl:onDataRange xsd:integer
+                                             owl:onDataRange xsd:decimal
                                            ] ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty <https://w3id.org/ci#cam> ;
@@ -737,6 +802,8 @@ xsd:date rdf:type rdfs:Datatype .
                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                              owl:onDataRange xsd:string
                                            ] ;
+                           rdfs:comment "A structured semantic entity representing the physical part involved in a production result, as distinct from the Activity performed on or for it. A Work is described through object, material, dimensional, physical, performance, regulatory, and other technical characteristics."@en ;
+                           rdfs:comment "Un'entità semantica strutturata che rappresenta la parte fisica coinvolta in un risultato produttivo, distinta dall'Activity eseguita su di essa o per essa. Un Work è descritto mediante caratteristiche relative a oggetto, materiale, dimensioni, proprietà fisiche, prestazioni, requisiti normativi e altri aspetti tecnici."@it ;
                            rdfs:label "Work" .
 
 
@@ -744,141 +811,119 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/ci#WorkOfConstructionComponent> rdf:type owl:Class ;
                                                   rdfs:subClassOf <https://w3id.org/ci#Work> ,
                                                                   [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty <https://w3id.org/ci#hasSubComponent> ;
-                                                                    owl:someValuesFrom <https://w3id.org/ci#ConstructionComponent>
-                                                                  ] ,
-                                                                  [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty <https://w3id.org/ci#hasSubComponent> ;
-                                                                    owl:someValuesFrom <https://w3id.org/ci#ProductComponent>
-                                                                  ] ,
-                                                                  [ rdf:type owl:Restriction ;
-                                                                    owl:onProperty <https://w3id.org/ci#hasSubComponent> ;
-                                                                    owl:someValuesFrom <https://w3id.org/cr#MaterialResource>
-                                                                  ] ,
-                                                                  [ rdf:type owl:Restriction ;
                                                                     owl:onProperty <https://w3id.org/cterm#hasAspect> ;
-                                                                    owl:someValuesFrom <https://w3id.org/cterm#AspectOfWorkOfConstructionWork>
+                                                                    owl:allValuesFrom <https://w3id.org/cterm#AspectOfWorkOfConstructionComponent>
                                                                   ] ,
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty <https://w3id.org/cterm#hasFinishing> ;
-                                                                    owl:someValuesFrom <https://w3id.org/cterm#FinishingOfWorkOfConstructionWork>
+                                                                    owl:allValuesFrom <https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent>
                                                                   ] ,
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty <https://w3id.org/cterm#hasFunction> ;
-                                                                    owl:someValuesFrom <https://w3id.org/cterm#FunctionOfWorkOfConstructionWork>
+                                                                    owl:allValuesFrom <https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent>
                                                                   ] ,
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty <https://w3id.org/cterm#hasUse> ;
-                                                                    owl:someValuesFrom <https://w3id.org/cterm#UseOfWorkOfConstructionWork>
+                                                                    owl:allValuesFrom <https://w3id.org/cterm#UseOfWorkOfConstructionComponent>
                                                                   ] ,
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty <https://w3id.org/cterm#hasCategory> ;
-                                                                    owl:allValuesFrom <https://w3id.org/cterm#CategoryOfWorkOfConstructionWork>
+                                                                    owl:allValuesFrom <https://w3id.org/cterm#CategoryOfWorkOfConstructionComponent>
                                                                   ] ,
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty <https://w3id.org/cterm#hasObject> ;
-                                                                    owl:allValuesFrom <https://w3id.org/cterm#ObjectOfWorkOfConstructionWork>
+                                                                    owl:allValuesFrom <https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent>
                                                                   ] ,
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty <https://w3id.org/cterm#hasType> ;
-                                                                    owl:allValuesFrom <https://w3id.org/cterm#TypeOfWorkOfConstructionWork>
+                                                                    owl:allValuesFrom <https://w3id.org/cterm#TypeOfWorkOfConstructionComponent>
                                                                   ] ;
                                                   owl:disjointWith <https://w3id.org/ci#WorkOfProductComponent> ,
                                                                    <https://w3id.org/ci#WorkOfTemporaryComponent> ;
-                                                  rdfs:label "WorkOfConstructionWork" .
+                                                  rdfs:comment "A Work specialization representing the physical part of a ConstructionComponent. It describes the construction object and its technical characteristics and may be decomposed into construction components, product components, and material resources."@en ;
+                                                  rdfs:comment "Una specializzazione di Work che rappresenta la parte fisica di un ConstructionComponent. Descrive l'oggetto costruito e le relative caratteristiche tecniche e può essere scomposta in ConstructionComponent, ProductComponent e MaterialResource."@it ;
+                                                  rdfs:label "WorkOfConstructionComponent" .
 
 
 ###  https://w3id.org/ci#WorkOfProductComponent
 <https://w3id.org/ci#WorkOfProductComponent> rdf:type owl:Class ;
                                              rdfs:subClassOf <https://w3id.org/ci#Work> ,
                                                              [ rdf:type owl:Restriction ;
-                                                               owl:onProperty <https://w3id.org/ci#hasSubComponent> ;
-                                                               owl:someValuesFrom <https://w3id.org/cr#MaterialResource>
-                                                             ] ,
-                                                             [ rdf:type owl:Restriction ;
                                                                owl:onProperty <https://w3id.org/cterm#hasAspect> ;
-                                                               owl:someValuesFrom <https://w3id.org/cterm#AspectOfWorkOfProductWork>
+                                                               owl:allValuesFrom <https://w3id.org/cterm#AspectOfWorkOfProductComponent>
                                                              ] ,
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty <https://w3id.org/cterm#hasFinishing> ;
-                                                               owl:someValuesFrom <https://w3id.org/cterm#FinishingOfWorkOfProductWork>
+                                                               owl:allValuesFrom <https://w3id.org/cterm#FinishingOfWorkOfProductComponent>
                                                              ] ,
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty <https://w3id.org/cterm#hasFunction> ;
-                                                               owl:someValuesFrom <https://w3id.org/cterm#FunctionOfWorkOfProductWork>
+                                                               owl:allValuesFrom <https://w3id.org/cterm#FunctionOfWorkOfProductComponent>
                                                              ] ,
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty <https://w3id.org/cterm#hasUse> ;
-                                                               owl:someValuesFrom <https://w3id.org/cterm#UseOfWorkOfProductWork>
+                                                               owl:allValuesFrom <https://w3id.org/cterm#UseOfWorkOfProductComponent>
                                                              ] ,
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty <https://w3id.org/cterm#hasCategory> ;
-                                                               owl:allValuesFrom <https://w3id.org/cterm#CategoryOfWorkOfProductWork>
+                                                               owl:allValuesFrom <https://w3id.org/cterm#CategoryOfWorkOfProductComponent>
                                                              ] ,
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty <https://w3id.org/cterm#hasObject> ;
-                                                               owl:allValuesFrom <https://w3id.org/cterm#ObjectOfWorkOfProductWork>
+                                                               owl:allValuesFrom <https://w3id.org/cterm#ObjectOfWorkOfProductComponent>
                                                              ] ,
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty <https://w3id.org/cterm#hasType> ;
-                                                               owl:allValuesFrom <https://w3id.org/cterm#TypeOfWorkOfProductWork>
+                                                               owl:allValuesFrom <https://w3id.org/cterm#TypeOfWorkOfProductComponent>
                                                              ] ;
                                              owl:disjointWith <https://w3id.org/ci#WorkOfTemporaryComponent> ;
-                                             rdfs:label "WorkOfProductWork" .
+                                             rdfs:comment "A Work specialization representing the physical part of a ProductComponent. It describes the product and its technical characteristics and may be decomposed into the material resources from which the product is formed."@en ;
+                                             rdfs:comment "Una specializzazione di Work che rappresenta la parte fisica di un ProductComponent. Descrive il prodotto e le relative caratteristiche tecniche e può essere scomposta nelle MaterialResource da cui il prodotto è costituito."@it ;
+                                             rdfs:label "WorkOfProductComponent" .
 
 
 ###  https://w3id.org/ci#WorkOfTemporaryComponent
 <https://w3id.org/ci#WorkOfTemporaryComponent> rdf:type owl:Class ;
                                                rdfs:subClassOf <https://w3id.org/ci#Work> ,
                                                                [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <https://w3id.org/ci#hasSubComponent> ;
-                                                                 owl:someValuesFrom <https://w3id.org/ci#ProductComponent>
-                                                               ] ,
-                                                               [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <https://w3id.org/ci#hasSubComponent> ;
-                                                                 owl:someValuesFrom <https://w3id.org/cr#EquipmentResource>
-                                                               ] ,
-                                                               [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <https://w3id.org/ci#hasSubComponent> ;
-                                                                 owl:someValuesFrom <https://w3id.org/cr#MaterialResource>
-                                                               ] ,
-                                                               [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <https://w3id.org/cterm#hasAspect> ;
-                                                                 owl:someValuesFrom <https://w3id.org/cterm#AspectOfWorkOfTemporaryWork>
+                                                                 owl:allValuesFrom <https://w3id.org/cterm#AspectOfWorkOfTemporaryComponent>
                                                                ] ,
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <https://w3id.org/cterm#hasFinishing> ;
-                                                                 owl:someValuesFrom <https://w3id.org/cterm#FinishingOfWorkOfTemporaryWork>
+                                                                 owl:allValuesFrom <https://w3id.org/cterm#FinishingOfWorkOfTemporaryComponent>
                                                                ] ,
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <https://w3id.org/cterm#hasFunction> ;
-                                                                 owl:someValuesFrom <https://w3id.org/cterm#FunctionOfWorkOfTemporaryWork>
+                                                                 owl:allValuesFrom <https://w3id.org/cterm#FunctionOfWorkOfTemporaryComponent>
                                                                ] ,
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <https://w3id.org/cterm#hasUse> ;
-                                                                 owl:someValuesFrom <https://w3id.org/cterm#UseOfWorkOfTemporaryWork>
+                                                                 owl:allValuesFrom <https://w3id.org/cterm#UseOfWorkOfTemporaryComponent>
                                                                ] ,
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <https://w3id.org/cterm#hasCategory> ;
-                                                                 owl:allValuesFrom <https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork>
+                                                                 owl:allValuesFrom <https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent>
                                                                ] ,
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <https://w3id.org/cterm#hasObject> ;
-                                                                 owl:allValuesFrom <https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork>
+                                                                 owl:allValuesFrom <https://w3id.org/cterm#ObjectOfWorkOfTemporaryComponent>
                                                                ] ,
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <https://w3id.org/cterm#hasType> ;
-                                                                 owl:allValuesFrom <https://w3id.org/cterm#TypeOfWorkOfTemporaryWork>
+                                                                 owl:allValuesFrom <https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent>
                                                                ] ;
-                                               rdfs:label "WorkOfTemporaryWork" .
+                                               rdfs:comment "A Work specialization representing the physical part of a TemporaryComponent. It describes the temporary or auxiliary work and its technical characteristics and may be decomposed into product components, equipment resources, and material resources."@en ;
+                                               rdfs:comment "Una specializzazione di Work che rappresenta la parte fisica di un TemporaryComponent. Descrive l'opera temporanea o ausiliaria e le relative caratteristiche tecniche e può essere scomposta in ProductComponent, EquipmentResource e MaterialResource."@it ;
+                                               rdfs:label "WorkOfTemporaryComponent" .
 
 
 ###  https://w3id.org/cr#EquipmentResource
 <https://w3id.org/cr#EquipmentResource> rdf:type owl:Class .
 
 
-###  https://w3id.org/cr#LaborResource
-<https://w3id.org/cr#LaborResource> rdf:type owl:Class .
+###  https://w3id.org/cr#LabourResource
+<https://w3id.org/cr#LabourResource> rdf:type owl:Class .
 
 
 ###  https://w3id.org/cr#MaterialResource
@@ -889,16 +934,16 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/cr#Resource> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#AspectOfWorkOfConstructionWork
-<https://w3id.org/cterm#AspectOfWorkOfConstructionWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#AspectOfWorkOfConstructionComponent
+<https://w3id.org/cterm#AspectOfWorkOfConstructionComponent> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#AspectOfWorkOfProductWork
-<https://w3id.org/cterm#AspectOfWorkOfProductWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#AspectOfWorkOfProductComponent
+<https://w3id.org/cterm#AspectOfWorkOfProductComponent> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#AspectOfWorkOfTemporaryWork
-<https://w3id.org/cterm#AspectOfWorkOfTemporaryWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#AspectOfWorkOfTemporaryComponent
+<https://w3id.org/cterm#AspectOfWorkOfTemporaryComponent> rdf:type owl:Class .
 
 
 ###  https://w3id.org/cterm#CategoryOfActivity
@@ -909,16 +954,16 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/cterm#CategoryOfCostComponent> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#CategoryOfWorkOfConstructionWork
-<https://w3id.org/cterm#CategoryOfWorkOfConstructionWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#CategoryOfWorkOfConstructionComponent
+<https://w3id.org/cterm#CategoryOfWorkOfConstructionComponent> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#CategoryOfWorkOfProductWork
-<https://w3id.org/cterm#CategoryOfWorkOfProductWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#CategoryOfWorkOfProductComponent
+<https://w3id.org/cterm#CategoryOfWorkOfProductComponent> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork
-<https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent
+<https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent> rdf:type owl:Class .
 
 
 ###  https://w3id.org/cterm#Classification
@@ -941,32 +986,32 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/cterm#FamilyOfWork> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#FinishingOfWorkOfConstructionWork
-<https://w3id.org/cterm#FinishingOfWorkOfConstructionWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent
+<https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#FinishingOfWorkOfProductWork
-<https://w3id.org/cterm#FinishingOfWorkOfProductWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#FinishingOfWorkOfProductComponent
+<https://w3id.org/cterm#FinishingOfWorkOfProductComponent> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#FinishingOfWorkOfTemporaryWork
-<https://w3id.org/cterm#FinishingOfWorkOfTemporaryWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#FinishingOfWorkOfTemporaryComponent
+<https://w3id.org/cterm#FinishingOfWorkOfTemporaryComponent> rdf:type owl:Class .
 
 
 ###  https://w3id.org/cterm#FunctionOfActivity
 <https://w3id.org/cterm#FunctionOfActivity> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#FunctionOfWorkOfConstructionWork
-<https://w3id.org/cterm#FunctionOfWorkOfConstructionWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent
+<https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#FunctionOfWorkOfProductWork
-<https://w3id.org/cterm#FunctionOfWorkOfProductWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#FunctionOfWorkOfProductComponent
+<https://w3id.org/cterm#FunctionOfWorkOfProductComponent> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#FunctionOfWorkOfTemporaryWork
-<https://w3id.org/cterm#FunctionOfWorkOfTemporaryWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#FunctionOfWorkOfTemporaryComponent
+<https://w3id.org/cterm#FunctionOfWorkOfTemporaryComponent> rdf:type owl:Class .
 
 
 ###  https://w3id.org/cterm#Material
@@ -981,16 +1026,16 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/cterm#ObjectOfCostComponent> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#ObjectOfWorkOfConstructionWork
-<https://w3id.org/cterm#ObjectOfWorkOfConstructionWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent
+<https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#ObjectOfWorkOfProductWork
-<https://w3id.org/cterm#ObjectOfWorkOfProductWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#ObjectOfWorkOfProductComponent
+<https://w3id.org/cterm#ObjectOfWorkOfProductComponent> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork
-<https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#ObjectOfWorkOfTemporaryComponent
+<https://w3id.org/cterm#ObjectOfWorkOfTemporaryComponent> rdf:type owl:Class .
 
 
 ###  https://w3id.org/cterm#PerformanceParameter
@@ -1009,32 +1054,32 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/cterm#TypeOfActivity> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#TypeOfWorkOfConstructionWork
-<https://w3id.org/cterm#TypeOfWorkOfConstructionWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#TypeOfWorkOfConstructionComponent
+<https://w3id.org/cterm#TypeOfWorkOfConstructionComponent> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#TypeOfWorkOfProductWork
-<https://w3id.org/cterm#TypeOfWorkOfProductWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#TypeOfWorkOfProductComponent
+<https://w3id.org/cterm#TypeOfWorkOfProductComponent> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#TypeOfWorkOfTemporaryWork
-<https://w3id.org/cterm#TypeOfWorkOfTemporaryWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent
+<https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent> rdf:type owl:Class .
 
 
 ###  https://w3id.org/cterm#UseOfActivity
 <https://w3id.org/cterm#UseOfActivity> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#UseOfWorkOfConstructionWork
-<https://w3id.org/cterm#UseOfWorkOfConstructionWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#UseOfWorkOfConstructionComponent
+<https://w3id.org/cterm#UseOfWorkOfConstructionComponent> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#UseOfWorkOfProductWork
-<https://w3id.org/cterm#UseOfWorkOfProductWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#UseOfWorkOfProductComponent
+<https://w3id.org/cterm#UseOfWorkOfProductComponent> rdf:type owl:Class .
 
 
-###  https://w3id.org/cterm#UseOfWorkOfTemporaryWork
-<https://w3id.org/cterm#UseOfWorkOfTemporaryWork> rdf:type owl:Class .
+###  https://w3id.org/cterm#UseOfWorkOfTemporaryComponent
+<https://w3id.org/cterm#UseOfWorkOfTemporaryComponent> rdf:type owl:Class .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
